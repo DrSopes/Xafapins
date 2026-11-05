@@ -43,6 +43,10 @@ jobs:
         run: |
           python src/predict_engine.py --species lactarius_deliciosus
           python src/predict_engine.py --species boletus_edulis
+          python src/predict_engine.py --species craterellus_lutescens
+          python src/predict_engine.py --species cantharellus_cibarius
+          python src/predict_engine.py --species hygrophorus_latitabundus
+          python src/predict_engine.py --species tricholoma_terreum
 
       - name: 3. Actualizar datos en el repositorio
         run: |

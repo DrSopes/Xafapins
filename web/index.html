@@ -2,74 +2,191 @@
 <html lang="ca">
 <head>
   <meta charset="UTF-8">
-  <title>Xafapins</title>
+  <title>Xafapins - Visor Micològic i Forestal de Catalunya</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://unpkg.com/maplibre-gl@3.6.2/dist/maplibre-gl.css" rel="stylesheet" />
   <script src="https://unpkg.com/maplibre-gl@3.6.2/dist/maplibre-gl.js"></script>
   <style>
-    body { margin: 0; padding: 0; font-family: system-ui, sans-serif; }
+    body { margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
     #map { position: absolute; top: 0; bottom: 0; width: 100%; }
+    
     .panel {
       position: absolute; top: 15px; left: 15px; z-index: 10;
-      background: rgba(255, 255, 255, 0.95); padding: 15px; border-radius: 8px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.15); max-width: 300px;
+      background: rgba(255, 255, 255, 0.95); padding: 16px; border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.15); width: 280px;
+      backdrop-filter: blur(4px);
     }
-    select, button { width: 100%; padding: 8px; margin-top: 6px; font-size: 0.9rem; }
-    button { background: #15803d; color: white; border: none; cursor: pointer; border-radius: 4px; }
+    .panel h2 { margin: 0 0 12px 0; font-size: 1.15rem; color: #1e293b; display: flex; align-items: center; gap: 8px; }
+    .panel label { font-size: 0.8rem; font-weight: 700; color: #475569; display: block; margin-top: 10px; text-transform: uppercase; letter-spacing: 0.5px; }
+    select {
+      width: 100%; padding: 8px 10px; margin-top: 4px; border: 1px solid #cbd5e1;
+      border-radius: 6px; font-size: 0.9rem; background: #fff; color: #1e293b;
+    }
+    
+    .legend-box { margin-top: 15px; border-top: 1px solid #e2e8f0; padding-top: 12px; }
+    .legend-title { font-size: 0.8rem; font-weight: 600; color: #334155; margin-bottom: 6px; }
+    .legend-bar { height: 10px; border-radius: 4px; margin-bottom: 4px; }
+    .legend-labels { display: flex; justify-content: space-between; font-size: 0.75rem; color: #64748b; }
+    
+    .legend-item { display: flex; align-items: center; gap: 8px; font-size: 0.8rem; color: #334155; margin-bottom: 4px; }
+    .legend-color { width: 14px; height: 14px; border-radius: 3px; }
   </style>
 </head>
 <body>
+
 <div id="map"></div>
+
 <div class="panel">
-  <h3>🍄 Xafapins</h3>
-  <label>Espècie:</label>
-  <select id="species">
-    <option value="lactarius_deliciosus">Rovelló / Pinetell</option>
+  <h2>🍄 Xafapins</h2>
+  
+  <label for="species-select">Espècie de bolet:</label>
+  <select id="species-select">
+    <option value="lactarius_deliciosus">Pinetell / Rovelló</option>
     <option value="boletus_edulis">Cep (Boletus edulis)</option>
   </select>
-  <button onclick="addMarker()">Afegir Setal Privat (Local)</button>
+
+  <label for="layer-select">Capa de visualització:</label>
+  <select id="layer-select">
+    <option value="score">Probabilitat de Fructificació</option>
+    <option value="trees">Arbolat / Masses Forestals</option>
+    <option value="soil">Tipus de Sòl (pH)</option>
+  </select>
+
+  <div id="legend-container" class="legend-box"></div>
 </div>
+
 <script>
   const map = new maplibregl.Map({
     container: 'map',
     style: 'https://basemaps.cartocdn.com/gl/positron-gl-style/style.json',
     center: [1.8, 41.7],
-    zoom: 7.8
+    zoom: 7.9
   });
 
-  function updateLayer(species) {
-    if (map.getSource('myco')) {
-      map.removeLayer('myco-layer');
-      map.removeSource('myco');
-    }
-    map.addSource('myco', { type: 'geojson', data: `prediction_${species}.geojson` });
-    map.addLayer({
-      id: 'myco-layer',
-      type: 'fill',
-      source: 'myco',
-      paint: {
-        'fill-color': [
-          'interpolate', ['linear'], ['get', 'score'],
-          0.0, 'rgba(239, 68, 68, 0.2)',
-          0.5, 'rgba(234, 179, 8, 0.5)',
-          1.0, 'rgba(21, 128, 61, 0.8)'
-        ],
-        'fill-opacity': 0.7
-      }
-    });
-  }
+  map.addControl(new maplibregl.NavigationControl());
+
+  let currentSpecies = 'lactarius_deliciosus';
+  let currentLayerMode = 'score';
 
   map.on('load', () => {
-    updateLayer('lactarius_deliciosus');
-    document.getElementById('species').addEventListener('change', (e) => updateLayer(e.target.value));
+    loadLayer();
+
+    document.getElementById('species-select').addEventListener('change', (e) => {
+      currentSpecies = e.target.value;
+      loadLayer();
+    });
+
+    document.getElementById('layer-select').addEventListener('change', (e) => {
+      currentLayerMode = e.target.value;
+      applyLayerStyle();
+      updateLegend();
+    });
   });
 
-  function addMarker() {
-    alert("Fes clic al mapa per marcar la posició.");
-    map.once('click', (e) => {
-      new maplibregl.Marker({ color: '#dc2626' }).setLngLat(e.lngLat).addTo(map);
+  function loadLayer() {
+    if (map.getSource('myco-data')) {
+      map.removeLayer('myco-fill');
+      map.removeSource('myco-data');
+    }
+
+    map.addSource('myco-data', {
+      type: 'geojson',
+      data: `prediction_${currentSpecies}.geojson`
+    });
+
+    map.addLayer({
+      id: 'myco-fill',
+      type: 'fill',
+      source: 'myco-data',
+      paint: {
+        'fill-opacity': 0.72
+      }
+    });
+
+    applyLayerStyle();
+    updateLegend();
+
+    // Popup interactiu en fer clic
+    map.off('click', 'myco-fill');
+    map.on('click', 'myco-fill', (e) => {
+      const p = e.features[0].properties;
+      new maplibregl.Popup()
+        .setLngLat(e.lngLat)
+        .setHTML(`
+          <div style="font-size:0.9rem; line-height:1.4;">
+            <strong style="color:#0f172a;">${p.species}</strong><br>
+            ⭐ <b>Probabilitat:</b> ${(p.score * 100).toFixed(0)}%<br>
+            🌲 <b>Massa forestal:</b> ${p.tree_type}<br>
+            🪨 <b>Tipus de sòl:</b> ${p.soil_type} (pH ~${p.ph})<br>
+            🌧️ <b>Pluja acumulada 21d:</b> ${p.rain_21d} mm<br>
+            🌡️ <b>T. mínima mitjana:</b> ${p.temp_min} °C
+          </div>
+        `)
+        .addTo(map);
     });
   }
+
+  function applyLayerStyle() {
+    if (!map.getLayer('myco-fill')) return;
+
+    if (currentLayerMode === 'score') {
+      map.setPaintProperty('myco-fill', 'fill-color', [
+        'interpolate', ['linear'], ['get', 'score'],
+        0.0, 'rgba(239, 68, 68, 0.15)',
+        0.35, 'rgba(245, 158, 11, 0.45)',
+        0.65, 'rgba(132, 204, 22, 0.65)',
+        1.0, 'rgba(21, 128, 61, 0.85)'
+      ]);
+    } else if (currentLayerMode === 'trees') {
+      map.setPaintProperty('myco-fill', 'fill-color', [
+        'match', ['get', 'tree_type'],
+        'Pi roig / Faig / Castanyer', '#15803d',
+        'Pi blanc / Alzina', '#84cc16',
+        'Pi negre / Roure', '#047857',
+        'Garriga / Conreus', '#eab308',
+        '#94a3b8'
+      ]);
+    } else if (currentLayerMode === 'soil') {
+      map.setPaintProperty('myco-fill', 'fill-color', [
+        'match', ['get', 'soil_type'],
+        'Silici (Àcid)', '#b45309',
+        'Calcari (Bàsic)', '#0284c7',
+        'Calcari argilós', '#06b6d4',
+        '#cbd5e1'
+      ]);
+    }
+  }
+
+  function updateLegend() {
+    const container = document.getElementById('legend-container');
+    if (currentLayerMode === 'score') {
+      container.innerHTML = `
+        <div class="legend-title">Índex de Fructificació:</div>
+        <div class="legend-bar" style="background: linear-gradient(to right, #ef4444, #f59e0b, #84cc16, #15803d);"></div>
+        <div class="legend-labels">
+          <span>Molt Baixa</span>
+          <span>Mitjana</span>
+          <span>Excel·lent</span>
+        </div>
+      `;
+    } else if (currentLayerMode === 'trees') {
+      container.innerHTML = `
+        <div class="legend-title">Massa Forestal Dominant:</div>
+        <div class="legend-item"><div class="legend-color" style="background:#15803d"></div> Pi roig / Faig / Castanyer</div>
+        <div class="legend-item"><div class="legend-color" style="background:#047857"></div> Pi negre / Roure</div>
+        <div class="legend-item"><div class="legend-color" style="background:#84cc16"></div> Pi blanc / Alzina</div>
+        <div class="legend-item"><div class="legend-color" style="background:#eab308"></div> Garriga / Matoll</div>
+      `;
+    } else if (currentLayerMode === 'soil') {
+      container.innerHTML = `
+        <div class="legend-title">Tipus de Sòl i Acidesa:</div>
+        <div class="legend-item"><div class="legend-color" style="background:#b45309"></div> Silici / Àcid (pH &lt; 6.0)</div>
+        <div class="legend-item"><div class="legend-color" style="background:#0284c7"></div> Calcari / Bàsic (pH &gt; 7.0)</div>
+        <div class="legend-item"><div class="legend-color" style="background:#06b6d4"></div> Calcari Argilós</div>
+      `;
+    }
+  }
 </script>
+
 </body>
 </html>

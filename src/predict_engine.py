@@ -47,14 +47,20 @@ def build(step_km=1.0, weather_path=None, output=None, allow_legacy=False, regio
         dates = validate_daily(rows[0])
         for row in rows[1:]:
             validate_daily(row, dates)
+        history_days = weather.get('history_days', 28)
         forecast_dates = weather['forecast_dates']
-        if not forecast_dates or forecast_dates != dates[28:]:
-            raise ValueError('Forecast dates must follow the complete 28-day history')
+        if history_days < 28 or not forecast_dates or forecast_dates != dates[history_days:]:
+            raise ValueError('Forecast dates must follow the complete antecedent history')
+        historical_days = min(15, history_days-28)
+        forecast_start = forecast_dates[0]
+        forecast_dates = dates[history_days-historical_days:]
         stamp = datetime.fromisoformat(weather['timestamp'])
         if (datetime.now(timezone.utc)-stamp).total_seconds() > 48*3600:
             raise ValueError('Weather is older than 48 hours; refresh before publishing')
     else:
         forecast_dates = [weather['timestamp'][:10]]
+        forecast_start = forecast_dates[0]
+        historical_days = 0
     if region_id and weather.get('region_id', 'ES') not in ['ES', region_id]:
         raise ValueError('Weather coverage does not match the requested region')
     region = boundary(region_id) if region_id else boundary()
@@ -135,6 +141,8 @@ def build(step_km=1.0, weather_path=None, output=None, allow_legacy=False, regio
         'region_id': region_id, 'bounds': list(region.bounds),
         'weather_timestamp': weather['timestamp'], 'legacy_snapshot': legacy,
         'dates': forecast_dates, 'cell_count': len(features), 'cell_size_km': step_km,
+        'forecast_start': forecast_start, 'historical_days': historical_days,
+        'visual_grid_m': 250,
         'weather_sampling_degrees': weather.get('sampling_step_degrees', 0.08),
         'weather_source': weather.get('source', 'Original snapshot; daily series unavailable'),
         'model': 'Uncalibrated weather and season suitability; not probability of occurrence',

@@ -1,0 +1,242 @@
+{
+  "lactarius_deliciosus": {
+    "name": "Lactarius deliciosus",
+    "image": "images/species/lactarius_deliciosus.jpg",
+    "author": "Eric Steinert",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "source": "https://commons.wikimedia.org/wiki/File:Lactarius_deliciosus.jpg",
+    "description": "",
+    "modification": "Miniatura reduïda; sense retocs de contingut."
+  },
+  "lactarius_sanguifluus": {
+    "name": "Lactarius sanguifluus",
+    "image": "images/species/lactarius_sanguifluus.jpg",
+    "author": "Holger Krisp",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Weinroter_Kiefern-Reizker_Lactarius_sanguifluus.jpg",
+    "description": "Lactarius sanguifluus, Family: Russulaceae, Location: Germany, Ehingen",
+    "modification": "Miniatura reduïda; sense retocs de contingut."
+  },
+  "boletus_edulis": {
+    "name": "Boletus edulis",
+    "image": "images/species/boletus_edulis.jpg",
+    "author": "ReddishClover",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Boletus_edulis_IT.jpg",
+    "description": "Boletus edulis in a mixed temperate montane forest (Abetina Reale, Emilia-Romagna, Italy). Forest composition: Abies alba and Fagus sylvatica.",
+    "modification": "Miniatura reduïda; sense retocs de contingut."
+  },
+  "boletus_aestivalis": {
+    "name": "Boletus aestivalis",
+    "image": "images/species/boletus_aestivalis.jpg",
+    "author": "Rude",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "source": "https://commons.wikimedia.org/wiki/File:Boletus.JPG",
+    "description": "Boletus reticulatus?",
+    "modification": "Miniatura reduïda; sense retocs de contingut."
+  },
+  "boletus_aereus": {
+    "name": "Boletus aereus",
+    "image": "images/species/boletus_aereus.jpg",
+    "author": "Achim Bollmann",
+    "license": "Copyrighted free use",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/File:Bronze_Roehrling.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Bronze_Roehrling.jpg",
+    "description": "Bronze Röhrling,Boletus aereus Bull.: Fr.- Pilz des Jahres 2008",
+    "modification": "Miniatura reduïda; sense retocs de contingut."
+  },
+  "boletus_pinophilus": {
+    "name": "Boletus pinophilus",
+    "image": "images/species/boletus_pinophilus.jpg",
+    "author": "Paffka",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Boletus_pinophilus3.JPG",
+    "description": "Boletus pinophilus from Bulgaria.",
+    "modification": "Miniatura reduïda; sense retocs de contingut."
+  },
+  "craterellus_lutescens": {
+    "name": "Craterellus lutescens",
+    "image": "images/species/craterellus_lutescens.jpg",
+    "author": "Pau Cabot",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "source": "https://commons.wikimedia.org/wiki/File:Cantharellus_lutescens.jpg",
+    "description": "Picornell de càrritx (Cantharellus lutescens), Mallorca.",
+    "modification": "Miniatura reduïda; sense retocs de contingut."
+  },
+  "craterellus_cornucopioides": {
+    "name": "Craterellus cornucopioides",
+    "image": "images/species/craterellus_cornucopioides.jpg",
+    "author": "Jean-Pol GRANDMONT",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Craterellus_cornucopioides_JPG1.jpg",
+    "description": "Black chanterelle, Havré, Belgium",
+    "modification": "Miniatura reduïda; sense retocs de contingut."
+  },
+  "craterellus_tubaeformis": {
+    "name": "Craterellus tubaeformis",
+    "image": "images/species/craterellus_tubaeformis.jpg",
+    "author": "Miika Silfverberg from Vantaa, Finland",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Craterellus_tubaeformis_1345904803_69350246bb_o.jpg",
+    "description": "My favourite mushroom, not photographically but gastronomically (YUM!). Trumpet chanterelle has all you need from a mushroom: great taste, easy and fun to pick, no maggots etc. The only nuisance is that they coincide with the nastiest of all creatures: the elk fly (YUK!)",
+    "modification": "Miniatura reduïda; sense retocs de contingut."
+  },
+  "cantharellus_cibarius": {
+    "name": "Cantharellus cibarius",
+    "image": "images/species/cantharellus_cibarius.jpg",
+    "author": "Strobilomyces",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "source": "https://commons.wikimedia.org/wiki/File:Chanterelle_Cantharellus_cibarius.jpg",
+    "description": "",
+    "modification": "Miniatura reduïda; sense retocs de contingut."
+  },
+  "hygrophorus_latitabundus": {
+    "name": "Hygrophorus latitabundus",
+    "image": "images/species/hygrophorus_latitabundus.jpg",
+    "author": "Paffka",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Hygrophorus_latitabundus1.JPG",
+    "description": "Hygrophorus latitabundus in coniferous forest in western Stara Planina mountains, Bulgaria. Under Pinus nigra.",
+    "modification": "Miniatura reduïda; sense retocs de contingut."
+  },
+  "tricholoma_terreum": {
+    "name": "Tricholoma terreum",
+    "image": "images/species/tricholoma_terreum.jpg",
+    "author": "User:Strobilomyces",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "source": "https://commons.wikimedia.org/wiki/File:Tricholoma_terreum_20061105wa.jpg",
+    "description": "Tricholoma terreum in a park near Paris, France.",
+    "modification": "Miniatura reduïda; sense retocs de contingut."
+  },
+  "tricholoma_portentosum": {
+    "name": "Tricholoma portentosum",
+    "image": "images/species/tricholoma_portentosum.jpg",
+    "author": "Dan Molter (shroomydan)",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Tricholoma_portentosum_181316.jpg",
+    "description": "Fruit bodies of the agaric fungus Tricholoma portentosum (Fr.) Quél. Specimens photographed in Strouds Run State Park, Athens, Ohio, USA. \"Notes: Large gray Tricholoma under pine. Flavor very mild, not bitter.\"",
+    "modification": "Miniatura reduïda; sense retocs de contingut."
+  },
+  "hydnum_repandum": {
+    "name": "Hydnum repandum",
+    "image": "images/species/hydnum_repandum.jpg",
+    "author": "D J Kelly",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Licensing",
+    "source": "https://commons.wikimedia.org/wiki/File:Hedgehog_fungi2.jpg",
+    "description": "Hedgehog Fungus, Hydnum repandum",
+    "modification": "Miniatura reduïda; sense retocs de contingut."
+  },
+  "amanita_caesarea": {
+    "name": "Amanita caesarea",
+    "image": "images/species/amanita_caesarea.jpg",
+    "author": "Yaqui",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Oronges.jpg",
+    "description": "Oronges (Amanites des Césars) posées dans l'herbe",
+    "modification": "Miniatura reduïda; sense retocs de contingut."
+  },
+  "macrolepiota_procera": {
+    "name": "Macrolepiota procera",
+    "image": "images/species/macrolepiota_procera.jpg",
+    "author": "Holger Krisp",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Parasol-Macrolepiota-procera.jpg",
+    "description": "Parasol mushroom, Macrolepiota procera, Family: Agaricaceae, Location: Southern Germany, Ulm, Eggingen.",
+    "modification": "Miniatura reduïda; sense retocs de contingut."
+  },
+  "calocybe_gambosa": {
+    "name": "Calocybe gambosa",
+    "image": "images/species/calocybe_gambosa.jpg",
+    "author": "User:Strobilomyces",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Calocybe_gambosa_080420wa.jpg",
+    "description": "Calocybe gambosa (= Tricholoma gambosum), St. George's  mushroom, in a park near Massy, France.",
+    "modification": "Miniatura reduïda; sense retocs de contingut."
+  },
+  "agaricus_campestris": {
+    "name": "Agaricus campestris",
+    "image": "images/species/agaricus_campestris.jpg",
+    "author": "Nathan Wilson",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Agaricus_campestris.jpg",
+    "description": "",
+    "modification": "Miniatura reduïda; sense retocs de contingut."
+  },
+  "morchella_elata": {
+    "name": "Morchella elata",
+    "image": "images/species/morchella_elata.jpg",
+    "author": "Holger Krisp",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Morchella_elata_Spitzmorchel_Morchella_conica.jpg",
+    "description": "Black Morel, Morchella elata syn. Morchella conica, Family: Morchellaceae, Location: Germany, Ulm, Eggingen",
+    "modification": "Miniatura reduïda; sense retocs de contingut."
+  },
+  "morchella_esculenta": {
+    "name": "Morchella esculenta",
+    "image": "images/species/morchella_esculenta.jpg",
+    "author": "TOMMES-WIKI",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Morchella_esculenta_-_DE_-_TH_-_2013-05-01_-_01.JPG",
+    "description": "Morchella esculenta\nFundort: DE - TH - LK SM\n\nFundtag: 2013-05-01",
+    "modification": "Miniatura reduïda; sense retocs de contingut."
+  },
+  "pleurotus_eryngii": {
+    "name": "Pleurotus eryngii",
+    "image": "images/species/pleurotus_eryngii.jpg",
+    "author": "Diego Delso",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Seta_de_cardo_(Pleurotus_eryngii),_2012-10-03,_DD_01.JPG",
+    "description": "King trumpet mushroom (Pleurotus eryngii)",
+    "modification": "Miniatura reduïda; sense retocs de contingut."
+  },
+  "hygrophorus_marzuolus": {
+    "name": "Hygrophorus marzuolus",
+    "image": "images/species/hygrophorus_marzuolus.jpg",
+    "author": "Hans Valda (contact: Scops)",
+    "license": "Attribution",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/File:Marzschnecklinge.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Marzschnecklinge.jpg",
+    "description": "Märzschnecklinge (Hygrophorus marzuolus)",
+    "modification": "Miniatura reduïda; sense retocs de contingut."
+  },
+  "marasmius_oreades": {
+    "name": "Marasmius oreades",
+    "image": "images/species/marasmius_oreades.jpg",
+    "author": "Alan Rockefeller",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Michigan_Marasmius_oreades.jpg",
+    "description": "Marasmius oreades photographed in Dearborn, Michigan, USA\nhttps://mushroomobserver.org/550918",
+    "modification": "Miniatura reduïda; sense retocs de contingut."
+  },
+  "cyclocybe_aegerita": {
+    "name": "Cyclocybe aegerita",
+    "image": "images/species/cyclocybe_aegerita.jpg",
+    "author": "Ramiro Barreiro",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Agrocybe_aegerita.jpg",
+    "description": "Agrocybe aegerita growing on a poplar stump in Girona, Catalonia, Spain.",
+    "modification": "Miniatura reduïda; sense retocs de contingut."
+  }
+}

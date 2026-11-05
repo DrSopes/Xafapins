@@ -3,7 +3,7 @@ const $ = id => document.getElementById(id);
 const modes = {
   score: ['Idoneïtat meteorològica', 0, 100, ' / 100', ['#e1e6d6','#b8c976','#4a8050','#153e35']],
   rain_21d: ['Pluja antecedent · 21 dies',0,150,' mm',['#f2e7c9','#a3c9b9','#5597bb','#253c85']],
-  rain_day: ['Precipitació prevista · dia',0,40,' mm',['#f2e7c9','#a3c9b9','#5597bb','#253c85']],
+  rain_day: ['Precipitació · dia',0,40,' mm',['#f2e7c9','#a3c9b9','#5597bb','#253c85']],
   temperature: ['Temperatura mitjana · 7 dies',-5,30,' °C',['#456aa4','#b8d9c8','#efca7c','#ab463f']],
   humidity: ['Humitat relativa · dia',0,100,' %',['#e9d6a3','#bad5bb','#62ada6','#286482']],
   wind: ['Vent màxim · dia',0,70,' km/h',['#e8e5d8','#abc6bc','#789bb7','#5f4a85']],
@@ -24,17 +24,28 @@ map.addControl(new maplibregl.GeolocateControl({positionOptions:{enableHighAccur
 let manifest, environment, grid, currentScores, revision=0, selected=null, ready=false;
 let national, regionRevision=0, dataPath='', inspectionController;
 const speciesCache = new Map();
+let photos={},photoSpecies=null;
+const rasterLayers=new Map([['forest-map','ff_tipo_bosque'],['soil-map','phh2o_0-5cm_mean']]);
 function status(text, warn=false) { $('status').textContent=text; $('status').classList.toggle('warn',warn); }
-async function json(url) { const response=await fetch(url); if(!response.ok) throw new Error(`HTTP ${response.status}: ${url}`); return response.json(); }
+async function json(url) {
+  if(url.startsWith('data/regions/')&&!url.endsWith('manifest.json')&&typeof DecompressionStream!=='undefined'){
+    const packed=await fetch(url+'.gz');
+    if(packed.ok)return new Response(packed.body.pipeThrough(new DecompressionStream('gzip'))).json();
+    if(packed.status!==404)throw new Error('HTTP '+packed.status+': '+url);
+  }
+  const response=await fetch(url);if(!response.ok)throw new Error('HTTP '+response.status+': '+url);return response.json();
+}
 function option(select, value, label) { const o=document.createElement('option');o.value=value;o.textContent=label;select.append(o); }
 function text(tag, value, parent) { const node=document.createElement(tag);node.textContent=value;parent.append(node);return node; }
 function baseTiles(id, service, layer) { map.getSource(id).setTiles([wms(service,layer)]); }
 map.on('error', e => { if(e.sourceId && e.sourceId!=='cells') status('Una capa cartogràfica no respon. Torna-ho a intentar més tard.',true); });
 map.on('load', async () => {
+  VisualGrid.attach(map);
+  json('species-photos.json').then(value=>{photos=value;if(ready)showPhoto(manifest.species.find(s=>s.id===$('species').value));}).catch(()=>{});
   map.addSource('cover',{type:'raster',tiles:[wms('cobertes-sol','cobertes_2024')],tileSize:256,attribution:'Cobertes del sòl © ICGC'});
   map.addLayer({id:'cover',type:'raster',source:'cover',layout:{visibility:'none'},paint:{'raster-opacity':0.7}});
   for(const [id,endpoint,layer,attribution] of [['forest-map',EL.FOREST,'ff_tipo_bosque','© MITECO · Mapa Forestal de España'],['soil-map',EL.SOIL,'phh2o_0-5cm_mean','© ISRIC SoilGrids · CC BY 4.0']]) {
-    map.addSource(id,{type:'raster',tiles:[EL.tile(endpoint,layer)],tileSize:256,attribution});
+    map.addSource(id,{type:'raster',tiles:[EL.tile(endpoint,layer)],tileSize:256,maxzoom:id==='soil-map'?11:13,attribution});
     map.addLayer({id,type:'raster',source:id,layout:{visibility:'none'},paint:{'raster-opacity':0.75}});
   }
   EL.forestTypes.forEach(([id,label])=>option($('forest'),id,label));
@@ -67,7 +78,8 @@ async function loadRegion(id,focus=true) {
     if(grid.features.length!==manifest.cell_count) throw new Error('La malla no coincideix amb les dades');
     ['species','date','layer'].forEach(key=>$(key).replaceChildren());
     manifest.species.forEach(s=>option($('species'),s.id,`${s.common_name} · ${s.scientific_name}`));
-    manifest.dates.forEach((d,i)=>option($('date'),i,new Date(d+'T12:00:00').toLocaleDateString('ca',{weekday:'short',day:'numeric',month:'short'})));
+    manifest.dates.forEach((d,i)=>option($('date'),i,(d<(manifest.forecast_start||manifest.dates[0])?'Històric · ':'Previsió · ')+new Date(d+'T12:00:00').toLocaleDateString('ca',{weekday:'short',day:'numeric',month:'short'})));
+    $('date').value=String(Math.max(0,manifest.dates.indexOf(manifest.forecast_start))); 
     ['score',...manifest.layers,'none'].forEach(k=>option($('layer'),k,modes[k][0]));
     if(previousSpecies)$('species').value=previousSpecies;
     if(previousDate&&Number(previousDate)<manifest.dates.length)$('date').value=previousDate;
@@ -76,8 +88,9 @@ async function loadRegion(id,focus=true) {
       map.addSource('cells',{type:'geojson',data:grid});
       map.addLayer({id:'conditions',type:'fill',source:'cells',paint:{'fill-color':'#ccc','fill-opacity':0}},'region-outline');
     } else {map.removeFeatureState({source:'cells'});map.getSource('cells').setData(grid);}
+    map.moveLayer('visual-grid');
     ['species','date','layer'].forEach(key=>$(key).disabled=false);
-    $('resolution').textContent=`Regió activa: malla ≈ ${manifest.cell_size_km} km · altres regions: mitjana regional · mostreig meteo ${manifest.weather_sampling_degrees}°`;
+    $('resolution').textContent=`Regió activa: retícula visual ≈ 250 m en apropar-te · càlcul ${manifest.cell_size_km} km · meteo ${manifest.weather_sampling_degrees}°`;
     const stale = Date.now()-Date.parse(manifest.weather_timestamp)>48*3600*1000;
     $('notice').textContent=stale?'Dades antigues: no les interpretis com una previsió actual.':'Bosc i pH disponibles per consulta; encara no ponderen l’índex. Hores en Europe/Madrid.';
     ready=true;
@@ -102,6 +115,11 @@ async function render() {
   $('detail').classList.add('hidden');currentScores=null;
   const profile=manifest.species.find(s=>s.id===species);
   $('profile').textContent=`${profile.habitat}. ${profile.altitude_min}–${profile.altitude_max} m. Mesos: ${profile.months.join(', ')}. Perfil provisional.`;
+  showPhoto(profile);
+  if(mode==='none'){
+    $('legend-title').textContent='Sense capa meteorològica';$('legend-min').textContent='';$('legend-max').textContent='';$('legend-bar').style.background='#ddd';
+    status('Cartografia · activa bosc o pH i fes clic per consultar.');return;
+  }
   status('Actualitzant condicions…');
   try {
     let result=speciesCache.get(species);
@@ -125,7 +143,7 @@ async function render() {
     map.setPaintProperty('conditions','fill-opacity',mode==='none'?0:Number($('opacity').value)/100);
     $('legend-title').textContent=title;$('legend-min').textContent=min+unit;$('legend-max').textContent=max+unit;
     $('legend-bar').style.background=`linear-gradient(90deg,${colors.join(',')})`;
-    status(`${manifest.species.length} espècies · dades ${manifest.weather_timestamp.slice(0,10)} · ${manifest.legacy_snapshot?'instantània històrica':manifest.dates.length+' dies'}`,manifest.legacy_snapshot||Date.now()-Date.parse(manifest.weather_timestamp)>48*3600*1000);
+    status(`${manifest.species.length} espècies · dades ${manifest.weather_timestamp.slice(0,10)} · ${manifest.legacy_snapshot?'instantània històrica':(manifest.historical_days||0)+' dies d’històric + '+(manifest.dates.length-(manifest.historical_days||0))+' dies de previsió'}`,manifest.legacy_snapshot||Date.now()-Date.parse(manifest.weather_timestamp)>48*3600*1000);
     if(selected) showDetail();
   } catch(error) {if(token===revision) status('Error de dades: '+error.message+'. Canvia de capa o torna-ho a intentar.',true);}
 }
@@ -140,22 +158,35 @@ map.on('click', event=>{
   inspectEnvironment(event.lngLat.lng,event.lngLat.lat);
 });
 async function inspectEnvironment(lon,lat) {
-  inspectionController?.abort();const controller=new AbortController();inspectionController=controller;
-  const timeout=setTimeout(()=>controller.abort(),20000);
-  const root=$('environment-detail');root.replaceChildren();root.classList.remove('hidden');
-  text('h2','Bosc i sòl en aquest punt',root);text('p',`${lat.toFixed(5)}, ${lon.toFixed(5)}`,root);
-  const forest=text('p','Consultant MITECO…',root),ph=text('p','Consultant SoilGrids…',root);
-  const depth=$('soil').value==='off'?'0-5cm':$('soil').value;
-  const tasks=[EL.forest(lon,lat,controller.signal).then(value=>{
+  inspectionController?.abort();
+  const root=$('environment-detail');root.replaceChildren();
+  const kind=$('forest').value!=='off'?'forest':$('soil').value==='on'?'soil':null;
+  if(!kind){root.classList.add('hidden');return;}
+  const controller=new AbortController();inspectionController=controller;
+  const timeout=setTimeout(()=>controller.abort(),15000);
+  root.classList.remove('hidden');text('h2',kind==='forest'?'Bosc en aquest punt':'pH en aquest punt',root);
+  text('p',lat.toFixed(5)+', '+lon.toFixed(5),root);
+  const result=text('p','Consultant '+(kind==='forest'?'MITECO':'SoilGrids')+'…',root);
+  try{
+    const value=kind==='forest'?await EL.forest(lon,lat,controller.signal):await EL.ph(lon,lat,'0-5cm','mean',controller.signal);
     if(controller!==inspectionController)return;
-    forest.textContent=value?`Bosc: ${value.formation}. Tipus: ${value.type}. Arbres: ${value.hosts.join(', ')||'sense dades'}. Coberta arbòria: ${value.canopy===null?'sense dades':value.canopy+'%'}.`:'MITECO: cap formació retornada; no confirma absència de bosc.';
-  }).catch(()=>{if(controller===inspectionController)forest.textContent='MITECO no disponible en aquest moment. Torna a clicar per reintentar.';}),
-  Promise.allSettled(['mean','Q0.05','Q0.95'].map(stat=>EL.ph(lon,lat,depth,stat,controller.signal))).then(results=>{
-    if(controller!==inspectionController)return;
-    const [mean,low,high]=results.map(r=>r.status==='fulfilled'?r.value:null);
-    ph.textContent=mean===null?'SoilGrids: pH no disponible en aquest punt.':`pH ${mean.toFixed(1)} · ${EL.phClass(mean)} · ${depth} · estimat a 250 m. ${low!==null&&high!==null?`Interval modelitzat 90%: ${low.toFixed(1)}–${high.toFixed(1)}.`:'Interval d’incertesa no disponible.'}`;
-  })];
-  await Promise.allSettled(tasks);clearTimeout(timeout);
+    result.textContent=kind==='forest'?(value?'Bosc: '+value.formation+'. Tipus: '+value.type+'. Arbres: '+(value.hosts.join(', ')||'sense dades')+'.':'MITECO: cap formació retornada; no confirma absència de bosc.'):
+      (value===null?'SoilGrids: pH no disponible en aquest punt.':'pH '+value.toFixed(1)+' · '+EL.phClass(value)+' · superfície 0–5 cm · estimació a 250 m, no una mesura local.');
+  }catch(error){if(controller===inspectionController)result.textContent='Servei no disponible ara. Torna a clicar per reintentar.';}
+  finally{clearTimeout(timeout);}
+}
+function showPhoto(species){
+  if(!species)return;
+  const photo=photos[species.id];
+  if(!photo){$('species-photo').classList.add('hidden');photoSpecies=null;return;}
+  if(photoSpecies===species.id)return;photoSpecies=species.id;
+  const frame=$('species-photo'),img=$('species-image'),credit=$('photo-credit');
+  frame.classList.remove('hidden');img.classList.remove('hidden');img.alt=species.common_name+' · '+species.scientific_name;
+  img.onerror=()=>{img.classList.add('hidden');credit.textContent='Fotografia no disponible. Torna a carregar la pàgina.';};
+  img.src=photo.image;credit.replaceChildren();
+  text('span',photo.author+' · ',credit);
+  const license=text('a',photo.license,credit);license.href=photo.licenseUrl;license.target='_blank';license.rel='noopener';
+  text('span',' · ',credit);const source=text('a','Wikimedia Commons',credit);source.href=photo.source;source.target='_blank';source.rel='noopener';
 }
 function showDetail() {
   if(!selected || !currentScores) return;
@@ -186,22 +217,24 @@ $('search-form').onsubmit=async event=>{
 $('all-spain').onclick=()=>map.fitBounds([[-18.3,27.5],[4.4,43.9]],{padding:35});
 $('canaries').onclick=()=>{if(national)loadRegion('ES70',true);};
 function overlayChange(kind) {
+  inspectionController?.abort();$('environment-detail').classList.add('hidden');
   const forest=$('forest').value,soil=$('soil').value;
   // The thematic maps are mutually exclusive, with their original provider legend.
   if(kind==='forest'&&forest!=='off')$('soil').value='off';
   if(kind==='soil'&&soil!=='off')$('forest').value='off';
-  for(const [control,id,endpoint,layer] of [['forest','forest-map',EL.FOREST,$('forest').value],['soil','soil-map',EL.SOIL,`phh2o_${$('soil').value}_mean`]]) {
+  for(const [control,id,endpoint,layer] of [['forest','forest-map',EL.FOREST,$('forest').value],['soil','soil-map',EL.SOIL,'phh2o_0-5cm_mean']]) {
     if(!map.getLayer(id))continue;
     const visible=$(control).value!=='off';map.setLayoutProperty(id,'visibility',visible?'visible':'none');
-    if(visible){map.getSource(id).setTiles([EL.tile(endpoint,layer)]);map.moveLayer(id);}
+    if(visible){if(rasterLayers.get(id)!==layer){map.getSource(id).setTiles([EL.tile(endpoint,layer)]);rasterLayers.set(id,layer);}map.moveLayer(id);}
   }
   const active=$('forest').value!=='off'?'forest':$('soil').value!=='off'?'soil':null;
   $('environment-legend').classList.toggle('hidden',!active);
   if(active){
     $('layer').value='none';render();
-    const layer=active==='forest'?$('forest').value:`phh2o_${$('soil').value}_mean`;
+    const layer=active==='forest'?$('forest').value:'phh2o_0-5cm_mean';
     $('source-legend').src=EL.url(active==='forest'?EL.FOREST:EL.SOIL,{SERVICE:'WMS',VERSION:'1.1.1',REQUEST:'GetLegendGraphic',LAYER:layer,FORMAT:'image/png'});
-    $('environment-caption').textContent=active==='forest'?'Llegenda MITECO · coníferes, frondoses i bosc mixt':'SoilGrids · pH estimat; els valors pH×10 es divideixen per 10. Sense color = sense dades.';
+    $('environment-caption').textContent=active==='forest'?'Llegenda MITECO · '+(EL.forestTypes.find(([id])=>id===$('forest').value)?.[1]||'Bosc'):'SoilGrids · pH estimat; els valors pH×10 es divideixen per 10. Sense color = sense dades.';
   }
+  if(map.getLayer('visual-grid'))map.moveLayer('visual-grid');
 }
 $('forest').onchange=()=>overlayChange('forest');$('soil').onchange=()=>overlayChange('soil');

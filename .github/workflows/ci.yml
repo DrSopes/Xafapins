@@ -21,4 +21,5 @@ jobs:
           node-version: '22'
       - run: node --check web/app.js
       - run: node --check web/environment-layers.js
-      - run: node --test tests/environment.test.cjs tests/app-state.test.cjs
+      - run: node --check web/visual-grid.js
+      - run: node --test tests/*.test.cjs

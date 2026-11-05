@@ -36,12 +36,30 @@
       hosts:[p.nom_sp1,p.nom_sp2,p.nom_sp3].filter(v=>v&&v!=='Sin especie arbórea'),
       canopy:typeof p.nm_fccarb==='number'?p.nm_fccarb:null};
   }
+  const pointCache=new Map();
   async function request(endpoint,layer,lon,lat,format,signal) {
+    if(signal?.aborted)throw new DOMException('Aborted','AbortError');
+    const key=[endpoint,layer,lon.toFixed(5),lat.toFixed(5)].join('|');
+    const cached=pointCache.get(key);
+    if(cached&&Date.now()-cached.time<600000)return cached.value;
     const response=await fetch(featureUrl(endpoint,layer,lon,lat,format),{signal});
     if(!response.ok)throw new Error('HTTP '+response.status);
-    return response.json();
+    const value=await response.json();
+    if(signal?.aborted)throw new DOMException('Aborted','AbortError');
+    // Do not cache empty results: a fresh click can retry them.
+    if(value.features?.length){
+      if(pointCache.size>=200)pointCache.delete(pointCache.keys().next().value);
+      pointCache.set(key,{value,time:Date.now()});
+    }
+    return value;
   }
-  const forestTypes=[['ff_tipo_bosque','Coníferes / frondoses / mixt']];
+  const forestTypes=[
+    ['ff_tipo_bosque','Vista general · coníferes, frondoses i mixt'],
+    ['pinar_pino_albar','Pinedes de pi roig'],['pinar_pino_negro','Pinedes de pi negre'],
+    ['pinar_pino_carrasco','Pinedes de pi blanc'],['encinares','Alzinars'],
+    ['alcornocales','Suredes'],['hayedos','Fagedes'],
+    ['robledales_qrobur_qpetraea','Rouredes · roure pènol i de fulla gran'],
+    ['abetales','Avetoses'],['castanares','Castanyedes'],['bosque_ribereno','Boscos de ribera']];
   root.EnvironmentLayers={FOREST,SOIL,tile,url,featureUrl,phValue,phClass,forestValue,forestTypes,
     forest:(lon,lat,signal)=>request(FOREST,'ff_form_arbolada',lon,lat,'application/json',signal).then(forestValue),
     ph:(lon,lat,depth,stat,signal)=>request(SOIL,`phh2o_${depth}_${stat}`,lon,lat,'application/geo+json',signal).then(phValue)};

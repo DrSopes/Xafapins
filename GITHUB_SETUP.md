@@ -2,7 +2,7 @@
 
 ## 1. Extract and commit the code
 
-Extract `Xafapins-GitHub-source.zip` into your repository root, replacing matching files. There is **no enclosing folder** in this ZIP. The resulting root must contain:
+Extract `Xafapins-GitHub-v2.zip` into your repository root, replacing matching files. There is **no enclosing folder** in this ZIP. The resulting root must contain:
 
 ```text
 .github/workflows/ci.yml
@@ -20,6 +20,8 @@ Include the hidden `.github` directory. Do not upload the ZIP itself expecting G
 Commit the extracted source files to the repository's **default branch**. The workflow detects that branch automatically; it does not require the branch to be named `main`.
 
 When updating an older Xafapins repository, replace its `xafapins_daily.yml` with this one. Disable any other obsolete deployment workflows that target the same Pages site. Old tracked `web/prediction_*.geojson` files can be removed: the new viewer does not use them. They are excluded from the new deployment artifact even if they remain in the repository.
+
+Include the `web/images` folder, `web/species-photos.json`, `web/visual-grid.js` and `PHOTO_CREDITS.md`. The deployment package compresses regional JSON/GeoJSON as `.gz`; the app decompresses these in modern browsers (Compression Streams API).
 
 The ZIP intentionally excludes weather snapshots, generated map data, `.venv`, and build output. **Actions generates the full Spain forecast itself.** The checked-in Spain boundary file is required and included. If generating locally, follow README.md before opening the viewer.
 
@@ -44,7 +46,7 @@ The workflow:
 1. Checks Pages configuration early.
 2. Installs Python dependencies and runs Python/JavaScript tests.
 3. Downloads weather covering all Spanish regions, islands and autonomous cities.
-4. Builds 24 species and seven forecast dates at approximately 1 km display spacing.
+4. Builds 24 species for 15 historical dates and seven forecast dates at 1 km calculation spacing; the browser draws the nominal 250 m visual grid when zoomed in.
 5. Validates all 19 regional datasets and prepares a clean `dist` folder.
 6. Uploads the Pages artifact and deploys it. The final deployment step supplies your website URL.
 

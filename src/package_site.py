@@ -1,5 +1,6 @@
 """Stage only the current application and validated Spain data for GitHub Pages."""
 import json
+import gzip
 import shutil
 from pathlib import Path
 from download_meteo import ROOT
@@ -18,8 +19,9 @@ def package():
     if output.exists():
         shutil.rmtree(output)
     output.mkdir()
-    for name in ['index.html','app.js','app.css','environment-layers.js']:
+    for name in ['index.html','app.js','app.css','environment-layers.js','visual-grid.js','species-photos.json']:
         shutil.copy2(web/name,output/name)
+    shutil.copytree(web/'images', output/'images')
     (output/'data/regions').mkdir(parents=True)
     for name in ['spain.json','spain-regions.geojson']:
         shutil.copy2(web/'data'/name,output/'data'/name)
@@ -35,7 +37,13 @@ def package():
         for name in names:
             if Path(name).name!=name:
                 raise ValueError('Invalid species filename')
-            shutil.copy2(source/name,destination/name)
+            # Explicit gzip files keep the 22-day national artifact small on Pages.
+            # The browser decompresses these; no custom HTTP headers are needed.
+            if name == 'manifest.json':
+                shutil.copy2(source/name,destination/name)
+            else:
+                with open(source/name, 'rb') as original, gzip.open(destination/(name+'.gz'), 'wb', compresslevel=6) as compressed:
+                    shutil.copyfileobj(original, compressed)
     (output/'.nojekyll').touch()
     total=sum(p.stat().st_size for p in output.rglob('*') if p.is_file())
     if total>=1_000_000_000:

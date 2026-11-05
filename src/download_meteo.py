@@ -48,9 +48,11 @@ def validate_daily(item, expected_dates=None):
     return dates
 
 
-def fetch_grid_weather(step=0.16, history_days=28, forecast_days=7, output=None, region_id=None):
+def fetch_grid_weather(step=0.16, history_days=43, forecast_days=7, output=None, region_id=None):
     if not 0.04 <= step <= 0.5:
         raise ValueError('Weather grid step must be between 0.04 and 0.5 degrees')
+    if history_days < 43:
+        raise ValueError('43 history days are required: 28 antecedent + 15 displayed days')
     points = weather_points(step, boundary(region_id))
     session = requests.Session()
     session.mount('https://', HTTPAdapter(max_retries=Retry(total=4, backoff_factor=2,

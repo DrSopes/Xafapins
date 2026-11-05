@@ -1,82 +1,64 @@
-# Xafapins · Spain
+# Xafapins · App feta per Dr.Sopes
 
-App feta per **Dr.Sopes**.
+Visor orientativo de meteorología y setas para las 19 regiones de España. Interfaz en catalán, 24 especies y OpenStreetMap como único mapa base.
 
-A static mushroom-weather explorer with **24 species**, **all 19 Spanish regions**, **official forest formations**, and **modelled soil pH**. Includes mainland Spain, the Balearic Islands, the Canary Islands, Ceuta and Melilla. The interface remains in Catalan.
+## Cambios de esta versión
 
-## Use the map
+- Retícula **visual de 250 m** al acercarse (zoom 12 o superior), generada solo para el área visible. El cálculo permanece a **1 km**; ni la retícula ni la interpolación añaden precisión a la meteorología original. La retícula es una referencia geométrica, no una parcela ni una nueva predicción por subcelda.
+- **11 opciones de bosque** más oculto: vista general, pi roig, pi negre, pi blanc, alzinars, suredes, fagedes, rouredes de roure pènol/de fulla gran, avetoses, castanyedes y ribera. Son las capas oficiales de MITECO; no representan todas las formaciones existentes.
+- **pH visible u oculto**, fijado en 0–5 cm de profundidad (SoilGrids, resolución nominal de 250 m).
+- **15 días anteriores + 7 días de previsión**. La fecha inicial es el primer día de previsión. El histórico se etiqueta por separado y muestra estimaciones retrospectivas, no avistamientos de setas ni predicciones archivadas que se emitieran entonces.
+- **24 fotos locales**, una por especie, con fuente, autor y licencia; ver PHOTO_CREDITS.md.
+- Aviso visible de desarrollo y orientación, y texto ampliado de uso y seguridad. No sirve para identificar setas, garantizar su presencia ni confirmar comestibilidad. El aviso no garantiza protección jurídica absoluta ni sustituye una revisión legal para el uso concreto.
 
-- The national overview colours regions by their average weather-suitability index. The selected region loads its approximately **1 km cells**. Click another region or choose it in the selector to load its detailed forecast. Regional averages are simple cell means, not occurrence probabilities.
-- Select a species, forecast date and weather layer. The **Tot Espanya** and **Canàries** buttons navigate between national and island views.
-- **Tipus de bosc** uses a simplified classification: conifers, broadleaf and mixed forest, through the official MITECO `ff_tipo_bosque` layer. The overlay can also be hidden. Detailed formation and tree information remains available by clicking the map.
-- **pH del sòl** displays SoilGrids estimates for 0–5, 5–15 or 15–30 cm depth. Click the map to query the pH, an approximate acidity class and, where available, the model's 5th–95th percentile interval. These are **250 m model estimates, not local measurements**.
-- Every land click queries the forest formation, dominant tree species and canopy cover where supplied by MITECO, plus soil pH. Empty/error responses remain unknown; they never become zero or neutral pH. Point queries can be retried by clicking again.
-- Forest and pH overlays are mutually exclusive so their original provider legends remain readable. Selecting either hides weather colours; selecting a weather layer hides the environmental overlay. Point details can show both independently.
-- Search Spanish place names or `latitude, longitude`. Click a region to load its forecast after navigating.
+## Rendimiento
 
-## Run locally
+Las capas se conservan al ocultarlas; mostrar de nuevo una misma capa no reinicia su fuente. Se limita el zoom de solicitud de teselas para no pedir detalle inútil al servidor. Solo se consulta el punto de la capa ambiental activa (una petición, sin los dos percentiles adicionales de pH). Los resultados válidos se reutilizan durante diez minutos, con un máximo de 200 puntos en memoria. Los fallos no se guardan. Seleccionar bosque o pH ya no descarga índices de especies innecesariamente.
 
-Requires Python 3.12+ and internet for map services and fresh weather. The large preview ZIP includes a generated snapshot. The **GitHub source ZIP contains code only**: run the commands below or deploy through Actions to generate data.
+Los datos regionales publicados se comprimen con gzip y el navegador los descomprime; solo se descarga la región activa y la especie seleccionada. Las fotos están incluidas en el sitio, sin consultas a Wikimedia durante el uso. La retícula se dibuja solo para la vista cercana actual.
+
+La primera carga de MITECO/SoilGrids sigue dependiendo del proveedor y de la conexión. No se ha medido una mejora porcentual ni se garantiza un tiempo de respuesta. Un salto adicional requeriría un servicio propio de teselas precalculadas y caché, con infraestructura fuera del sitio estático.
+
+## Meteorología e interpretación
+
+Se descargan **43 días previos**: 28 para completar los antecedentes de la primera fecha histórica y 15 para mostrar. Cada fecha usa su ventana antecedente de lluvia (según especie, hasta 25 días), temperatura y heladas. La lluvia del propio día queda fuera de su acumulado antecedente; los días futuros incorporan previsiones anteriores de la misma serie. El índice meteorológico y estacional de 0–100 no es una probabilidad y no está calibrado con trabajo de campo. Bosque y pH se consultan independientemente y aún no ponderan ese índice.
+
+Open-Meteo aporta meteorología modelizada, no medidas locales. El muestreo de descarga sigue siendo 0,16° y la interpolación usa cuatro vecinos; las celdas de 1 km no equivalen a observaciones de 1 km. Fechas en Europe/Madrid, incluidas Canarias. Los límites administrativos son generalizados (GISCO 1:1M). El pH estimado no es una medida local y las respuestas vacías se mantienen como desconocidas.
+
+## Ejecutar y probar
+
+Python 3.12+, las dependencias de requirements.txt y conexión para descargar meteorología y usar mapas. Node se usa para las pruebas.
 
 ```sh
-python -m venv .venv
-# Windows: .venv\Scripts\activate
-# macOS/Linux: source .venv/bin/activate
 pip install -r requirements.txt
 python src/download_meteo.py --grid-step 0.16 --forecast-days 7
 python src/predict_engine.py --cell-km 1 --all-spain
 python src/validate_output.py --all-spain
-python -m http.server 8000 --bind 127.0.0.1 --directory web
+python src/package_site.py
+python -m http.server 8000 --bind 127.0.0.1 --directory dist
 ```
 
-Open http://localhost:8000. On Windows, `./preview.ps1` starts the existing local environment. Do not open index.html with file://. Node is only needed for JavaScript tests, not serving the map.
+Usa un navegador moderno con DecompressionStream (Chrome, Edge, Firefox o Safari actualizados). Para desarrollo también se puede servir web con sus datos sin comprimir. No abrir index.html mediante file://.
 
 ```sh
 python -m unittest discover -s tests -v
+node --test tests/*.test.cjs
 node --check web/app.js
-node --test tests/environment.test.cjs tests/app-state.test.cjs
-# Optional live provider checks, requires network:
-python src/check_services.py
+node --check web/environment-layers.js
+node --check web/visual-grid.js
 ```
 
-## GitHub and GitHub Actions
+## Subir a GitHub
 
-The generated national preview is about 506 MB uncompressed. Commit the source, not `web/data` or the weather snapshots; `.gitignore` excludes those outputs. GitHub Actions builds them for the Pages artifact. The browser loads only the selected region and species rather than downloading the complete national dataset.
+Extrae el ZIP y reemplaza los archivos en la raíz de tu repositorio, incluyendo **.github** y **web/images**. No subas el ZIP como sustituto del código. GitHub Pages debe usar GitHub Actions. El workflow conserva el cálculo de 1 km, regenera los 22 días, valida y comprime antes de desplegar. No publiques web/data ni dist en el repositorio. Las actualizaciones fallidas no sustituyen la web publicada. Consulta GITHUB_SETUP.md.
 
-1. Upload the **contents of this folder** to your repository root, including `.github`.
-2. Set Settings → Pages → Build and deployment → **GitHub Actions**.
-3. Push to your repository's default branch or run **Build and deploy Xafapins** manually on that branch. The workflow detects its name automatically. See [GITHUB_SETUP.md](GITHUB_SETUP.md) for update instructions and troubleshooting.
+## Fuentes
 
-Actions runs offline tests, downloads weather, generates every species for all 19 regions, validates all output, and deploys the `web` artifact. Daily schedule: **06:00 UTC**, or 07:00 Madrid in winter / 08:00 in summer. Schedules may be delayed or disabled by GitHub. Failed downloads/builds stop deployment and preserve the previously published version. Generated data is ignored by Git and regenerated in CI; no daily commits or repository-write permission are needed.
-
-Open-Meteo's public service requires no key for eligible non-commercial usage. Check current rate limits and commercial terms before production. National downloads are substantially larger than Catalonia-only downloads. `--grid-step` controls sampling; denser sampling increases API usage and does not change native model resolution. Forest and pH layers are queried directly by visitors and can be temporarily unavailable independently of forecasts.
-
-## Resolution and interpretation
-
-| Layer | Resolution / interpretation |
-| --- | --- |
-| Forecast display | Nominal 1 km cells, clipped to each region; regional latitude controls longitude spacing. Boundaries are generalized GISCO 1:1M geometry, not parcel surveys. |
-| National overview | Simple average of each region's cells for the selected species/date. Select a region for detailed cells. |
-| Weather sampling | Default **0.16°**, approximately 12–16 km east–west and 18 km north–south. This is coarser than the previous Catalonia-only 0.08° sampling to keep national API usage manageable. Source models have their own variable native resolutions. Four-neighbour inverse-distance interpolation. |
-| Forest formations | MITECO's Mapa Forestal de España / foto fija service, independently rendered at the source map scale; zoom does not create new survey detail. |
-| Soil pH | ISRIC SoilGrids, 250 m modelled pH in water. Raw `pH×10` point values are divided by 10. Surface and subsurface depths are selectable. |
-| Terrain elevation | Interpolated weather-query elevation; not a local terrain DEM. |
-| Water balance | Rain minus reference evapotranspiration over 21 days; not measured soil moisture. |
-
-The weather index is **uncalibrated**, not a probability of finding mushrooms. Each species uses a provisional rain window, mean-temperature response, frost penalty, season and elevation range. Species profiles need expert review and independent field calibration, especially outside their expected distribution. Nationwide coverage does not assert that every catalogue species occurs on every island or region.
-
-**Forest and pH are real reference layers and point queries, but they do not yet modify the precomputed weather index.** This is stated in the UI. No fabricated ecological weighting is applied. Classification labels use simple display bins: pH <5.5 acidic, 5.5–<6.5 slightly acidic, 6.5–7.5 near-neutral, >7.5 alkaline.
-
-Weather includes 28 historical days and 7 forecast days by default. Antecedent rain excludes the target day; later forecast dates include earlier predicted rain. Temperature and frost use the preceding 7 days; daily wind, humidity and rain use the selected day. All weather dates use **Europe/Madrid**, including Canary Island locations (not Canary local-midnight aggregation). Stale data is flagged after 48 hours. Missing distant weather coverage is rejected rather than extrapolated across Spain.
-
-## Sources and attribution
-
-- [MITECO official forest formations directory](https://www.miteco.gob.es/es/cartografia-y-sig/ide/directorio_datos_servicios/biodiversidad/wms-formaciones-arboladas.html), service `https://iepnb.gob.es/geoserver/foto_fija_mfe/wms`; © MITECO.
-- [ISRIC SoilGrids documentation](https://docs.isric.org/globaldata/soilgrids/SoilGrids_faqs_01.html), service `https://maps.isric.org/mapserv?map=/map/phh2o.map`; CC BY 4.0.
-- [Open-Meteo Forecast API](https://open-meteo.com/en/docs); CC BY 4.0. Archived forecast/model output, not station observations.
-- [OpenStreetMap](https://www.openstreetmap.org/copyright) is the only basemap; © OpenStreetMap contributors.
-- [ICGC](https://www.icgc.cat/ca/Geoinformacio-i-mapes/Servei-de-Mapa-Base) land cover overlays remain available for Catalonia.
-- [Eurostat GISCO NUTS 2024](https://gisco-services.ec.europa.eu/distribution/v2/nuts/), 19 Spanish NUTS-2 boundaries at 1:1M; © EuroGeographics for administrative boundaries. Checked-in `data/spain-regions.geojson` is the Spanish subset.
-- [Sporas.io](https://sporas.io/) supplied the original feature reference; no proprietary algorithm or assets copied.
-
-No account, cross-device synchronization, station-rainfall integration, access/fire restrictions, or cloud alerts are implemented. The map does not identify mushrooms or certify edibility.
+- [OpenStreetMap](https://www.openstreetmap.org/copyright), © colaboradores.
+- [MITECO](https://www.miteco.gob.es/es/biodiversidad/temas/inventarios-nacionales/mapa-forestal-espana.html), Mapa Forestal de España.
+- [ISRIC SoilGrids](https://soilgrids.org), CC BY 4.0.
+- [Open-Meteo](https://open-meteo.com/en/docs), CC BY 4.0; el servicio público tiene condiciones y límites de uso.
+- ICGC: capas opcionales de coberturas del suelo en Cataluña.
+- Eurostat GISCO / © EuroGeographics: límites administrativos.
+- Wikimedia Commons: fotografías y licencias individuales en PHOTO_CREDITS.md.
+- [Canal Salut](https://canalsalut.gencat.cat/ca/salut-a-z/i/intoxicacio-bolets/): información de seguridad enlazada desde el aviso.

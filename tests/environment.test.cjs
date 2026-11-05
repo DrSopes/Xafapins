@@ -25,3 +25,17 @@ test('WMS URLs preserve map parameter, tile token and longitude-latitude axis or
   const bbox=query.searchParams.get('BBOX').split(',').map(Number);
   assert.ok(bbox[0]<2.4&&bbox[2]>2.4&&bbox[1]<41.8&&bbox[3]>41.8);
 });
+
+test('point results are reused, while failed requests can be retried',async()=>{
+  const original=global.fetch;let calls=0;
+  global.fetch=async()=>{calls++;return {ok:true,json:async()=>({features:[{properties:{pixel_value:62}}]})};};
+  try{
+    assert.equal(await E.ph(2.54321,41.12345,'0-5cm','mean'),6.2);
+    assert.equal(await E.ph(2.54321,41.12345,'0-5cm','mean'),6.2);
+    assert.equal(calls,1);
+    global.fetch=async()=>{calls++;return {ok:false,status:503};};
+    await assert.rejects(E.ph(2.6,41.2,'0-5cm','mean'));
+    await assert.rejects(E.ph(2.6,41.2,'0-5cm','mean'));
+    assert.equal(calls,3);
+  }finally{global.fetch=original;}
+});

@@ -1,6 +1,8 @@
 import json
 import sys
 import tempfile
+import gzip
+import shutil
 import unittest
 from datetime import datetime, timezone, date, timedelta
 from pathlib import Path
@@ -13,6 +15,7 @@ from download_meteo import VARIABLES, validate_daily, atomic_json
 from predict_engine import build, load_rules, score_weather
 from validate_output import validate
 from regions import regions, region_geometry, weather_points
+import package_site
 from shapely.geometry import Point
 
 
@@ -113,6 +116,53 @@ class PipelineTests(unittest.TestCase):
             path=Path(directory)/'weather.json';weather=fixture();weather['timestamp']='2000-01-01T00:00:00+00:00'
             atomic_json(path,weather)
             with self.assertRaises(ValueError): build(weather_path=path)
+
+    def test_15_historical_days_keep_full_antecedent_windows(self):
+        with tempfile.TemporaryDirectory() as directory:
+            folder=Path(directory);weather=fixture()
+            start=date(2026,9,23)
+            dates=[(start+timedelta(days=i)).isoformat() for i in range(50)]
+            weather['history_days']=43
+            weather['forecast_dates']=dates[43:]
+            daily=weather['data'][0]['daily']
+            daily['time']=dates
+            for key,value in zip(VARIABLES,[3,8,18,80,15,2]):daily[key]=[value]*50
+            # The first displayed historical day must exclude its own rain.
+            daily['precipitation_sum'][28]=100
+            atomic_json(folder/'weather.json',weather)
+            with patch('predict_engine.boundary',return_value=box(1.99,41.99,2.01,42.01)):
+                build(weather_path=folder/'weather.json',output=folder/'out')
+            validate(folder/'out')
+            manifest=json.loads((folder/'out/manifest.json').read_text())
+            env=json.loads((folder/'out/environment.json').read_text())
+            self.assertEqual(manifest['historical_days'],15)
+            self.assertEqual(manifest['forecast_start'],dates[43])
+            self.assertEqual(manifest['dates'],dates[28:])
+            self.assertEqual(len(env['days']),22)
+            self.assertEqual(env['days'][0]['rain_21d'][0],63)
+            self.assertEqual(env['days'][1]['rain_21d'][0],160)
+
+    def test_packaged_data_is_compressed_and_photos_are_included(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root=Path(directory);web=root/'web';web.mkdir()
+            source=Path(__file__).resolve().parents[1]/'web'
+            for name in ['index.html','app.js','app.css','environment-layers.js','visual-grid.js','species-photos.json']:
+                shutil.copy2(source/name,web/name)
+            shutil.copytree(source/'images',web/'images')
+            atomic_json(root/'weather.json',fixture())
+            with patch('predict_engine.boundary',return_value=box(1.99,41.99,2.01,42.01)):
+                build(weather_path=root/'weather.json',output=web/'data/regions/ES51',region_id='ES51')
+            atomic_json(web/'data/spain.json',{'regions':[{'id':'ES51','path':'data/regions/ES51'}]})
+            atomic_json(web/'data/spain-regions.geojson',{'type':'FeatureCollection','features':[]})
+            with patch.object(package_site,'ROOT',root),patch.object(package_site,'regions',return_value=[{'properties':{'id':'ES51'}}]):
+                package_site.package()
+            packed=root/'dist/data/regions/ES51/environment.json.gz'
+            with gzip.open(packed,'rt',encoding='utf-8') as stream:env=json.load(stream)
+            self.assertEqual(len(env['days']),7)
+            self.assertFalse((packed.parent/'environment.json').exists())
+            photos=json.loads((root/'dist/species-photos.json').read_text(encoding='utf-8'))
+            self.assertEqual(len(photos),24)
+            self.assertTrue(all((root/'dist'/p['image']).exists() and p['author'] and p['license'] for p in photos.values()))
 
 
 if __name__ == '__main__': unittest.main()

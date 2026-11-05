@@ -1,14 +1,15 @@
-# Verification of this update
+# Verificación de la versión 2
 
-Checked locally on 5 November 2026:
+Comprobaciones locales del 5 de noviembre de 2026:
 
-- Syntax checks passed for both JavaScript application files.
-- All 7 JavaScript tests passed, including regional switching, stale-response protection, forest/soil/weather overlays and environmental data parsing.
-- OpenStreetMap is the fixed basemap with contributor attribution.
-- Forest display uses the official ff_tipo_bosque classification: conifers, broadleaf and mixed forest. Detailed point queries remain available.
-- Saved-place controls, storage access, markers and GPX export were removed.
-- The app footer credits Dr.Sopes.
+- 14 pruebas Python y 11 pruebas JavaScript superadas.
+- Sintaxis comprobada en app.js, environment-layers.js y visual-grid.js.
+- Histórico: 15 días anteriores y 7 días de previsión, usando 43 días de antecedentes descargados. La prueba comprueba que la lluvia del propio día no entra en su acumulado antecedente.
+- Empaquetado probado: JSON/GeoJSON regionales comprimidos con gzip, manifest sin comprimir y las 24 fotografías incluidas con créditos.
+- Chrome real, con meteorología sintética y teselas simuladas: carga gzip, 22 fechas, selección inicial de previsión, las 24 fotos, retícula visual de 250 m, exclusión bosque/pH, fecha histórica y botón móvil. Cero errores JavaScript. Revisadas capturas de escritorio y móvil.
+- El servicio GetCapabilities de MITECO respondió HTTP 200 y contiene las 11 capas de bosque usadas.
+- Reutilización de consultas de puntos y ausencia de reinicio de teselas al volver a mostrar el pH comprobadas mediante pruebas.
 
-Tests use stubbed map and DOM adapters. No real-browser visual check or live provider check was performed for this update. Python was unavailable in the local shell, so Python tests and the national forecast build were not rerun. Existing GitHub workflows retain those checks and generate forecast data before deployment. GitHub Actions and Pages have not been run remotely for this update.
+La retícula es visual: el cálculo sigue a 1 km y la meteorología original es más gruesa. No se ha medido un porcentaje de aceleración ni comprobado exhaustivamente la disponibilidad de teselas y puntos de los proveedores. Las fotos proceden de Wikimedia Commons, con atribuciones y licencias en PHOTO_CREDITS.md.
 
-The source ZIP includes .github and the required Spain boundary data. It excludes generated forecasts, historical snapshots and obsolete prediction files. See GITHUB_SETUP.md for deployment instructions.
+No se ha descargado ni generado en esta revisión la previsión nacional completa de 22 fechas, ni ejecutado GitHub Actions remotamente. El workflow conserva la descarga, generación, validación y compresión antes del despliegue. El ZIP contiene código y fotografías, no meteorología actual lista para abrir sin ejecutar el pipeline. No se ha publicado nada.

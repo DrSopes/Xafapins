@@ -5,6 +5,7 @@ const vm=require('node:vm');
 const fs=require('node:fs');
 const path=require('node:path');
 const E=require('../web/environment-layers.js');
+const VisualGrid=require('../web/visual-grid.js');
 
 async function setup() {
   const html=fs.readFileSync(path.join(__dirname,'../web/index.html'),'utf8');
@@ -25,7 +26,9 @@ async function setup() {
       for(const [id,data] of Object.entries(options.style.sources))this.addSource(id,data);
       for(const layer of options.style.layers)this.addLayer(layer);}
     on(event,fn){this.events[event]=fn;}addControl(){}fitBounds(){}flyTo(){}
-    addSource(id,data){this.sources[id]={...data,setTiles(tiles){this.tiles=tiles;},setData(value){this.data=value;}};}
+    getBounds(){return {getWest:()=>1.99,getSouth:()=>41.99,getEast:()=>2.02,getNorth:()=>42.02};}
+    getCenter(){return {lat:42};}getZoom(){return 13;}
+    addSource(id,data){this.sources[id]={...data,tileUpdates:0,setTiles(tiles){this.tiles=tiles;this.tileUpdates++;},setData(value){this.data=value;}};}
     getSource(id){return this.sources[id];}addLayer(layer){this.layers[layer.id]=layer;}
     getLayer(id){return this.layers[id];}moveLayer(){}removeFeatureState(){}
     setPaintProperty(id,key,value){assert.ok(this.layers[id],id);(this.layers[id].paint??={})[key]=value;}
@@ -44,7 +47,7 @@ async function setup() {
     assets[r.path+'/grid.geojson']={type:'FeatureCollection',features:[{id:0,properties:{cell:0},geometry:{type:'Polygon',coordinates:[]}}]};
     assets[r.path+'/test_species.json']={dates,scores:[[r.id==='ES51'?30:70]]};
   }
-  const context=vm.createContext({EnvironmentLayers:E,document:{getElementById:id=>nodes[id],createElement:element},
+  const context=vm.createContext({EnvironmentLayers:E,VisualGrid,document:{getElementById:id=>nodes[id],createElement:element},
     maplibregl:{Map:MapStub,NavigationControl:class{},GeolocateControl:class{}},
     fetch:async url=>({ok:!!assets[url],status:assets[url]?200:404,json:async()=>structuredClone(assets[url])}),
     requestAnimationFrame:fn=>fn(),setTimeout,clearTimeout,AbortController,URL,Blob,console});
@@ -70,10 +73,32 @@ test('forest and soil overlays are exclusive and weather selection clears them',
   const {context,map,nodes}=await setup();
   nodes.forest.value='ff_tipo_bosque';context.overlayChange('forest');
   assert.equal(nodes.layer.value,'none');assert.equal(map.layers['forest-map'].layout.visibility,'visible');
-  nodes.soil.value='0-5cm';context.overlayChange('soil');
+  nodes.soil.value='on';context.overlayChange('soil');
   assert.equal(nodes.forest.value,'off');assert.equal(map.layers['forest-map'].layout.visibility,'none');
   assert.equal(map.layers['soil-map'].layout.visibility,'visible');
   nodes.layer.value='score';await context.render();
   assert.equal(nodes.soil.value,'off');assert.equal(map.layers['soil-map'].layout.visibility,'none');
   assert.equal(map.states['cells:0'].value,30);
+});
+
+test('showing pH again keeps its tile source and does not load species scores',async()=>{
+  const {context,map,nodes}=await setup();
+  let requests=0;context.fetch=()=>{requests++;throw new Error('Unexpected data fetch');};
+  nodes.soil.value='on';context.overlayChange('soil');
+  nodes.soil.value='off';context.overlayChange('soil');
+  nodes.soil.value='on';context.overlayChange('soil');
+  assert.equal(map.sources['soil-map'].tileUpdates,0);
+  assert.equal(requests,0);
+});
+
+test('only the active environmental overlay triggers a point query',async()=>{
+  const {context,nodes}=await setup();let forest=0,ph=0;
+  context.EnvironmentLayers={...E,forest:async()=>{forest++;return null;},ph:async()=>{ph++;return 6.2;}};
+  // EL is bound when the controller loads; replace its methods temporarily.
+  const oldForest=E.forest,oldPh=E.ph;
+  E.forest=context.EnvironmentLayers.forest;E.ph=context.EnvironmentLayers.ph;
+  try{
+    await context.inspectEnvironment(2,42);assert.equal(forest+ph,0);
+    nodes.soil.value='on';await context.inspectEnvironment(2,42);assert.equal(ph,1);assert.equal(forest,0);
+  }finally{E.forest=oldForest;E.ph=oldPh;}
 });

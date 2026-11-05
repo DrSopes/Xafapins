@@ -1,58 +1,95 @@
+lactarius_deliciosus:
+  common_name: "Pinetell / Rovelló (Lactarius deliciosus / sanguifluus)"
+  tree_target: [1, 2, 4] # Pinedes i mixtes
+  altitude_min: 100
+  altitude_max: 1600
+  ph_min: 5.5
+  ph_max: 8.5
+  meteo_triggers:
+    rain_window_days: 18
+    rain_min_mm: 35.0
+    rain_optimal_mm: 75.0
+    temp_min_celsius: 4.0
+    temp_optimal_celsius: 14.0
+    temp_max_celsius: 22.0
+    frost_penalty_days: 2
+
 boletus_edulis:
-  common_name: "Cep / Boletus edulis"
-  hosts:
-    - "Pinus sylvestris"
-    - "Fagus sylvatica"
-    - "Castanea sativa"
-  altitude_min: 800
-  altitude_max: 2100
+  common_name: "Cep (Boletus edulis / aereus / pinophilus)"
+  tree_target: [1] # Pi roig, faig, castanyer
+  altitude_min: 750
+  altitude_max: 2200
   ph_min: 4.2
-  ph_max: 6.2
+  ph_max: 6.4
   meteo_triggers:
     rain_window_days: 21
     rain_min_mm: 50.0
     rain_optimal_mm: 90.0
     temp_min_celsius: 3.0
-    temp_optimal_celsius: 14.0
-    temp_max_celsius: 22.0
+    temp_optimal_celsius: 13.0
+    temp_max_celsius: 21.0
     frost_penalty_days: 3
 
-lactarius_deliciosus:
-  common_name: "Pinetell / Rovelló (Lactarius deliciosus / sanguifluus)"
-  hosts:
-    - "Pinus halepensis"
-    - "Pinus sylvestris"
-    - "Pinus pinea"
-    - "Pinus nigra"
-  altitude_min: 100
-  altitude_max: 1600
-  ph_min: 5.5
+craterellus_lutescens:
+  common_name: "Camagroc (Craterellus lutescens)"
+  tree_target: [1, 2, 4] # Pinedes obagues amb molsa
+  altitude_min: 300
+  altitude_max: 1700
+  ph_min: 5.0
   ph_max: 8.2
   meteo_triggers:
-    rain_window_days: 18
-    rain_min_mm: 40.0
-    rain_optimal_mm: 80.0
-    temp_min_celsius: 5.0
-    temp_optimal_celsius: 15.0
-    temp_max_celsius: 23.0
-    frost_penalty_days: 2
+    rain_window_days: 25
+    rain_min_mm: 45.0
+    rain_optimal_mm: 95.0
+    temp_min_celsius: 1.0 # Resisteix molt bé baixes temperatures
+    temp_optimal_celsius: 10.0
+    temp_max_celsius: 18.0
+    frost_penalty_days: 6
 
 cantharellus_cibarius:
   common_name: "Rossinyol (Cantharellus cibarius)"
-  hosts:
-    - "Quercus ilex"
-    - "Quercus suber"
-    - "Castanea sativa"
-    - "Fagus sylvatica"
-  altitude_min: 200
+  tree_target: [1, 4] # Alzinars, suredes i fagedes àcides
+  altitude_min: 150
   altitude_max: 1400
   ph_min: 4.5
-  ph_max: 6.8
+  ph_max: 6.5
   meteo_triggers:
     rain_window_days: 25
-    rain_min_mm: 60.0
-    rain_optimal_mm: 110.0
-    temp_min_celsius: 8.0
-    temp_optimal_celsius: 17.0
-    temp_max_celsius: 25.0
+    rain_min_mm: 55.0
+    rain_optimal_mm: 100.0
+    temp_min_celsius: 7.0
+    temp_optimal_celsius: 16.0
+    temp_max_celsius: 24.0
     frost_penalty_days: 2
+
+hygrophorus_latitabundus:
+  common_name: "Llenega negra (Hygrophorus latitabundus)"
+  tree_target: [2, 4] # Pinedes calcàries de terra baixa i mitja muntanya
+  altitude_min: 200
+  altitude_max: 1300
+  ph_min: 6.8
+  ph_max: 8.5
+  meteo_triggers:
+    rain_window_days: 20
+    rain_min_mm: 40.0
+    rain_optimal_mm: 80.0
+    temp_min_celsius: 2.0
+    temp_optimal_celsius: 9.0
+    temp_max_celsius: 16.0
+    frost_penalty_days: 4
+
+tricholoma_terreum:
+  common_name: "Fredolic (Tricholoma terreum)"
+  tree_target: [1, 2, 4]
+  altitude_min: 200
+  altitude_max: 1800
+  ph_min: 5.5
+  ph_max: 8.5
+  meteo_triggers:
+    rain_window_days: 20
+    rain_min_mm: 30.0
+    rain_optimal_mm: 70.0
+    temp_min_celsius: -2.0 # Fructifica amb fred i glaçades lleugeres
+    temp_optimal_celsius: 6.0
+    temp_max_celsius: 14.0
+    frost_penalty_days: 8

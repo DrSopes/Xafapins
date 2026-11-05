@@ -1,20 +1,19 @@
-name: Xafapins Daily Forecast & Telegram Alert
+name: Xafapins Daily Forecast & Web Map
 
 on:
   schedule:
+    # Se ejecuta cada día a las 06:00 UTC (07:00 / 08:00 peninsular)
     - cron: '0 6 * * *'
   workflow_dispatch:
 
-# Aquí defines los permisos que necesita GitHub Pages y el push de git:
 permissions:
-  contents: write    # Necesario para hacer el git push de los GeoJSON actualizados
-  pages: write       # Necesario para desplegar en GitHub Pages
-  id-token: write    # Necesario para que GitHub valide el despliegue de Pages
+  contents: write
+  pages: write
+  id-token: write
 
 jobs:
   run-pipeline:
     runs-on: ubuntu-latest
-    # También se puede poner 'environment' para trackear el despliegue de Pages
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -38,36 +37,27 @@ jobs:
         env:
           PYTHONUNBUFFERED: "1"
         run: |
-          python src/download_meteo.py --grid-step 0.05
+          python src/download_meteo.py --grid-step 0.08
 
-      - name: 2. Ejecutar motor predictivo
+      - name: 2. Generar gradientes predictivos (GeoJSON continuo)
         run: |
           python src/predict_engine.py --species lactarius_deliciosus
           python src/predict_engine.py --species boletus_edulis
 
-      - name: 3. Enviar informe a Telegram
-        env:
-          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-          # Agafa automàticament la URL pública de GitHub Pages del repositori:
-          PAGES_URL: "https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/"
-        run: |
-          python src/telegram_bot.py
-
-      - name: 4. Actualizar capas GeoJSON en el repositorio
+      - name: 3. Actualizar datos en el repositorio
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add web/*.geojson data/meteo_catalunya_latest.json
           git diff --quiet && git diff --staged --quiet || (git commit -m "chore(data): actualització diària de capes micològiques" && git push)
 
-      - name: 5. Subir artefacto para GitHub Pages
+      - name: 4. Subir artefacto para GitHub Pages
         uses: actions/upload-pages-artifact@v3
         with:
           path: './web'
 
-      - name: 6. Desplegar a GitHub Pages
+      - name: 5. Desplegar a GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
         with:
-          timeout: 120000 # Aumenta el tiempo de espera a 2 minutos
+          timeout: 120000

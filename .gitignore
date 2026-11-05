@@ -1,0 +1,11 @@
+venv/
+__pycache__/
+*.py[cod]
+.env
+data/*.tif
+data/*.gpkg
+data/*.shp
+data/*.dbf
+data/*.shx
+data/*.zip
+.DS_Store

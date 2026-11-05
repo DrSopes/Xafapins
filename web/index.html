@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <title>Xafapins</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/maplibre-gl@3.6.2/dist/maplibre-gl.css" rel="stylesheet" />
+  <script src="https://unpkg.com/maplibre-gl@3.6.2/dist/maplibre-gl.js"></script>
+  <style>
+    body { margin: 0; padding: 0; font-family: system-ui, sans-serif; }
+    #map { position: absolute; top: 0; bottom: 0; width: 100%; }
+    .panel {
+      position: absolute; top: 15px; left: 15px; z-index: 10;
+      background: rgba(255, 255, 255, 0.95); padding: 15px; border-radius: 8px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.15); max-width: 300px;
+    }
+    select, button { width: 100%; padding: 8px; margin-top: 6px; font-size: 0.9rem; }
+    button { background: #15803d; color: white; border: none; cursor: pointer; border-radius: 4px; }
+  </style>
+</head>
+<body>
+<div id="map"></div>
+<div class="panel">
+  <h3>🍄 Xafapins</h3>
+  <label>Espècie:</label>
+  <select id="species">
+    <option value="lactarius_deliciosus">Rovelló / Pinetell</option>
+    <option value="boletus_edulis">Cep (Boletus edulis)</option>
+  </select>
+  <button onclick="addMarker()">Afegir Setal Privat (Local)</button>
+</div>
+<script>
+  const map = new maplibregl.Map({
+    container: 'map',
+    style: 'https://basemaps.cartocdn.com/gl/positron-gl-style/style.json',
+    center: [1.8, 41.7],
+    zoom: 7.8
+  });
+
+  function updateLayer(species) {
+    if (map.getSource('myco')) {
+      map.removeLayer('myco-layer');
+      map.removeSource('myco');
+    }
+    map.addSource('myco', { type: 'geojson', data: `prediction_${species}.geojson` });
+    map.addLayer({
+      id: 'myco-layer',
+      type: 'fill',
+      source: 'myco',
+      paint: {
+        'fill-color': [
+          'interpolate', ['linear'], ['get', 'score'],
+          0.0, 'rgba(239, 68, 68, 0.2)',
+          0.5, 'rgba(234, 179, 8, 0.5)',
+          1.0, 'rgba(21, 128, 61, 0.8)'
+        ],
+        'fill-opacity': 0.7
+      }
+    });
+  }
+
+  map.on('load', () => {
+    updateLayer('lactarius_deliciosus');
+    document.getElementById('species').addEventListener('change', (e) => updateLayer(e.target.value));
+  });
+
+  function addMarker() {
+    alert("Fes clic al mapa per marcar la posició.");
+    map.once('click', (e) => {
+      new maplibregl.Marker({ color: '#dc2626' }).setLngLat(e.lngLat).addTo(map);
+    });
+  }
+</script>
+</body>
+</html>

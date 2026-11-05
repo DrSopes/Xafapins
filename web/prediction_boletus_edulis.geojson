@@ -1,0 +1,6221 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.555,
+        "rain_21d": 47.5,
+        "temp_min": 13.6,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.21999999999999997,
+              40.52
+            ],
+            [
+              0.38,
+              40.52
+            ],
+            [
+              0.38,
+              40.68
+            ],
+            [
+              0.21999999999999997,
+              40.68
+            ],
+            [
+              0.21999999999999997,
+              40.52
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.691,
+        "rain_21d": 57.5,
+        "temp_min": 13.6,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.42,
+              40.52
+            ],
+            [
+              0.58,
+              40.52
+            ],
+            [
+              0.58,
+              40.68
+            ],
+            [
+              0.42,
+              40.68
+            ],
+            [
+              0.42,
+              40.52
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.781,
+        "rain_21d": 67.5,
+        "temp_min": 13.6,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.62,
+              40.52
+            ],
+            [
+              0.7799999999999999,
+              40.52
+            ],
+            [
+              0.7799999999999999,
+              40.68
+            ],
+            [
+              0.62,
+              40.68
+            ],
+            [
+              0.62,
+              40.52
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.555,
+        "rain_21d": 47.5,
+        "temp_min": 13.6,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.8200000000000001,
+              40.52
+            ],
+            [
+              0.98,
+              40.52
+            ],
+            [
+              0.98,
+              40.68
+            ],
+            [
+              0.8200000000000001,
+              40.68
+            ],
+            [
+              0.8200000000000001,
+              40.52
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.691,
+        "rain_21d": 57.5,
+        "temp_min": 13.6,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.02,
+              40.52
+            ],
+            [
+              1.1800000000000002,
+              40.52
+            ],
+            [
+              1.1800000000000002,
+              40.68
+            ],
+            [
+              1.02,
+              40.68
+            ],
+            [
+              1.02,
+              40.52
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.781,
+        "rain_21d": 67.5,
+        "temp_min": 13.6,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.22,
+              40.52
+            ],
+            [
+              1.3800000000000001,
+              40.52
+            ],
+            [
+              1.3800000000000001,
+              40.68
+            ],
+            [
+              1.22,
+              40.68
+            ],
+            [
+              1.22,
+              40.52
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.555,
+        "rain_21d": 47.5,
+        "temp_min": 13.6,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.42,
+              40.52
+            ],
+            [
+              1.58,
+              40.52
+            ],
+            [
+              1.58,
+              40.68
+            ],
+            [
+              1.42,
+              40.68
+            ],
+            [
+              1.42,
+              40.52
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.691,
+        "rain_21d": 57.5,
+        "temp_min": 13.6,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.6199999999999999,
+              40.52
+            ],
+            [
+              1.78,
+              40.52
+            ],
+            [
+              1.78,
+              40.68
+            ],
+            [
+              1.6199999999999999,
+              40.68
+            ],
+            [
+              1.6199999999999999,
+              40.52
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.781,
+        "rain_21d": 67.5,
+        "temp_min": 13.6,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.8199999999999998,
+              40.52
+            ],
+            [
+              1.98,
+              40.52
+            ],
+            [
+              1.98,
+              40.68
+            ],
+            [
+              1.8199999999999998,
+              40.68
+            ],
+            [
+              1.8199999999999998,
+              40.52
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.555,
+        "rain_21d": 47.5,
+        "temp_min": 13.6,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              2.02,
+              40.52
+            ],
+            [
+              2.18,
+              40.52
+            ],
+            [
+              2.18,
+              40.68
+            ],
+            [
+              2.02,
+              40.68
+            ],
+            [
+              2.02,
+              40.52
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.691,
+        "rain_21d": 57.5,
+        "temp_min": 13.6,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              2.2199999999999998,
+              40.52
+            ],
+            [
+              2.38,
+              40.52
+            ],
+            [
+              2.38,
+              40.68
+            ],
+            [
+              2.2199999999999998,
+              40.68
+            ],
+            [
+              2.2199999999999998,
+              40.52
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.781,
+        "rain_21d": 67.5,
+        "temp_min": 13.6,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              2.42,
+              40.52
+            ],
+            [
+              2.58,
+              40.52
+            ],
+            [
+              2.58,
+              40.68
+            ],
+            [
+              2.42,
+              40.68
+            ],
+            [
+              2.42,
+              40.52
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.555,
+        "rain_21d": 47.5,
+        "temp_min": 13.6,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              2.62,
+              40.52
+            ],
+            [
+              2.7800000000000002,
+              40.52
+            ],
+            [
+              2.7800000000000002,
+              40.68
+            ],
+            [
+              2.62,
+              40.68
+            ],
+            [
+              2.62,
+              40.52
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.691,
+        "rain_21d": 57.5,
+        "temp_min": 13.6,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              2.82,
+              40.52
+            ],
+            [
+              2.98,
+              40.52
+            ],
+            [
+              2.98,
+              40.68
+            ],
+            [
+              2.82,
+              40.68
+            ],
+            [
+              2.82,
+              40.52
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.614,
+        "rain_21d": 52.5,
+        "temp_min": 12.8,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.21999999999999997,
+              40.72
+            ],
+            [
+              0.38,
+              40.72
+            ],
+            [
+              0.38,
+              40.879999999999995
+            ],
+            [
+              0.21999999999999997,
+              40.879999999999995
+            ],
+            [
+              0.21999999999999997,
+              40.72
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.704,
+        "rain_21d": 62.5,
+        "temp_min": 12.8,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.42,
+              40.72
+            ],
+            [
+              0.58,
+              40.72
+            ],
+            [
+              0.58,
+              40.879999999999995
+            ],
+            [
+              0.42,
+              40.879999999999995
+            ],
+            [
+              0.42,
+              40.72
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.794,
+        "rain_21d": 72.5,
+        "temp_min": 12.8,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.62,
+              40.72
+            ],
+            [
+              0.7799999999999999,
+              40.72
+            ],
+            [
+              0.7799999999999999,
+              40.879999999999995
+            ],
+            [
+              0.62,
+              40.879999999999995
+            ],
+            [
+              0.62,
+              40.72
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.614,
+        "rain_21d": 52.5,
+        "temp_min": 12.8,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.8200000000000001,
+              40.72
+            ],
+            [
+              0.98,
+              40.72
+            ],
+            [
+              0.98,
+              40.879999999999995
+            ],
+            [
+              0.8200000000000001,
+              40.879999999999995
+            ],
+            [
+              0.8200000000000001,
+              40.72
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.704,
+        "rain_21d": 62.5,
+        "temp_min": 12.8,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.02,
+              40.72
+            ],
+            [
+              1.1800000000000002,
+              40.72
+            ],
+            [
+              1.1800000000000002,
+              40.879999999999995
+            ],
+            [
+              1.02,
+              40.879999999999995
+            ],
+            [
+              1.02,
+              40.72
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.794,
+        "rain_21d": 72.5,
+        "temp_min": 12.8,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.22,
+              40.72
+            ],
+            [
+              1.3800000000000001,
+              40.72
+            ],
+            [
+              1.3800000000000001,
+              40.879999999999995
+            ],
+            [
+              1.22,
+              40.879999999999995
+            ],
+            [
+              1.22,
+              40.72
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.614,
+        "rain_21d": 52.5,
+        "temp_min": 12.8,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.42,
+              40.72
+            ],
+            [
+              1.58,
+              40.72
+            ],
+            [
+              1.58,
+              40.879999999999995
+            ],
+            [
+              1.42,
+              40.879999999999995
+            ],
+            [
+              1.42,
+              40.72
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.704,
+        "rain_21d": 62.5,
+        "temp_min": 12.8,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.6199999999999999,
+              40.72
+            ],
+            [
+              1.78,
+              40.72
+            ],
+            [
+              1.78,
+              40.879999999999995
+            ],
+            [
+              1.6199999999999999,
+              40.879999999999995
+            ],
+            [
+              1.6199999999999999,
+              40.72
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.794,
+        "rain_21d": 72.5,
+        "temp_min": 12.8,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.8199999999999998,
+              40.72
+            ],
+            [
+              1.98,
+              40.72
+            ],
+            [
+              1.98,
+              40.879999999999995
+            ],
+            [
+              1.8199999999999998,
+              40.879999999999995
+            ],
+            [
+              1.8199999999999998,
+              40.72
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.614,
+        "rain_21d": 52.5,
+        "temp_min": 12.8,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              2.02,
+              40.72
+            ],
+            [
+              2.18,
+              40.72
+            ],
+            [
+              2.18,
+              40.879999999999995
+            ],
+            [
+              2.02,
+              40.879999999999995
+            ],
+            [
+              2.02,
+              40.72
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.704,
+        "rain_21d": 62.5,
+        "temp_min": 12.8,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              2.2199999999999998,
+              40.72
+            ],
+            [
+              2.38,
+              40.72
+            ],
+            [
+              2.38,
+              40.879999999999995
+            ],
+            [
+              2.2199999999999998,
+              40.879999999999995
+            ],
+            [
+              2.2199999999999998,
+              40.72
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.794,
+        "rain_21d": 72.5,
+        "temp_min": 12.8,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              2.42,
+              40.72
+            ],
+            [
+              2.58,
+              40.72
+            ],
+            [
+              2.58,
+              40.879999999999995
+            ],
+            [
+              2.42,
+              40.879999999999995
+            ],
+            [
+              2.42,
+              40.72
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.614,
+        "rain_21d": 52.5,
+        "temp_min": 12.8,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              2.62,
+              40.72
+            ],
+            [
+              2.7800000000000002,
+              40.72
+            ],
+            [
+              2.7800000000000002,
+              40.879999999999995
+            ],
+            [
+              2.62,
+              40.879999999999995
+            ],
+            [
+              2.62,
+              40.72
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.704,
+        "rain_21d": 62.5,
+        "temp_min": 12.8,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              2.82,
+              40.72
+            ],
+            [
+              2.98,
+              40.72
+            ],
+            [
+              2.98,
+              40.879999999999995
+            ],
+            [
+              2.82,
+              40.879999999999995
+            ],
+            [
+              2.82,
+              40.72
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.627,
+        "rain_21d": 57.5,
+        "temp_min": 12.0,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.21999999999999997,
+              40.92
+            ],
+            [
+              0.38,
+              40.92
+            ],
+            [
+              0.38,
+              41.08
+            ],
+            [
+              0.21999999999999997,
+              41.08
+            ],
+            [
+              0.21999999999999997,
+              40.92
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.717,
+        "rain_21d": 67.5,
+        "temp_min": 12.0,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.42,
+              40.92
+            ],
+            [
+              0.58,
+              40.92
+            ],
+            [
+              0.58,
+              41.08
+            ],
+            [
+              0.42,
+              41.08
+            ],
+            [
+              0.42,
+              40.92
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.807,
+        "rain_21d": 77.5,
+        "temp_min": 12.0,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.62,
+              40.92
+            ],
+            [
+              0.7799999999999999,
+              40.92
+            ],
+            [
+              0.7799999999999999,
+              41.08
+            ],
+            [
+              0.62,
+              41.08
+            ],
+            [
+              0.62,
+              40.92
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.627,
+        "rain_21d": 57.5,
+        "temp_min": 12.0,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.8200000000000001,
+              40.92
+            ],
+            [
+              0.98,
+              40.92
+            ],
+            [
+              0.98,
+              41.08
+            ],
+            [
+              0.8200000000000001,
+              41.08
+            ],
+            [
+              0.8200000000000001,
+              40.92
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.717,
+        "rain_21d": 67.5,
+        "temp_min": 12.0,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.02,
+              40.92
+            ],
+            [
+              1.1800000000000002,
+              40.92
+            ],
+            [
+              1.1800000000000002,
+              41.08
+            ],
+            [
+              1.02,
+              41.08
+            ],
+            [
+              1.02,
+              40.92
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.807,
+        "rain_21d": 77.5,
+        "temp_min": 12.0,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.22,
+              40.92
+            ],
+            [
+              1.3800000000000001,
+              40.92
+            ],
+            [
+              1.3800000000000001,
+              41.08
+            ],
+            [
+              1.22,
+              41.08
+            ],
+            [
+              1.22,
+              40.92
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.627,
+        "rain_21d": 57.5,
+        "temp_min": 12.0,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.42,
+              40.92
+            ],
+            [
+              1.58,
+              40.92
+            ],
+            [
+              1.58,
+              41.08
+            ],
+            [
+              1.42,
+              41.08
+            ],
+            [
+              1.42,
+              40.92
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.717,
+        "rain_21d": 67.5,
+        "temp_min": 12.0,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.6199999999999999,
+              40.92
+            ],
+            [
+              1.78,
+              40.92
+            ],
+            [
+              1.78,
+              41.08
+            ],
+            [
+              1.6199999999999999,
+              41.08
+            ],
+            [
+              1.6199999999999999,
+              40.92
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.807,
+        "rain_21d": 77.5,
+        "temp_min": 12.0,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.8199999999999998,
+              40.92
+            ],
+            [
+              1.98,
+              40.92
+            ],
+            [
+              1.98,
+              41.08
+            ],
+            [
+              1.8199999999999998,
+              41.08
+            ],
+            [
+              1.8199999999999998,
+              40.92
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.627,
+        "rain_21d": 57.5,
+        "temp_min": 12.0,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              2.02,
+              40.92
+            ],
+            [
+              2.18,
+              40.92
+            ],
+            [
+              2.18,
+              41.08
+            ],
+            [
+              2.02,
+              41.08
+            ],
+            [
+              2.02,
+              40.92
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.717,
+        "rain_21d": 67.5,
+        "temp_min": 12.0,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              2.2199999999999998,
+              40.92
+            ],
+            [
+              2.38,
+              40.92
+            ],
+            [
+              2.38,
+              41.08
+            ],
+            [
+              2.2199999999999998,
+              41.08
+            ],
+            [
+              2.2199999999999998,
+              40.92
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.807,
+        "rain_21d": 77.5,
+        "temp_min": 12.0,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              2.42,
+              40.92
+            ],
+            [
+              2.58,
+              40.92
+            ],
+            [
+              2.58,
+              41.08
+            ],
+            [
+              2.42,
+              41.08
+            ],
+            [
+              2.42,
+              40.92
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.627,
+        "rain_21d": 57.5,
+        "temp_min": 12.0,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              2.62,
+              40.92
+            ],
+            [
+              2.7800000000000002,
+              40.92
+            ],
+            [
+              2.7800000000000002,
+              41.08
+            ],
+            [
+              2.62,
+              41.08
+            ],
+            [
+              2.62,
+              40.92
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.717,
+        "rain_21d": 67.5,
+        "temp_min": 12.0,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              2.82,
+              40.92
+            ],
+            [
+              2.98,
+              40.92
+            ],
+            [
+              2.98,
+              41.08
+            ],
+            [
+              2.82,
+              41.08
+            ],
+            [
+              2.82,
+              40.92
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.64,
+        "rain_21d": 62.5,
+        "temp_min": 11.2,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.21999999999999997,
+              41.120000000000005
+            ],
+            [
+              0.38,
+              41.120000000000005
+            ],
+            [
+              0.38,
+              41.28
+            ],
+            [
+              0.21999999999999997,
+              41.28
+            ],
+            [
+              0.21999999999999997,
+              41.120000000000005
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.73,
+        "rain_21d": 72.5,
+        "temp_min": 11.2,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.42,
+              41.120000000000005
+            ],
+            [
+              0.58,
+              41.120000000000005
+            ],
+            [
+              0.58,
+              41.28
+            ],
+            [
+              0.42,
+              41.28
+            ],
+            [
+              0.42,
+              41.120000000000005
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.82,
+        "rain_21d": 82.5,
+        "temp_min": 11.2,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.62,
+              41.120000000000005
+            ],
+            [
+              0.7799999999999999,
+              41.120000000000005
+            ],
+            [
+              0.7799999999999999,
+              41.28
+            ],
+            [
+              0.62,
+              41.28
+            ],
+            [
+              0.62,
+              41.120000000000005
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.64,
+        "rain_21d": 62.5,
+        "temp_min": 11.2,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.8200000000000001,
+              41.120000000000005
+            ],
+            [
+              0.98,
+              41.120000000000005
+            ],
+            [
+              0.98,
+              41.28
+            ],
+            [
+              0.8200000000000001,
+              41.28
+            ],
+            [
+              0.8200000000000001,
+              41.120000000000005
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.73,
+        "rain_21d": 72.5,
+        "temp_min": 11.2,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.02,
+              41.120000000000005
+            ],
+            [
+              1.1800000000000002,
+              41.120000000000005
+            ],
+            [
+              1.1800000000000002,
+              41.28
+            ],
+            [
+              1.02,
+              41.28
+            ],
+            [
+              1.02,
+              41.120000000000005
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.82,
+        "rain_21d": 82.5,
+        "temp_min": 11.2,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.22,
+              41.120000000000005
+            ],
+            [
+              1.3800000000000001,
+              41.120000000000005
+            ],
+            [
+              1.3800000000000001,
+              41.28
+            ],
+            [
+              1.22,
+              41.28
+            ],
+            [
+              1.22,
+              41.120000000000005
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.64,
+        "rain_21d": 62.5,
+        "temp_min": 11.2,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.42,
+              41.120000000000005
+            ],
+            [
+              1.58,
+              41.120000000000005
+            ],
+            [
+              1.58,
+              41.28
+            ],
+            [
+              1.42,
+              41.28
+            ],
+            [
+              1.42,
+              41.120000000000005
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.73,
+        "rain_21d": 72.5,
+        "temp_min": 11.2,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.6199999999999999,
+              41.120000000000005
+            ],
+            [
+              1.78,
+              41.120000000000005
+            ],
+            [
+              1.78,
+              41.28
+            ],
+            [
+              1.6199999999999999,
+              41.28
+            ],
+            [
+              1.6199999999999999,
+              41.120000000000005
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.82,
+        "rain_21d": 82.5,
+        "temp_min": 11.2,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.8199999999999998,
+              41.120000000000005
+            ],
+            [
+              1.98,
+              41.120000000000005
+            ],
+            [
+              1.98,
+              41.28
+            ],
+            [
+              1.8199999999999998,
+              41.28
+            ],
+            [
+              1.8199999999999998,
+              41.120000000000005
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.64,
+        "rain_21d": 62.5,
+        "temp_min": 11.2,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              2.02,
+              41.120000000000005
+            ],
+            [
+              2.18,
+              41.120000000000005
+            ],
+            [
+              2.18,
+              41.28
+            ],
+            [
+              2.02,
+              41.28
+            ],
+            [
+              2.02,
+              41.120000000000005
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.73,
+        "rain_21d": 72.5,
+        "temp_min": 11.2,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              2.2199999999999998,
+              41.120000000000005
+            ],
+            [
+              2.38,
+              41.120000000000005
+            ],
+            [
+              2.38,
+              41.28
+            ],
+            [
+              2.2199999999999998,
+              41.28
+            ],
+            [
+              2.2199999999999998,
+              41.120000000000005
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.82,
+        "rain_21d": 82.5,
+        "temp_min": 11.2,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              2.42,
+              41.120000000000005
+            ],
+            [
+              2.58,
+              41.120000000000005
+            ],
+            [
+              2.58,
+              41.28
+            ],
+            [
+              2.42,
+              41.28
+            ],
+            [
+              2.42,
+              41.120000000000005
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.64,
+        "rain_21d": 62.5,
+        "temp_min": 11.2,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              2.62,
+              41.120000000000005
+            ],
+            [
+              2.7800000000000002,
+              41.120000000000005
+            ],
+            [
+              2.7800000000000002,
+              41.28
+            ],
+            [
+              2.62,
+              41.28
+            ],
+            [
+              2.62,
+              41.120000000000005
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.73,
+        "rain_21d": 72.5,
+        "temp_min": 11.2,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              2.82,
+              41.120000000000005
+            ],
+            [
+              2.98,
+              41.120000000000005
+            ],
+            [
+              2.98,
+              41.28
+            ],
+            [
+              2.82,
+              41.28
+            ],
+            [
+              2.82,
+              41.120000000000005
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.653,
+        "rain_21d": 67.5,
+        "temp_min": 10.4,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.21999999999999997,
+              41.32
+            ],
+            [
+              0.38,
+              41.32
+            ],
+            [
+              0.38,
+              41.48
+            ],
+            [
+              0.21999999999999997,
+              41.48
+            ],
+            [
+              0.21999999999999997,
+              41.32
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.743,
+        "rain_21d": 77.5,
+        "temp_min": 10.4,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.42,
+              41.32
+            ],
+            [
+              0.58,
+              41.32
+            ],
+            [
+              0.58,
+              41.48
+            ],
+            [
+              0.42,
+              41.48
+            ],
+            [
+              0.42,
+              41.32
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.833,
+        "rain_21d": 87.5,
+        "temp_min": 10.4,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.62,
+              41.32
+            ],
+            [
+              0.7799999999999999,
+              41.32
+            ],
+            [
+              0.7799999999999999,
+              41.48
+            ],
+            [
+              0.62,
+              41.48
+            ],
+            [
+              0.62,
+              41.32
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.653,
+        "rain_21d": 67.5,
+        "temp_min": 10.4,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.8200000000000001,
+              41.32
+            ],
+            [
+              0.98,
+              41.32
+            ],
+            [
+              0.98,
+              41.48
+            ],
+            [
+              0.8200000000000001,
+              41.48
+            ],
+            [
+              0.8200000000000001,
+              41.32
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.743,
+        "rain_21d": 77.5,
+        "temp_min": 10.4,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.02,
+              41.32
+            ],
+            [
+              1.1800000000000002,
+              41.32
+            ],
+            [
+              1.1800000000000002,
+              41.48
+            ],
+            [
+              1.02,
+              41.48
+            ],
+            [
+              1.02,
+              41.32
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.833,
+        "rain_21d": 87.5,
+        "temp_min": 10.4,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.22,
+              41.32
+            ],
+            [
+              1.3800000000000001,
+              41.32
+            ],
+            [
+              1.3800000000000001,
+              41.48
+            ],
+            [
+              1.22,
+              41.48
+            ],
+            [
+              1.22,
+              41.32
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.653,
+        "rain_21d": 67.5,
+        "temp_min": 10.4,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.42,
+              41.32
+            ],
+            [
+              1.58,
+              41.32
+            ],
+            [
+              1.58,
+              41.48
+            ],
+            [
+              1.42,
+              41.48
+            ],
+            [
+              1.42,
+              41.32
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.743,
+        "rain_21d": 77.5,
+        "temp_min": 10.4,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.6199999999999999,
+              41.32
+            ],
+            [
+              1.78,
+              41.32
+            ],
+            [
+              1.78,
+              41.48
+            ],
+            [
+              1.6199999999999999,
+              41.48
+            ],
+            [
+              1.6199999999999999,
+              41.32
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.833,
+        "rain_21d": 87.5,
+        "temp_min": 10.4,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.8199999999999998,
+              41.32
+            ],
+            [
+              1.98,
+              41.32
+            ],
+            [
+              1.98,
+              41.48
+            ],
+            [
+              1.8199999999999998,
+              41.48
+            ],
+            [
+              1.8199999999999998,
+              41.32
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.653,
+        "rain_21d": 67.5,
+        "temp_min": 10.4,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              2.02,
+              41.32
+            ],
+            [
+              2.18,
+              41.32
+            ],
+            [
+              2.18,
+              41.48
+            ],
+            [
+              2.02,
+              41.48
+            ],
+            [
+              2.02,
+              41.32
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.743,
+        "rain_21d": 77.5,
+        "temp_min": 10.4,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              2.2199999999999998,
+              41.32
+            ],
+            [
+              2.38,
+              41.32
+            ],
+            [
+              2.38,
+              41.48
+            ],
+            [
+              2.2199999999999998,
+              41.48
+            ],
+            [
+              2.2199999999999998,
+              41.32
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.833,
+        "rain_21d": 87.5,
+        "temp_min": 10.4,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              2.42,
+              41.32
+            ],
+            [
+              2.58,
+              41.32
+            ],
+            [
+              2.58,
+              41.48
+            ],
+            [
+              2.42,
+              41.48
+            ],
+            [
+              2.42,
+              41.32
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.653,
+        "rain_21d": 67.5,
+        "temp_min": 10.4,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              2.62,
+              41.32
+            ],
+            [
+              2.7800000000000002,
+              41.32
+            ],
+            [
+              2.7800000000000002,
+              41.48
+            ],
+            [
+              2.62,
+              41.48
+            ],
+            [
+              2.62,
+              41.32
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.743,
+        "rain_21d": 77.5,
+        "temp_min": 10.4,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              2.82,
+              41.32
+            ],
+            [
+              2.98,
+              41.32
+            ],
+            [
+              2.98,
+              41.48
+            ],
+            [
+              2.82,
+              41.48
+            ],
+            [
+              2.82,
+              41.32
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.666,
+        "rain_21d": 72.5,
+        "temp_min": 9.6,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.21999999999999997,
+              41.52
+            ],
+            [
+              0.38,
+              41.52
+            ],
+            [
+              0.38,
+              41.68
+            ],
+            [
+              0.21999999999999997,
+              41.68
+            ],
+            [
+              0.21999999999999997,
+              41.52
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.756,
+        "rain_21d": 82.5,
+        "temp_min": 9.6,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.42,
+              41.52
+            ],
+            [
+              0.58,
+              41.52
+            ],
+            [
+              0.58,
+              41.68
+            ],
+            [
+              0.42,
+              41.68
+            ],
+            [
+              0.42,
+              41.52
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.824,
+        "rain_21d": 92.5,
+        "temp_min": 9.6,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.62,
+              41.52
+            ],
+            [
+              0.7799999999999999,
+              41.52
+            ],
+            [
+              0.7799999999999999,
+              41.68
+            ],
+            [
+              0.62,
+              41.68
+            ],
+            [
+              0.62,
+              41.52
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.666,
+        "rain_21d": 72.5,
+        "temp_min": 9.6,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.8200000000000001,
+              41.52
+            ],
+            [
+              0.98,
+              41.52
+            ],
+            [
+              0.98,
+              41.68
+            ],
+            [
+              0.8200000000000001,
+              41.68
+            ],
+            [
+              0.8200000000000001,
+              41.52
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.756,
+        "rain_21d": 82.5,
+        "temp_min": 9.6,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.02,
+              41.52
+            ],
+            [
+              1.1800000000000002,
+              41.52
+            ],
+            [
+              1.1800000000000002,
+              41.68
+            ],
+            [
+              1.02,
+              41.68
+            ],
+            [
+              1.02,
+              41.52
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.824,
+        "rain_21d": 92.5,
+        "temp_min": 9.6,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.22,
+              41.52
+            ],
+            [
+              1.3800000000000001,
+              41.52
+            ],
+            [
+              1.3800000000000001,
+              41.68
+            ],
+            [
+              1.22,
+              41.68
+            ],
+            [
+              1.22,
+              41.52
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.666,
+        "rain_21d": 72.5,
+        "temp_min": 9.6,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.42,
+              41.52
+            ],
+            [
+              1.58,
+              41.52
+            ],
+            [
+              1.58,
+              41.68
+            ],
+            [
+              1.42,
+              41.68
+            ],
+            [
+              1.42,
+              41.52
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.756,
+        "rain_21d": 82.5,
+        "temp_min": 9.6,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.6199999999999999,
+              41.52
+            ],
+            [
+              1.78,
+              41.52
+            ],
+            [
+              1.78,
+              41.68
+            ],
+            [
+              1.6199999999999999,
+              41.68
+            ],
+            [
+              1.6199999999999999,
+              41.52
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.824,
+        "rain_21d": 92.5,
+        "temp_min": 9.6,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.8199999999999998,
+              41.52
+            ],
+            [
+              1.98,
+              41.52
+            ],
+            [
+              1.98,
+              41.68
+            ],
+            [
+              1.8199999999999998,
+              41.68
+            ],
+            [
+              1.8199999999999998,
+              41.52
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.666,
+        "rain_21d": 72.5,
+        "temp_min": 9.6,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              2.02,
+              41.52
+            ],
+            [
+              2.18,
+              41.52
+            ],
+            [
+              2.18,
+              41.68
+            ],
+            [
+              2.02,
+              41.68
+            ],
+            [
+              2.02,
+              41.52
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.756,
+        "rain_21d": 82.5,
+        "temp_min": 9.6,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              2.2199999999999998,
+              41.52
+            ],
+            [
+              2.38,
+              41.52
+            ],
+            [
+              2.38,
+              41.68
+            ],
+            [
+              2.2199999999999998,
+              41.68
+            ],
+            [
+              2.2199999999999998,
+              41.52
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.824,
+        "rain_21d": 92.5,
+        "temp_min": 9.6,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              2.42,
+              41.52
+            ],
+            [
+              2.58,
+              41.52
+            ],
+            [
+              2.58,
+              41.68
+            ],
+            [
+              2.42,
+              41.68
+            ],
+            [
+              2.42,
+              41.52
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.666,
+        "rain_21d": 72.5,
+        "temp_min": 9.6,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              2.62,
+              41.52
+            ],
+            [
+              2.7800000000000002,
+              41.52
+            ],
+            [
+              2.7800000000000002,
+              41.68
+            ],
+            [
+              2.62,
+              41.68
+            ],
+            [
+              2.62,
+              41.52
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.756,
+        "rain_21d": 82.5,
+        "temp_min": 9.6,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              2.82,
+              41.52
+            ],
+            [
+              2.98,
+              41.52
+            ],
+            [
+              2.98,
+              41.68
+            ],
+            [
+              2.82,
+              41.68
+            ],
+            [
+              2.82,
+              41.52
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.679,
+        "rain_21d": 77.5,
+        "temp_min": 8.8,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.21999999999999997,
+              41.72
+            ],
+            [
+              0.38,
+              41.72
+            ],
+            [
+              0.38,
+              41.879999999999995
+            ],
+            [
+              0.21999999999999997,
+              41.879999999999995
+            ],
+            [
+              0.21999999999999997,
+              41.72
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.769,
+        "rain_21d": 87.5,
+        "temp_min": 8.8,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.42,
+              41.72
+            ],
+            [
+              0.58,
+              41.72
+            ],
+            [
+              0.58,
+              41.879999999999995
+            ],
+            [
+              0.42,
+              41.879999999999995
+            ],
+            [
+              0.42,
+              41.72
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.792,
+        "rain_21d": 97.5,
+        "temp_min": 8.8,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.62,
+              41.72
+            ],
+            [
+              0.7799999999999999,
+              41.72
+            ],
+            [
+              0.7799999999999999,
+              41.879999999999995
+            ],
+            [
+              0.62,
+              41.879999999999995
+            ],
+            [
+              0.62,
+              41.72
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.679,
+        "rain_21d": 77.5,
+        "temp_min": 8.8,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.8200000000000001,
+              41.72
+            ],
+            [
+              0.98,
+              41.72
+            ],
+            [
+              0.98,
+              41.879999999999995
+            ],
+            [
+              0.8200000000000001,
+              41.879999999999995
+            ],
+            [
+              0.8200000000000001,
+              41.72
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.769,
+        "rain_21d": 87.5,
+        "temp_min": 8.8,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.02,
+              41.72
+            ],
+            [
+              1.1800000000000002,
+              41.72
+            ],
+            [
+              1.1800000000000002,
+              41.879999999999995
+            ],
+            [
+              1.02,
+              41.879999999999995
+            ],
+            [
+              1.02,
+              41.72
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.792,
+        "rain_21d": 97.5,
+        "temp_min": 8.8,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.22,
+              41.72
+            ],
+            [
+              1.3800000000000001,
+              41.72
+            ],
+            [
+              1.3800000000000001,
+              41.879999999999995
+            ],
+            [
+              1.22,
+              41.879999999999995
+            ],
+            [
+              1.22,
+              41.72
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.679,
+        "rain_21d": 77.5,
+        "temp_min": 8.8,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.42,
+              41.72
+            ],
+            [
+              1.58,
+              41.72
+            ],
+            [
+              1.58,
+              41.879999999999995
+            ],
+            [
+              1.42,
+              41.879999999999995
+            ],
+            [
+              1.42,
+              41.72
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.769,
+        "rain_21d": 87.5,
+        "temp_min": 8.8,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.6199999999999999,
+              41.72
+            ],
+            [
+              1.78,
+              41.72
+            ],
+            [
+              1.78,
+              41.879999999999995
+            ],
+            [
+              1.6199999999999999,
+              41.879999999999995
+            ],
+            [
+              1.6199999999999999,
+              41.72
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.792,
+        "rain_21d": 97.5,
+        "temp_min": 8.8,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.8199999999999998,
+              41.72
+            ],
+            [
+              1.98,
+              41.72
+            ],
+            [
+              1.98,
+              41.879999999999995
+            ],
+            [
+              1.8199999999999998,
+              41.879999999999995
+            ],
+            [
+              1.8199999999999998,
+              41.72
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.679,
+        "rain_21d": 77.5,
+        "temp_min": 8.8,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              2.02,
+              41.72
+            ],
+            [
+              2.18,
+              41.72
+            ],
+            [
+              2.18,
+              41.879999999999995
+            ],
+            [
+              2.02,
+              41.879999999999995
+            ],
+            [
+              2.02,
+              41.72
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.769,
+        "rain_21d": 87.5,
+        "temp_min": 8.8,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              2.2199999999999998,
+              41.72
+            ],
+            [
+              2.38,
+              41.72
+            ],
+            [
+              2.38,
+              41.879999999999995
+            ],
+            [
+              2.2199999999999998,
+              41.879999999999995
+            ],
+            [
+              2.2199999999999998,
+              41.72
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.792,
+        "rain_21d": 97.5,
+        "temp_min": 8.8,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              2.42,
+              41.72
+            ],
+            [
+              2.58,
+              41.72
+            ],
+            [
+              2.58,
+              41.879999999999995
+            ],
+            [
+              2.42,
+              41.879999999999995
+            ],
+            [
+              2.42,
+              41.72
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.679,
+        "rain_21d": 77.5,
+        "temp_min": 8.8,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              2.62,
+              41.72
+            ],
+            [
+              2.7800000000000002,
+              41.72
+            ],
+            [
+              2.7800000000000002,
+              41.879999999999995
+            ],
+            [
+              2.62,
+              41.879999999999995
+            ],
+            [
+              2.62,
+              41.72
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.769,
+        "rain_21d": 87.5,
+        "temp_min": 8.8,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              2.82,
+              41.72
+            ],
+            [
+              2.98,
+              41.72
+            ],
+            [
+              2.98,
+              41.879999999999995
+            ],
+            [
+              2.82,
+              41.879999999999995
+            ],
+            [
+              2.82,
+              41.72
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.692,
+        "rain_21d": 82.5,
+        "temp_min": 8.0,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.21999999999999997,
+              41.92
+            ],
+            [
+              0.38,
+              41.92
+            ],
+            [
+              0.38,
+              42.08
+            ],
+            [
+              0.21999999999999997,
+              42.08
+            ],
+            [
+              0.21999999999999997,
+              41.92
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.76,
+        "rain_21d": 92.5,
+        "temp_min": 8.0,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.42,
+              41.92
+            ],
+            [
+              0.58,
+              41.92
+            ],
+            [
+              0.58,
+              42.08
+            ],
+            [
+              0.42,
+              42.08
+            ],
+            [
+              0.42,
+              41.92
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.76,
+        "rain_21d": 102.5,
+        "temp_min": 8.0,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.62,
+              41.92
+            ],
+            [
+              0.7799999999999999,
+              41.92
+            ],
+            [
+              0.7799999999999999,
+              42.08
+            ],
+            [
+              0.62,
+              42.08
+            ],
+            [
+              0.62,
+              41.92
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.692,
+        "rain_21d": 82.5,
+        "temp_min": 8.0,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.8200000000000001,
+              41.92
+            ],
+            [
+              0.98,
+              41.92
+            ],
+            [
+              0.98,
+              42.08
+            ],
+            [
+              0.8200000000000001,
+              42.08
+            ],
+            [
+              0.8200000000000001,
+              41.92
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.76,
+        "rain_21d": 92.5,
+        "temp_min": 8.0,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.02,
+              41.92
+            ],
+            [
+              1.1800000000000002,
+              41.92
+            ],
+            [
+              1.1800000000000002,
+              42.08
+            ],
+            [
+              1.02,
+              42.08
+            ],
+            [
+              1.02,
+              41.92
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.76,
+        "rain_21d": 102.5,
+        "temp_min": 8.0,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.22,
+              41.92
+            ],
+            [
+              1.3800000000000001,
+              41.92
+            ],
+            [
+              1.3800000000000001,
+              42.08
+            ],
+            [
+              1.22,
+              42.08
+            ],
+            [
+              1.22,
+              41.92
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.692,
+        "rain_21d": 82.5,
+        "temp_min": 8.0,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.42,
+              41.92
+            ],
+            [
+              1.58,
+              41.92
+            ],
+            [
+              1.58,
+              42.08
+            ],
+            [
+              1.42,
+              42.08
+            ],
+            [
+              1.42,
+              41.92
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.76,
+        "rain_21d": 92.5,
+        "temp_min": 8.0,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.6199999999999999,
+              41.92
+            ],
+            [
+              1.78,
+              41.92
+            ],
+            [
+              1.78,
+              42.08
+            ],
+            [
+              1.6199999999999999,
+              42.08
+            ],
+            [
+              1.6199999999999999,
+              41.92
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.76,
+        "rain_21d": 102.5,
+        "temp_min": 8.0,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.8199999999999998,
+              41.92
+            ],
+            [
+              1.98,
+              41.92
+            ],
+            [
+              1.98,
+              42.08
+            ],
+            [
+              1.8199999999999998,
+              42.08
+            ],
+            [
+              1.8199999999999998,
+              41.92
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.692,
+        "rain_21d": 82.5,
+        "temp_min": 8.0,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              2.02,
+              41.92
+            ],
+            [
+              2.18,
+              41.92
+            ],
+            [
+              2.18,
+              42.08
+            ],
+            [
+              2.02,
+              42.08
+            ],
+            [
+              2.02,
+              41.92
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.76,
+        "rain_21d": 92.5,
+        "temp_min": 8.0,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              2.2199999999999998,
+              41.92
+            ],
+            [
+              2.38,
+              41.92
+            ],
+            [
+              2.38,
+              42.08
+            ],
+            [
+              2.2199999999999998,
+              42.08
+            ],
+            [
+              2.2199999999999998,
+              41.92
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.76,
+        "rain_21d": 102.5,
+        "temp_min": 8.0,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              2.42,
+              41.92
+            ],
+            [
+              2.58,
+              41.92
+            ],
+            [
+              2.58,
+              42.08
+            ],
+            [
+              2.42,
+              42.08
+            ],
+            [
+              2.42,
+              41.92
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.692,
+        "rain_21d": 82.5,
+        "temp_min": 8.0,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              2.62,
+              41.92
+            ],
+            [
+              2.7800000000000002,
+              41.92
+            ],
+            [
+              2.7800000000000002,
+              42.08
+            ],
+            [
+              2.62,
+              42.08
+            ],
+            [
+              2.62,
+              41.92
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.76,
+        "rain_21d": 92.5,
+        "temp_min": 8.0,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              2.82,
+              41.92
+            ],
+            [
+              2.98,
+              41.92
+            ],
+            [
+              2.98,
+              42.08
+            ],
+            [
+              2.82,
+              42.08
+            ],
+            [
+              2.82,
+              41.92
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.705,
+        "rain_21d": 87.5,
+        "temp_min": 7.2,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.21999999999999997,
+              42.120000000000005
+            ],
+            [
+              0.38,
+              42.120000000000005
+            ],
+            [
+              0.38,
+              42.28
+            ],
+            [
+              0.21999999999999997,
+              42.28
+            ],
+            [
+              0.21999999999999997,
+              42.120000000000005
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.728,
+        "rain_21d": 97.5,
+        "temp_min": 7.2,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.42,
+              42.120000000000005
+            ],
+            [
+              0.58,
+              42.120000000000005
+            ],
+            [
+              0.58,
+              42.28
+            ],
+            [
+              0.42,
+              42.28
+            ],
+            [
+              0.42,
+              42.120000000000005
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.728,
+        "rain_21d": 107.5,
+        "temp_min": 7.2,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.62,
+              42.120000000000005
+            ],
+            [
+              0.7799999999999999,
+              42.120000000000005
+            ],
+            [
+              0.7799999999999999,
+              42.28
+            ],
+            [
+              0.62,
+              42.28
+            ],
+            [
+              0.62,
+              42.120000000000005
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.705,
+        "rain_21d": 87.5,
+        "temp_min": 7.2,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.8200000000000001,
+              42.120000000000005
+            ],
+            [
+              0.98,
+              42.120000000000005
+            ],
+            [
+              0.98,
+              42.28
+            ],
+            [
+              0.8200000000000001,
+              42.28
+            ],
+            [
+              0.8200000000000001,
+              42.120000000000005
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.728,
+        "rain_21d": 97.5,
+        "temp_min": 7.2,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.02,
+              42.120000000000005
+            ],
+            [
+              1.1800000000000002,
+              42.120000000000005
+            ],
+            [
+              1.1800000000000002,
+              42.28
+            ],
+            [
+              1.02,
+              42.28
+            ],
+            [
+              1.02,
+              42.120000000000005
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.728,
+        "rain_21d": 107.5,
+        "temp_min": 7.2,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.22,
+              42.120000000000005
+            ],
+            [
+              1.3800000000000001,
+              42.120000000000005
+            ],
+            [
+              1.3800000000000001,
+              42.28
+            ],
+            [
+              1.22,
+              42.28
+            ],
+            [
+              1.22,
+              42.120000000000005
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.705,
+        "rain_21d": 87.5,
+        "temp_min": 7.2,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.42,
+              42.120000000000005
+            ],
+            [
+              1.58,
+              42.120000000000005
+            ],
+            [
+              1.58,
+              42.28
+            ],
+            [
+              1.42,
+              42.28
+            ],
+            [
+              1.42,
+              42.120000000000005
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.728,
+        "rain_21d": 97.5,
+        "temp_min": 7.2,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.6199999999999999,
+              42.120000000000005
+            ],
+            [
+              1.78,
+              42.120000000000005
+            ],
+            [
+              1.78,
+              42.28
+            ],
+            [
+              1.6199999999999999,
+              42.28
+            ],
+            [
+              1.6199999999999999,
+              42.120000000000005
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.728,
+        "rain_21d": 107.5,
+        "temp_min": 7.2,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.8199999999999998,
+              42.120000000000005
+            ],
+            [
+              1.98,
+              42.120000000000005
+            ],
+            [
+              1.98,
+              42.28
+            ],
+            [
+              1.8199999999999998,
+              42.28
+            ],
+            [
+              1.8199999999999998,
+              42.120000000000005
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.705,
+        "rain_21d": 87.5,
+        "temp_min": 7.2,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              2.02,
+              42.120000000000005
+            ],
+            [
+              2.18,
+              42.120000000000005
+            ],
+            [
+              2.18,
+              42.28
+            ],
+            [
+              2.02,
+              42.28
+            ],
+            [
+              2.02,
+              42.120000000000005
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.728,
+        "rain_21d": 97.5,
+        "temp_min": 7.2,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              2.2199999999999998,
+              42.120000000000005
+            ],
+            [
+              2.38,
+              42.120000000000005
+            ],
+            [
+              2.38,
+              42.28
+            ],
+            [
+              2.2199999999999998,
+              42.28
+            ],
+            [
+              2.2199999999999998,
+              42.120000000000005
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.728,
+        "rain_21d": 107.5,
+        "temp_min": 7.2,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              2.42,
+              42.120000000000005
+            ],
+            [
+              2.58,
+              42.120000000000005
+            ],
+            [
+              2.58,
+              42.28
+            ],
+            [
+              2.42,
+              42.28
+            ],
+            [
+              2.42,
+              42.120000000000005
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.705,
+        "rain_21d": 87.5,
+        "temp_min": 7.2,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              2.62,
+              42.120000000000005
+            ],
+            [
+              2.7800000000000002,
+              42.120000000000005
+            ],
+            [
+              2.7800000000000002,
+              42.28
+            ],
+            [
+              2.62,
+              42.28
+            ],
+            [
+              2.62,
+              42.120000000000005
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.728,
+        "rain_21d": 97.5,
+        "temp_min": 7.2,
+        "frost_days": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              2.82,
+              42.120000000000005
+            ],
+            [
+              2.98,
+              42.120000000000005
+            ],
+            [
+              2.98,
+              42.28
+            ],
+            [
+              2.82,
+              42.28
+            ],
+            [
+              2.82,
+              42.120000000000005
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.522,
+        "rain_21d": 92.5,
+        "temp_min": 6.4,
+        "frost_days": 1
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.21999999999999997,
+              42.32
+            ],
+            [
+              0.38,
+              42.32
+            ],
+            [
+              0.38,
+              42.48
+            ],
+            [
+              0.21999999999999997,
+              42.48
+            ],
+            [
+              0.21999999999999997,
+              42.32
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.522,
+        "rain_21d": 102.5,
+        "temp_min": 6.4,
+        "frost_days": 1
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.42,
+              42.32
+            ],
+            [
+              0.58,
+              42.32
+            ],
+            [
+              0.58,
+              42.48
+            ],
+            [
+              0.42,
+              42.48
+            ],
+            [
+              0.42,
+              42.32
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.522,
+        "rain_21d": 112.5,
+        "temp_min": 6.4,
+        "frost_days": 1
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.62,
+              42.32
+            ],
+            [
+              0.7799999999999999,
+              42.32
+            ],
+            [
+              0.7799999999999999,
+              42.48
+            ],
+            [
+              0.62,
+              42.48
+            ],
+            [
+              0.62,
+              42.32
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.522,
+        "rain_21d": 92.5,
+        "temp_min": 6.4,
+        "frost_days": 1
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.8200000000000001,
+              42.32
+            ],
+            [
+              0.98,
+              42.32
+            ],
+            [
+              0.98,
+              42.48
+            ],
+            [
+              0.8200000000000001,
+              42.48
+            ],
+            [
+              0.8200000000000001,
+              42.32
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.522,
+        "rain_21d": 102.5,
+        "temp_min": 6.4,
+        "frost_days": 1
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.02,
+              42.32
+            ],
+            [
+              1.1800000000000002,
+              42.32
+            ],
+            [
+              1.1800000000000002,
+              42.48
+            ],
+            [
+              1.02,
+              42.48
+            ],
+            [
+              1.02,
+              42.32
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.522,
+        "rain_21d": 112.5,
+        "temp_min": 6.4,
+        "frost_days": 1
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.22,
+              42.32
+            ],
+            [
+              1.3800000000000001,
+              42.32
+            ],
+            [
+              1.3800000000000001,
+              42.48
+            ],
+            [
+              1.22,
+              42.48
+            ],
+            [
+              1.22,
+              42.32
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.522,
+        "rain_21d": 92.5,
+        "temp_min": 6.4,
+        "frost_days": 1
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.42,
+              42.32
+            ],
+            [
+              1.58,
+              42.32
+            ],
+            [
+              1.58,
+              42.48
+            ],
+            [
+              1.42,
+              42.48
+            ],
+            [
+              1.42,
+              42.32
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.522,
+        "rain_21d": 102.5,
+        "temp_min": 6.4,
+        "frost_days": 1
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.6199999999999999,
+              42.32
+            ],
+            [
+              1.78,
+              42.32
+            ],
+            [
+              1.78,
+              42.48
+            ],
+            [
+              1.6199999999999999,
+              42.48
+            ],
+            [
+              1.6199999999999999,
+              42.32
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.522,
+        "rain_21d": 112.5,
+        "temp_min": 6.4,
+        "frost_days": 1
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.8199999999999998,
+              42.32
+            ],
+            [
+              1.98,
+              42.32
+            ],
+            [
+              1.98,
+              42.48
+            ],
+            [
+              1.8199999999999998,
+              42.48
+            ],
+            [
+              1.8199999999999998,
+              42.32
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.522,
+        "rain_21d": 92.5,
+        "temp_min": 6.4,
+        "frost_days": 1
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              2.02,
+              42.32
+            ],
+            [
+              2.18,
+              42.32
+            ],
+            [
+              2.18,
+              42.48
+            ],
+            [
+              2.02,
+              42.48
+            ],
+            [
+              2.02,
+              42.32
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.522,
+        "rain_21d": 102.5,
+        "temp_min": 6.4,
+        "frost_days": 1
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              2.2199999999999998,
+              42.32
+            ],
+            [
+              2.38,
+              42.32
+            ],
+            [
+              2.38,
+              42.48
+            ],
+            [
+              2.2199999999999998,
+              42.48
+            ],
+            [
+              2.2199999999999998,
+              42.32
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.522,
+        "rain_21d": 112.5,
+        "temp_min": 6.4,
+        "frost_days": 1
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              2.42,
+              42.32
+            ],
+            [
+              2.58,
+              42.32
+            ],
+            [
+              2.58,
+              42.48
+            ],
+            [
+              2.42,
+              42.48
+            ],
+            [
+              2.42,
+              42.32
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.522,
+        "rain_21d": 92.5,
+        "temp_min": 6.4,
+        "frost_days": 1
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              2.62,
+              42.32
+            ],
+            [
+              2.7800000000000002,
+              42.32
+            ],
+            [
+              2.7800000000000002,
+              42.48
+            ],
+            [
+              2.62,
+              42.48
+            ],
+            [
+              2.62,
+              42.32
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.522,
+        "rain_21d": 102.5,
+        "temp_min": 6.4,
+        "frost_days": 1
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              2.82,
+              42.32
+            ],
+            [
+              2.98,
+              42.32
+            ],
+            [
+              2.98,
+              42.48
+            ],
+            [
+              2.82,
+              42.48
+            ],
+            [
+              2.82,
+              42.32
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.51,
+        "rain_21d": 97.5,
+        "temp_min": 5.6,
+        "frost_days": 1
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.21999999999999997,
+              42.52
+            ],
+            [
+              0.38,
+              42.52
+            ],
+            [
+              0.38,
+              42.68
+            ],
+            [
+              0.21999999999999997,
+              42.68
+            ],
+            [
+              0.21999999999999997,
+              42.52
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.51,
+        "rain_21d": 107.5,
+        "temp_min": 5.6,
+        "frost_days": 1
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.42,
+              42.52
+            ],
+            [
+              0.58,
+              42.52
+            ],
+            [
+              0.58,
+              42.68
+            ],
+            [
+              0.42,
+              42.68
+            ],
+            [
+              0.42,
+              42.52
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.51,
+        "rain_21d": 117.5,
+        "temp_min": 5.6,
+        "frost_days": 1
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.62,
+              42.52
+            ],
+            [
+              0.7799999999999999,
+              42.52
+            ],
+            [
+              0.7799999999999999,
+              42.68
+            ],
+            [
+              0.62,
+              42.68
+            ],
+            [
+              0.62,
+              42.52
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.51,
+        "rain_21d": 97.5,
+        "temp_min": 5.6,
+        "frost_days": 1
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.8200000000000001,
+              42.52
+            ],
+            [
+              0.98,
+              42.52
+            ],
+            [
+              0.98,
+              42.68
+            ],
+            [
+              0.8200000000000001,
+              42.68
+            ],
+            [
+              0.8200000000000001,
+              42.52
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.51,
+        "rain_21d": 107.5,
+        "temp_min": 5.6,
+        "frost_days": 1
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.02,
+              42.52
+            ],
+            [
+              1.1800000000000002,
+              42.52
+            ],
+            [
+              1.1800000000000002,
+              42.68
+            ],
+            [
+              1.02,
+              42.68
+            ],
+            [
+              1.02,
+              42.52
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.51,
+        "rain_21d": 117.5,
+        "temp_min": 5.6,
+        "frost_days": 1
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.22,
+              42.52
+            ],
+            [
+              1.3800000000000001,
+              42.52
+            ],
+            [
+              1.3800000000000001,
+              42.68
+            ],
+            [
+              1.22,
+              42.68
+            ],
+            [
+              1.22,
+              42.52
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.51,
+        "rain_21d": 97.5,
+        "temp_min": 5.6,
+        "frost_days": 1
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.42,
+              42.52
+            ],
+            [
+              1.58,
+              42.52
+            ],
+            [
+              1.58,
+              42.68
+            ],
+            [
+              1.42,
+              42.68
+            ],
+            [
+              1.42,
+              42.52
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.51,
+        "rain_21d": 107.5,
+        "temp_min": 5.6,
+        "frost_days": 1
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.6199999999999999,
+              42.52
+            ],
+            [
+              1.78,
+              42.52
+            ],
+            [
+              1.78,
+              42.68
+            ],
+            [
+              1.6199999999999999,
+              42.68
+            ],
+            [
+              1.6199999999999999,
+              42.52
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.51,
+        "rain_21d": 117.5,
+        "temp_min": 5.6,
+        "frost_days": 1
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.8199999999999998,
+              42.52
+            ],
+            [
+              1.98,
+              42.52
+            ],
+            [
+              1.98,
+              42.68
+            ],
+            [
+              1.8199999999999998,
+              42.68
+            ],
+            [
+              1.8199999999999998,
+              42.52
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.51,
+        "rain_21d": 97.5,
+        "temp_min": 5.6,
+        "frost_days": 1
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              2.02,
+              42.52
+            ],
+            [
+              2.18,
+              42.52
+            ],
+            [
+              2.18,
+              42.68
+            ],
+            [
+              2.02,
+              42.68
+            ],
+            [
+              2.02,
+              42.52
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.51,
+        "rain_21d": 107.5,
+        "temp_min": 5.6,
+        "frost_days": 1
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              2.2199999999999998,
+              42.52
+            ],
+            [
+              2.38,
+              42.52
+            ],
+            [
+              2.38,
+              42.68
+            ],
+            [
+              2.2199999999999998,
+              42.68
+            ],
+            [
+              2.2199999999999998,
+              42.52
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.51,
+        "rain_21d": 117.5,
+        "temp_min": 5.6,
+        "frost_days": 1
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              2.42,
+              42.52
+            ],
+            [
+              2.58,
+              42.52
+            ],
+            [
+              2.58,
+              42.68
+            ],
+            [
+              2.42,
+              42.68
+            ],
+            [
+              2.42,
+              42.52
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.51,
+        "rain_21d": 97.5,
+        "temp_min": 5.6,
+        "frost_days": 1
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              2.62,
+              42.52
+            ],
+            [
+              2.7800000000000002,
+              42.52
+            ],
+            [
+              2.7800000000000002,
+              42.68
+            ],
+            [
+              2.62,
+              42.68
+            ],
+            [
+              2.62,
+              42.52
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.51,
+        "rain_21d": 107.5,
+        "temp_min": 5.6,
+        "frost_days": 1
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              2.82,
+              42.52
+            ],
+            [
+              2.98,
+              42.52
+            ],
+            [
+              2.98,
+              42.68
+            ],
+            [
+              2.82,
+              42.68
+            ],
+            [
+              2.82,
+              42.52
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.51,
+        "rain_21d": 102.5,
+        "temp_min": 4.8,
+        "frost_days": 1
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.21999999999999997,
+              42.72
+            ],
+            [
+              0.38,
+              42.72
+            ],
+            [
+              0.38,
+              42.879999999999995
+            ],
+            [
+              0.21999999999999997,
+              42.879999999999995
+            ],
+            [
+              0.21999999999999997,
+              42.72
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.51,
+        "rain_21d": 112.5,
+        "temp_min": 4.8,
+        "frost_days": 1
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.42,
+              42.72
+            ],
+            [
+              0.58,
+              42.72
+            ],
+            [
+              0.58,
+              42.879999999999995
+            ],
+            [
+              0.42,
+              42.879999999999995
+            ],
+            [
+              0.42,
+              42.72
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.51,
+        "rain_21d": 122.5,
+        "temp_min": 4.8,
+        "frost_days": 1
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.62,
+              42.72
+            ],
+            [
+              0.7799999999999999,
+              42.72
+            ],
+            [
+              0.7799999999999999,
+              42.879999999999995
+            ],
+            [
+              0.62,
+              42.879999999999995
+            ],
+            [
+              0.62,
+              42.72
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.51,
+        "rain_21d": 102.5,
+        "temp_min": 4.8,
+        "frost_days": 1
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.8200000000000001,
+              42.72
+            ],
+            [
+              0.98,
+              42.72
+            ],
+            [
+              0.98,
+              42.879999999999995
+            ],
+            [
+              0.8200000000000001,
+              42.879999999999995
+            ],
+            [
+              0.8200000000000001,
+              42.72
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.51,
+        "rain_21d": 112.5,
+        "temp_min": 4.8,
+        "frost_days": 1
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.02,
+              42.72
+            ],
+            [
+              1.1800000000000002,
+              42.72
+            ],
+            [
+              1.1800000000000002,
+              42.879999999999995
+            ],
+            [
+              1.02,
+              42.879999999999995
+            ],
+            [
+              1.02,
+              42.72
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.51,
+        "rain_21d": 122.5,
+        "temp_min": 4.8,
+        "frost_days": 1
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.22,
+              42.72
+            ],
+            [
+              1.3800000000000001,
+              42.72
+            ],
+            [
+              1.3800000000000001,
+              42.879999999999995
+            ],
+            [
+              1.22,
+              42.879999999999995
+            ],
+            [
+              1.22,
+              42.72
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.51,
+        "rain_21d": 102.5,
+        "temp_min": 4.8,
+        "frost_days": 1
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.42,
+              42.72
+            ],
+            [
+              1.58,
+              42.72
+            ],
+            [
+              1.58,
+              42.879999999999995
+            ],
+            [
+              1.42,
+              42.879999999999995
+            ],
+            [
+              1.42,
+              42.72
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.51,
+        "rain_21d": 112.5,
+        "temp_min": 4.8,
+        "frost_days": 1
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.6199999999999999,
+              42.72
+            ],
+            [
+              1.78,
+              42.72
+            ],
+            [
+              1.78,
+              42.879999999999995
+            ],
+            [
+              1.6199999999999999,
+              42.879999999999995
+            ],
+            [
+              1.6199999999999999,
+              42.72
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.51,
+        "rain_21d": 122.5,
+        "temp_min": 4.8,
+        "frost_days": 1
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.8199999999999998,
+              42.72
+            ],
+            [
+              1.98,
+              42.72
+            ],
+            [
+              1.98,
+              42.879999999999995
+            ],
+            [
+              1.8199999999999998,
+              42.879999999999995
+            ],
+            [
+              1.8199999999999998,
+              42.72
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.51,
+        "rain_21d": 102.5,
+        "temp_min": 4.8,
+        "frost_days": 1
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              2.02,
+              42.72
+            ],
+            [
+              2.18,
+              42.72
+            ],
+            [
+              2.18,
+              42.879999999999995
+            ],
+            [
+              2.02,
+              42.879999999999995
+            ],
+            [
+              2.02,
+              42.72
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.51,
+        "rain_21d": 112.5,
+        "temp_min": 4.8,
+        "frost_days": 1
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              2.2199999999999998,
+              42.72
+            ],
+            [
+              2.38,
+              42.72
+            ],
+            [
+              2.38,
+              42.879999999999995
+            ],
+            [
+              2.2199999999999998,
+              42.879999999999995
+            ],
+            [
+              2.2199999999999998,
+              42.72
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.51,
+        "rain_21d": 122.5,
+        "temp_min": 4.8,
+        "frost_days": 1
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              2.42,
+              42.72
+            ],
+            [
+              2.58,
+              42.72
+            ],
+            [
+              2.58,
+              42.879999999999995
+            ],
+            [
+              2.42,
+              42.879999999999995
+            ],
+            [
+              2.42,
+              42.72
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.51,
+        "rain_21d": 102.5,
+        "temp_min": 4.8,
+        "frost_days": 1
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              2.62,
+              42.72
+            ],
+            [
+              2.7800000000000002,
+              42.72
+            ],
+            [
+              2.7800000000000002,
+              42.879999999999995
+            ],
+            [
+              2.62,
+              42.879999999999995
+            ],
+            [
+              2.62,
+              42.72
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Cep / Boletus edulis",
+        "score": 0.51,
+        "rain_21d": 112.5,
+        "temp_min": 4.8,
+        "frost_days": 1
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              2.82,
+              42.72
+            ],
+            [
+              2.98,
+              42.72
+            ],
+            [
+              2.98,
+              42.879999999999995
+            ],
+            [
+              2.82,
+              42.879999999999995
+            ],
+            [
+              2.82,
+              42.72
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

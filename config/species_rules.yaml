@@ -1,0 +1,58 @@
+boletus_edulis:
+  common_name: "Cep / Boletus edulis"
+  hosts:
+    - "Pinus sylvestris"
+    - "Fagus sylvatica"
+    - "Castanea sativa"
+  altitude_min: 800
+  altitude_max: 2100
+  ph_min: 4.2
+  ph_max: 6.2
+  meteo_triggers:
+    rain_window_days: 21
+    rain_min_mm: 50.0
+    rain_optimal_mm: 90.0
+    temp_min_celsius: 3.0
+    temp_optimal_celsius: 14.0
+    temp_max_celsius: 22.0
+    frost_penalty_days: 3
+
+lactarius_deliciosus:
+  common_name: "Pinetell / Rovelló (Lactarius deliciosus / sanguifluus)"
+  hosts:
+    - "Pinus halepensis"
+    - "Pinus sylvestris"
+    - "Pinus pinea"
+    - "Pinus nigra"
+  altitude_min: 100
+  altitude_max: 1600
+  ph_min: 5.5
+  ph_max: 8.2
+  meteo_triggers:
+    rain_window_days: 18
+    rain_min_mm: 40.0
+    rain_optimal_mm: 80.0
+    temp_min_celsius: 5.0
+    temp_optimal_celsius: 15.0
+    temp_max_celsius: 23.0
+    frost_penalty_days: 2
+
+cantharellus_cibarius:
+  common_name: "Rossinyol (Cantharellus cibarius)"
+  hosts:
+    - "Quercus ilex"
+    - "Quercus suber"
+    - "Castanea sativa"
+    - "Fagus sylvatica"
+  altitude_min: 200
+  altitude_max: 1400
+  ph_min: 4.5
+  ph_max: 6.8
+  meteo_triggers:
+    rain_window_days: 25
+    rain_min_mm: 60.0
+    rain_optimal_mm: 110.0
+    temp_min_celsius: 8.0
+    temp_optimal_celsius: 17.0
+    temp_max_celsius: 25.0
+    frost_penalty_days: 2

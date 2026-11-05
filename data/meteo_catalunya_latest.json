@@ -1,1 +1,1045 @@
-{"data": [{"lat": 40.6, "lon": 0.3, "rain_past_21d": 47.5, "t_min_avg": 13.6, "t_max_avg": 21.6, "frost_days": 0}, {"lat": 40.6, "lon": 0.5, "rain_past_21d": 57.5, "t_min_avg": 13.6, "t_max_avg": 21.6, "frost_days": 0}, {"lat": 40.6, "lon": 0.7, "rain_past_21d": 67.5, "t_min_avg": 13.6, "t_max_avg": 21.6, "frost_days": 0}, {"lat": 40.6, "lon": 0.9, "rain_past_21d": 47.5, "t_min_avg": 13.6, "t_max_avg": 21.6, "frost_days": 0}, {"lat": 40.6, "lon": 1.1, "rain_past_21d": 57.5, "t_min_avg": 13.6, "t_max_avg": 21.6, "frost_days": 0}, {"lat": 40.6, "lon": 1.3, "rain_past_21d": 67.5, "t_min_avg": 13.6, "t_max_avg": 21.6, "frost_days": 0}, {"lat": 40.6, "lon": 1.5, "rain_past_21d": 47.5, "t_min_avg": 13.6, "t_max_avg": 21.6, "frost_days": 0}, {"lat": 40.6, "lon": 1.7, "rain_past_21d": 57.5, "t_min_avg": 13.6, "t_max_avg": 21.6, "frost_days": 0}, {"lat": 40.6, "lon": 1.9, "rain_past_21d": 67.5, "t_min_avg": 13.6, "t_max_avg": 21.6, "frost_days": 0}, {"lat": 40.6, "lon": 2.1, "rain_past_21d": 47.5, "t_min_avg": 13.6, "t_max_avg": 21.6, "frost_days": 0}, {"lat": 40.6, "lon": 2.3, "rain_past_21d": 57.5, "t_min_avg": 13.6, "t_max_avg": 21.6, "frost_days": 0}, {"lat": 40.6, "lon": 2.5, "rain_past_21d": 67.5, "t_min_avg": 13.6, "t_max_avg": 21.6, "frost_days": 0}, {"lat": 40.6, "lon": 2.7, "rain_past_21d": 47.5, "t_min_avg": 13.6, "t_max_avg": 21.6, "frost_days": 0}, {"lat": 40.6, "lon": 2.9, "rain_past_21d": 57.5, "t_min_avg": 13.6, "t_max_avg": 21.6, "frost_days": 0}, {"lat": 40.8, "lon": 0.3, "rain_past_21d": 52.5, "t_min_avg": 12.8, "t_max_avg": 20.8, "frost_days": 0}, {"lat": 40.8, "lon": 0.5, "rain_past_21d": 62.5, "t_min_avg": 12.8, "t_max_avg": 20.8, "frost_days": 0}, {"lat": 40.8, "lon": 0.7, "rain_past_21d": 72.5, "t_min_avg": 12.8, "t_max_avg": 20.8, "frost_days": 0}, {"lat": 40.8, "lon": 0.9, "rain_past_21d": 52.5, "t_min_avg": 12.8, "t_max_avg": 20.8, "frost_days": 0}, {"lat": 40.8, "lon": 1.1, "rain_past_21d": 62.5, "t_min_avg": 12.8, "t_max_avg": 20.8, "frost_days": 0}, {"lat": 40.8, "lon": 1.3, "rain_past_21d": 72.5, "t_min_avg": 12.8, "t_max_avg": 20.8, "frost_days": 0}, {"lat": 40.8, "lon": 1.5, "rain_past_21d": 52.5, "t_min_avg": 12.8, "t_max_avg": 20.8, "frost_days": 0}, {"lat": 40.8, "lon": 1.7, "rain_past_21d": 62.5, "t_min_avg": 12.8, "t_max_avg": 20.8, "frost_days": 0}, {"lat": 40.8, "lon": 1.9, "rain_past_21d": 72.5, "t_min_avg": 12.8, "t_max_avg": 20.8, "frost_days": 0}, {"lat": 40.8, "lon": 2.1, "rain_past_21d": 52.5, "t_min_avg": 12.8, "t_max_avg": 20.8, "frost_days": 0}, {"lat": 40.8, "lon": 2.3, "rain_past_21d": 62.5, "t_min_avg": 12.8, "t_max_avg": 20.8, "frost_days": 0}, {"lat": 40.8, "lon": 2.5, "rain_past_21d": 72.5, "t_min_avg": 12.8, "t_max_avg": 20.8, "frost_days": 0}, {"lat": 40.8, "lon": 2.7, "rain_past_21d": 52.5, "t_min_avg": 12.8, "t_max_avg": 20.8, "frost_days": 0}, {"lat": 40.8, "lon": 2.9, "rain_past_21d": 62.5, "t_min_avg": 12.8, "t_max_avg": 20.8, "frost_days": 0}, {"lat": 41.0, "lon": 0.3, "rain_past_21d": 57.5, "t_min_avg": 12.0, "t_max_avg": 20.0, "frost_days": 0}, {"lat": 41.0, "lon": 0.5, "rain_past_21d": 67.5, "t_min_avg": 12.0, "t_max_avg": 20.0, "frost_days": 0}, {"lat": 41.0, "lon": 0.7, "rain_past_21d": 77.5, "t_min_avg": 12.0, "t_max_avg": 20.0, "frost_days": 0}, {"lat": 41.0, "lon": 0.9, "rain_past_21d": 57.5, "t_min_avg": 12.0, "t_max_avg": 20.0, "frost_days": 0}, {"lat": 41.0, "lon": 1.1, "rain_past_21d": 67.5, "t_min_avg": 12.0, "t_max_avg": 20.0, "frost_days": 0}, {"lat": 41.0, "lon": 1.3, "rain_past_21d": 77.5, "t_min_avg": 12.0, "t_max_avg": 20.0, "frost_days": 0}, {"lat": 41.0, "lon": 1.5, "rain_past_21d": 57.5, "t_min_avg": 12.0, "t_max_avg": 20.0, "frost_days": 0}, {"lat": 41.0, "lon": 1.7, "rain_past_21d": 67.5, "t_min_avg": 12.0, "t_max_avg": 20.0, "frost_days": 0}, {"lat": 41.0, "lon": 1.9, "rain_past_21d": 77.5, "t_min_avg": 12.0, "t_max_avg": 20.0, "frost_days": 0}, {"lat": 41.0, "lon": 2.1, "rain_past_21d": 57.5, "t_min_avg": 12.0, "t_max_avg": 20.0, "frost_days": 0}, {"lat": 41.0, "lon": 2.3, "rain_past_21d": 67.5, "t_min_avg": 12.0, "t_max_avg": 20.0, "frost_days": 0}, {"lat": 41.0, "lon": 2.5, "rain_past_21d": 77.5, "t_min_avg": 12.0, "t_max_avg": 20.0, "frost_days": 0}, {"lat": 41.0, "lon": 2.7, "rain_past_21d": 57.5, "t_min_avg": 12.0, "t_max_avg": 20.0, "frost_days": 0}, {"lat": 41.0, "lon": 2.9, "rain_past_21d": 67.5, "t_min_avg": 12.0, "t_max_avg": 20.0, "frost_days": 0}, {"lat": 41.2, "lon": 0.3, "rain_past_21d": 62.5, "t_min_avg": 11.2, "t_max_avg": 19.2, "frost_days": 0}, {"lat": 41.2, "lon": 0.5, "rain_past_21d": 72.5, "t_min_avg": 11.2, "t_max_avg": 19.2, "frost_days": 0}, {"lat": 41.2, "lon": 0.7, "rain_past_21d": 82.5, "t_min_avg": 11.2, "t_max_avg": 19.2, "frost_days": 0}, {"lat": 41.2, "lon": 0.9, "rain_past_21d": 62.5, "t_min_avg": 11.2, "t_max_avg": 19.2, "frost_days": 0}, {"lat": 41.2, "lon": 1.1, "rain_past_21d": 72.5, "t_min_avg": 11.2, "t_max_avg": 19.2, "frost_days": 0}, {"lat": 41.2, "lon": 1.3, "rain_past_21d": 82.5, "t_min_avg": 11.2, "t_max_avg": 19.2, "frost_days": 0}, {"lat": 41.2, "lon": 1.5, "rain_past_21d": 62.5, "t_min_avg": 11.2, "t_max_avg": 19.2, "frost_days": 0}, {"lat": 41.2, "lon": 1.7, "rain_past_21d": 72.5, "t_min_avg": 11.2, "t_max_avg": 19.2, "frost_days": 0}, {"lat": 41.2, "lon": 1.9, "rain_past_21d": 82.5, "t_min_avg": 11.2, "t_max_avg": 19.2, "frost_days": 0}, {"lat": 41.2, "lon": 2.1, "rain_past_21d": 62.5, "t_min_avg": 11.2, "t_max_avg": 19.2, "frost_days": 0}, {"lat": 41.2, "lon": 2.3, "rain_past_21d": 72.5, "t_min_avg": 11.2, "t_max_avg": 19.2, "frost_days": 0}, {"lat": 41.2, "lon": 2.5, "rain_past_21d": 82.5, "t_min_avg": 11.2, "t_max_avg": 19.2, "frost_days": 0}, {"lat": 41.2, "lon": 2.7, "rain_past_21d": 62.5, "t_min_avg": 11.2, "t_max_avg": 19.2, "frost_days": 0}, {"lat": 41.2, "lon": 2.9, "rain_past_21d": 72.5, "t_min_avg": 11.2, "t_max_avg": 19.2, "frost_days": 0}, {"lat": 41.4, "lon": 0.3, "rain_past_21d": 67.5, "t_min_avg": 10.4, "t_max_avg": 18.4, "frost_days": 0}, {"lat": 41.4, "lon": 0.5, "rain_past_21d": 77.5, "t_min_avg": 10.4, "t_max_avg": 18.4, "frost_days": 0}, {"lat": 41.4, "lon": 0.7, "rain_past_21d": 87.5, "t_min_avg": 10.4, "t_max_avg": 18.4, "frost_days": 0}, {"lat": 41.4, "lon": 0.9, "rain_past_21d": 67.5, "t_min_avg": 10.4, "t_max_avg": 18.4, "frost_days": 0}, {"lat": 41.4, "lon": 1.1, "rain_past_21d": 77.5, "t_min_avg": 10.4, "t_max_avg": 18.4, "frost_days": 0}, {"lat": 41.4, "lon": 1.3, "rain_past_21d": 87.5, "t_min_avg": 10.4, "t_max_avg": 18.4, "frost_days": 0}, {"lat": 41.4, "lon": 1.5, "rain_past_21d": 67.5, "t_min_avg": 10.4, "t_max_avg": 18.4, "frost_days": 0}, {"lat": 41.4, "lon": 1.7, "rain_past_21d": 77.5, "t_min_avg": 10.4, "t_max_avg": 18.4, "frost_days": 0}, {"lat": 41.4, "lon": 1.9, "rain_past_21d": 87.5, "t_min_avg": 10.4, "t_max_avg": 18.4, "frost_days": 0}, {"lat": 41.4, "lon": 2.1, "rain_past_21d": 67.5, "t_min_avg": 10.4, "t_max_avg": 18.4, "frost_days": 0}, {"lat": 41.4, "lon": 2.3, "rain_past_21d": 77.5, "t_min_avg": 10.4, "t_max_avg": 18.4, "frost_days": 0}, {"lat": 41.4, "lon": 2.5, "rain_past_21d": 87.5, "t_min_avg": 10.4, "t_max_avg": 18.4, "frost_days": 0}, {"lat": 41.4, "lon": 2.7, "rain_past_21d": 67.5, "t_min_avg": 10.4, "t_max_avg": 18.4, "frost_days": 0}, {"lat": 41.4, "lon": 2.9, "rain_past_21d": 77.5, "t_min_avg": 10.4, "t_max_avg": 18.4, "frost_days": 0}, {"lat": 41.6, "lon": 0.3, "rain_past_21d": 72.5, "t_min_avg": 9.6, "t_max_avg": 17.6, "frost_days": 0}, {"lat": 41.6, "lon": 0.5, "rain_past_21d": 82.5, "t_min_avg": 9.6, "t_max_avg": 17.6, "frost_days": 0}, {"lat": 41.6, "lon": 0.7, "rain_past_21d": 92.5, "t_min_avg": 9.6, "t_max_avg": 17.6, "frost_days": 0}, {"lat": 41.6, "lon": 0.9, "rain_past_21d": 72.5, "t_min_avg": 9.6, "t_max_avg": 17.6, "frost_days": 0}, {"lat": 41.6, "lon": 1.1, "rain_past_21d": 82.5, "t_min_avg": 9.6, "t_max_avg": 17.6, "frost_days": 0}, {"lat": 41.6, "lon": 1.3, "rain_past_21d": 92.5, "t_min_avg": 9.6, "t_max_avg": 17.6, "frost_days": 0}, {"lat": 41.6, "lon": 1.5, "rain_past_21d": 72.5, "t_min_avg": 9.6, "t_max_avg": 17.6, "frost_days": 0}, {"lat": 41.6, "lon": 1.7, "rain_past_21d": 82.5, "t_min_avg": 9.6, "t_max_avg": 17.6, "frost_days": 0}, {"lat": 41.6, "lon": 1.9, "rain_past_21d": 92.5, "t_min_avg": 9.6, "t_max_avg": 17.6, "frost_days": 0}, {"lat": 41.6, "lon": 2.1, "rain_past_21d": 72.5, "t_min_avg": 9.6, "t_max_avg": 17.6, "frost_days": 0}, {"lat": 41.6, "lon": 2.3, "rain_past_21d": 82.5, "t_min_avg": 9.6, "t_max_avg": 17.6, "frost_days": 0}, {"lat": 41.6, "lon": 2.5, "rain_past_21d": 92.5, "t_min_avg": 9.6, "t_max_avg": 17.6, "frost_days": 0}, {"lat": 41.6, "lon": 2.7, "rain_past_21d": 72.5, "t_min_avg": 9.6, "t_max_avg": 17.6, "frost_days": 0}, {"lat": 41.6, "lon": 2.9, "rain_past_21d": 82.5, "t_min_avg": 9.6, "t_max_avg": 17.6, "frost_days": 0}, {"lat": 41.8, "lon": 0.3, "rain_past_21d": 77.5, "t_min_avg": 8.8, "t_max_avg": 16.8, "frost_days": 0}, {"lat": 41.8, "lon": 0.5, "rain_past_21d": 87.5, "t_min_avg": 8.8, "t_max_avg": 16.8, "frost_days": 0}, {"lat": 41.8, "lon": 0.7, "rain_past_21d": 97.5, "t_min_avg": 8.8, "t_max_avg": 16.8, "frost_days": 0}, {"lat": 41.8, "lon": 0.9, "rain_past_21d": 77.5, "t_min_avg": 8.8, "t_max_avg": 16.8, "frost_days": 0}, {"lat": 41.8, "lon": 1.1, "rain_past_21d": 87.5, "t_min_avg": 8.8, "t_max_avg": 16.8, "frost_days": 0}, {"lat": 41.8, "lon": 1.3, "rain_past_21d": 97.5, "t_min_avg": 8.8, "t_max_avg": 16.8, "frost_days": 0}, {"lat": 41.8, "lon": 1.5, "rain_past_21d": 77.5, "t_min_avg": 8.8, "t_max_avg": 16.8, "frost_days": 0}, {"lat": 41.8, "lon": 1.7, "rain_past_21d": 87.5, "t_min_avg": 8.8, "t_max_avg": 16.8, "frost_days": 0}, {"lat": 41.8, "lon": 1.9, "rain_past_21d": 97.5, "t_min_avg": 8.8, "t_max_avg": 16.8, "frost_days": 0}, {"lat": 41.8, "lon": 2.1, "rain_past_21d": 77.5, "t_min_avg": 8.8, "t_max_avg": 16.8, "frost_days": 0}, {"lat": 41.8, "lon": 2.3, "rain_past_21d": 87.5, "t_min_avg": 8.8, "t_max_avg": 16.8, "frost_days": 0}, {"lat": 41.8, "lon": 2.5, "rain_past_21d": 97.5, "t_min_avg": 8.8, "t_max_avg": 16.8, "frost_days": 0}, {"lat": 41.8, "lon": 2.7, "rain_past_21d": 77.5, "t_min_avg": 8.8, "t_max_avg": 16.8, "frost_days": 0}, {"lat": 41.8, "lon": 2.9, "rain_past_21d": 87.5, "t_min_avg": 8.8, "t_max_avg": 16.8, "frost_days": 0}, {"lat": 42.0, "lon": 0.3, "rain_past_21d": 82.5, "t_min_avg": 8.0, "t_max_avg": 16.0, "frost_days": 0}, {"lat": 42.0, "lon": 0.5, "rain_past_21d": 92.5, "t_min_avg": 8.0, "t_max_avg": 16.0, "frost_days": 0}, {"lat": 42.0, "lon": 0.7, "rain_past_21d": 102.5, "t_min_avg": 8.0, "t_max_avg": 16.0, "frost_days": 0}, {"lat": 42.0, "lon": 0.9, "rain_past_21d": 82.5, "t_min_avg": 8.0, "t_max_avg": 16.0, "frost_days": 0}, {"lat": 42.0, "lon": 1.1, "rain_past_21d": 92.5, "t_min_avg": 8.0, "t_max_avg": 16.0, "frost_days": 0}, {"lat": 42.0, "lon": 1.3, "rain_past_21d": 102.5, "t_min_avg": 8.0, "t_max_avg": 16.0, "frost_days": 0}, {"lat": 42.0, "lon": 1.5, "rain_past_21d": 82.5, "t_min_avg": 8.0, "t_max_avg": 16.0, "frost_days": 0}, {"lat": 42.0, "lon": 1.7, "rain_past_21d": 92.5, "t_min_avg": 8.0, "t_max_avg": 16.0, "frost_days": 0}, {"lat": 42.0, "lon": 1.9, "rain_past_21d": 102.5, "t_min_avg": 8.0, "t_max_avg": 16.0, "frost_days": 0}, {"lat": 42.0, "lon": 2.1, "rain_past_21d": 82.5, "t_min_avg": 8.0, "t_max_avg": 16.0, "frost_days": 0}, {"lat": 42.0, "lon": 2.3, "rain_past_21d": 92.5, "t_min_avg": 8.0, "t_max_avg": 16.0, "frost_days": 0}, {"lat": 42.0, "lon": 2.5, "rain_past_21d": 102.5, "t_min_avg": 8.0, "t_max_avg": 16.0, "frost_days": 0}, {"lat": 42.0, "lon": 2.7, "rain_past_21d": 82.5, "t_min_avg": 8.0, "t_max_avg": 16.0, "frost_days": 0}, {"lat": 42.0, "lon": 2.9, "rain_past_21d": 92.5, "t_min_avg": 8.0, "t_max_avg": 16.0, "frost_days": 0}, {"lat": 42.2, "lon": 0.3, "rain_past_21d": 87.5, "t_min_avg": 7.2, "t_max_avg": 15.2, "frost_days": 0}, {"lat": 42.2, "lon": 0.5, "rain_past_21d": 97.5, "t_min_avg": 7.2, "t_max_avg": 15.2, "frost_days": 0}, {"lat": 42.2, "lon": 0.7, "rain_past_21d": 107.5, "t_min_avg": 7.2, "t_max_avg": 15.2, "frost_days": 0}, {"lat": 42.2, "lon": 0.9, "rain_past_21d": 87.5, "t_min_avg": 7.2, "t_max_avg": 15.2, "frost_days": 0}, {"lat": 42.2, "lon": 1.1, "rain_past_21d": 97.5, "t_min_avg": 7.2, "t_max_avg": 15.2, "frost_days": 0}, {"lat": 42.2, "lon": 1.3, "rain_past_21d": 107.5, "t_min_avg": 7.2, "t_max_avg": 15.2, "frost_days": 0}, {"lat": 42.2, "lon": 1.5, "rain_past_21d": 87.5, "t_min_avg": 7.2, "t_max_avg": 15.2, "frost_days": 0}, {"lat": 42.2, "lon": 1.7, "rain_past_21d": 97.5, "t_min_avg": 7.2, "t_max_avg": 15.2, "frost_days": 0}, {"lat": 42.2, "lon": 1.9, "rain_past_21d": 107.5, "t_min_avg": 7.2, "t_max_avg": 15.2, "frost_days": 0}, {"lat": 42.2, "lon": 2.1, "rain_past_21d": 87.5, "t_min_avg": 7.2, "t_max_avg": 15.2, "frost_days": 0}, {"lat": 42.2, "lon": 2.3, "rain_past_21d": 97.5, "t_min_avg": 7.2, "t_max_avg": 15.2, "frost_days": 0}, {"lat": 42.2, "lon": 2.5, "rain_past_21d": 107.5, "t_min_avg": 7.2, "t_max_avg": 15.2, "frost_days": 0}, {"lat": 42.2, "lon": 2.7, "rain_past_21d": 87.5, "t_min_avg": 7.2, "t_max_avg": 15.2, "frost_days": 0}, {"lat": 42.2, "lon": 2.9, "rain_past_21d": 97.5, "t_min_avg": 7.2, "t_max_avg": 15.2, "frost_days": 0}, {"lat": 42.4, "lon": 0.3, "rain_past_21d": 92.5, "t_min_avg": 6.4, "t_max_avg": 14.4, "frost_days": 1}, {"lat": 42.4, "lon": 0.5, "rain_past_21d": 102.5, "t_min_avg": 6.4, "t_max_avg": 14.4, "frost_days": 1}, {"lat": 42.4, "lon": 0.7, "rain_past_21d": 112.5, "t_min_avg": 6.4, "t_max_avg": 14.4, "frost_days": 1}, {"lat": 42.4, "lon": 0.9, "rain_past_21d": 92.5, "t_min_avg": 6.4, "t_max_avg": 14.4, "frost_days": 1}, {"lat": 42.4, "lon": 1.1, "rain_past_21d": 102.5, "t_min_avg": 6.4, "t_max_avg": 14.4, "frost_days": 1}, {"lat": 42.4, "lon": 1.3, "rain_past_21d": 112.5, "t_min_avg": 6.4, "t_max_avg": 14.4, "frost_days": 1}, {"lat": 42.4, "lon": 1.5, "rain_past_21d": 92.5, "t_min_avg": 6.4, "t_max_avg": 14.4, "frost_days": 1}, {"lat": 42.4, "lon": 1.7, "rain_past_21d": 102.5, "t_min_avg": 6.4, "t_max_avg": 14.4, "frost_days": 1}, {"lat": 42.4, "lon": 1.9, "rain_past_21d": 112.5, "t_min_avg": 6.4, "t_max_avg": 14.4, "frost_days": 1}, {"lat": 42.4, "lon": 2.1, "rain_past_21d": 92.5, "t_min_avg": 6.4, "t_max_avg": 14.4, "frost_days": 1}, {"lat": 42.4, "lon": 2.3, "rain_past_21d": 102.5, "t_min_avg": 6.4, "t_max_avg": 14.4, "frost_days": 1}, {"lat": 42.4, "lon": 2.5, "rain_past_21d": 112.5, "t_min_avg": 6.4, "t_max_avg": 14.4, "frost_days": 1}, {"lat": 42.4, "lon": 2.7, "rain_past_21d": 92.5, "t_min_avg": 6.4, "t_max_avg": 14.4, "frost_days": 1}, {"lat": 42.4, "lon": 2.9, "rain_past_21d": 102.5, "t_min_avg": 6.4, "t_max_avg": 14.4, "frost_days": 1}, {"lat": 42.6, "lon": 0.3, "rain_past_21d": 97.5, "t_min_avg": 5.6, "t_max_avg": 13.6, "frost_days": 1}, {"lat": 42.6, "lon": 0.5, "rain_past_21d": 107.5, "t_min_avg": 5.6, "t_max_avg": 13.6, "frost_days": 1}, {"lat": 42.6, "lon": 0.7, "rain_past_21d": 117.5, "t_min_avg": 5.6, "t_max_avg": 13.6, "frost_days": 1}, {"lat": 42.6, "lon": 0.9, "rain_past_21d": 97.5, "t_min_avg": 5.6, "t_max_avg": 13.6, "frost_days": 1}, {"lat": 42.6, "lon": 1.1, "rain_past_21d": 107.5, "t_min_avg": 5.6, "t_max_avg": 13.6, "frost_days": 1}, {"lat": 42.6, "lon": 1.3, "rain_past_21d": 117.5, "t_min_avg": 5.6, "t_max_avg": 13.6, "frost_days": 1}, {"lat": 42.6, "lon": 1.5, "rain_past_21d": 97.5, "t_min_avg": 5.6, "t_max_avg": 13.6, "frost_days": 1}, {"lat": 42.6, "lon": 1.7, "rain_past_21d": 107.5, "t_min_avg": 5.6, "t_max_avg": 13.6, "frost_days": 1}, {"lat": 42.6, "lon": 1.9, "rain_past_21d": 117.5, "t_min_avg": 5.6, "t_max_avg": 13.6, "frost_days": 1}, {"lat": 42.6, "lon": 2.1, "rain_past_21d": 97.5, "t_min_avg": 5.6, "t_max_avg": 13.6, "frost_days": 1}, {"lat": 42.6, "lon": 2.3, "rain_past_21d": 107.5, "t_min_avg": 5.6, "t_max_avg": 13.6, "frost_days": 1}, {"lat": 42.6, "lon": 2.5, "rain_past_21d": 117.5, "t_min_avg": 5.6, "t_max_avg": 13.6, "frost_days": 1}, {"lat": 42.6, "lon": 2.7, "rain_past_21d": 97.5, "t_min_avg": 5.6, "t_max_avg": 13.6, "frost_days": 1}, {"lat": 42.6, "lon": 2.9, "rain_past_21d": 107.5, "t_min_avg": 5.6, "t_max_avg": 13.6, "frost_days": 1}, {"lat": 42.8, "lon": 0.3, "rain_past_21d": 102.5, "t_min_avg": 4.8, "t_max_avg": 12.8, "frost_days": 1}, {"lat": 42.8, "lon": 0.5, "rain_past_21d": 112.5, "t_min_avg": 4.8, "t_max_avg": 12.8, "frost_days": 1}, {"lat": 42.8, "lon": 0.7, "rain_past_21d": 122.5, "t_min_avg": 4.8, "t_max_avg": 12.8, "frost_days": 1}, {"lat": 42.8, "lon": 0.9, "rain_past_21d": 102.5, "t_min_avg": 4.8, "t_max_avg": 12.8, "frost_days": 1}, {"lat": 42.8, "lon": 1.1, "rain_past_21d": 112.5, "t_min_avg": 4.8, "t_max_avg": 12.8, "frost_days": 1}, {"lat": 42.8, "lon": 1.3, "rain_past_21d": 122.5, "t_min_avg": 4.8, "t_max_avg": 12.8, "frost_days": 1}, {"lat": 42.8, "lon": 1.5, "rain_past_21d": 102.5, "t_min_avg": 4.8, "t_max_avg": 12.8, "frost_days": 1}, {"lat": 42.8, "lon": 1.7, "rain_past_21d": 112.5, "t_min_avg": 4.8, "t_max_avg": 12.8, "frost_days": 1}, {"lat": 42.8, "lon": 1.9, "rain_past_21d": 122.5, "t_min_avg": 4.8, "t_max_avg": 12.8, "frost_days": 1}, {"lat": 42.8, "lon": 2.1, "rain_past_21d": 102.5, "t_min_avg": 4.8, "t_max_avg": 12.8, "frost_days": 1}, {"lat": 42.8, "lon": 2.3, "rain_past_21d": 112.5, "t_min_avg": 4.8, "t_max_avg": 12.8, "frost_days": 1}, {"lat": 42.8, "lon": 2.5, "rain_past_21d": 122.5, "t_min_avg": 4.8, "t_max_avg": 12.8, "frost_days": 1}, {"lat": 42.8, "lon": 2.7, "rain_past_21d": 102.5, "t_min_avg": 4.8, "t_max_avg": 12.8, "frost_days": 1}, {"lat": 42.8, "lon": 2.9, "rain_past_21d": 112.5, "t_min_avg": 4.8, "t_max_avg": 12.8, "frost_days": 1}]}
+{
+  "timestamp": "2026-11-05T09:24:29.330787",
+  "data": [
+    {
+      "lat": 40.47102,
+      "lon": 0.17269766,
+      "rain_past_21d": 58.4,
+      "t_min_avg": 10.9,
+      "t_max_avg": 19.3,
+      "frost_days": 0
+    },
+    {
+      "lat": 40.529446,
+      "lon": 0.403273,
+      "rain_past_21d": 52.4,
+      "t_min_avg": 12.3,
+      "t_max_avg": 20.8,
+      "frost_days": 0
+    },
+    {
+      "lat": 40.52904,
+      "lon": 0.51849145,
+      "rain_past_21d": 45.6,
+      "t_min_avg": 15.1,
+      "t_max_avg": 21.0,
+      "frost_days": 0
+    },
+    {
+      "lat": 40.52721,
+      "lon": 0.8641334,
+      "rain_past_21d": 130.1,
+      "t_min_avg": 18.2,
+      "t_max_avg": 21.1,
+      "frost_days": 0
+    },
+    {
+      "lat": 40.548306,
+      "lon": 1.1529646,
+      "rain_past_21d": 205.4,
+      "t_min_avg": 18.8,
+      "t_max_avg": 21.2,
+      "frost_days": 0
+    },
+    {
+      "lat": 40.522133,
+      "lon": 1.4401352,
+      "rain_past_21d": 189.0,
+      "t_min_avg": 19.0,
+      "t_max_avg": 21.3,
+      "frost_days": 0
+    },
+    {
+      "lat": 40.51939,
+      "lon": 1.6705022,
+      "rain_past_21d": 146.0,
+      "t_min_avg": 19.2,
+      "t_max_avg": 21.3,
+      "frost_days": 0
+    },
+    {
+      "lat": 40.51624,
+      "lon": 1.9008449,
+      "rain_past_21d": 132.9,
+      "t_min_avg": 19.3,
+      "t_max_avg": 21.3,
+      "frost_days": 0
+    },
+    {
+      "lat": 40.512688,
+      "lon": 2.13116,
+      "rain_past_21d": 106.7,
+      "t_min_avg": 19.4,
+      "t_max_avg": 21.4,
+      "frost_days": 0
+    },
+    {
+      "lat": 40.508728,
+      "lon": 2.3614442,
+      "rain_past_21d": 80.5,
+      "t_min_avg": 19.3,
+      "t_max_avg": 21.4,
+      "frost_days": 0
+    },
+    {
+      "lat": 40.52649,
+      "lon": 2.6511297,
+      "rain_past_21d": 78.9,
+      "t_min_avg": 18.9,
+      "t_max_avg": 21.1,
+      "frost_days": 0
+    },
+    {
+      "lat": 40.52161,
+      "lon": 2.8814952,
+      "rain_past_21d": 65.5,
+      "t_min_avg": 18.7,
+      "t_max_avg": 20.9,
+      "frost_days": 0
+    },
+    {
+      "lat": 40.491673,
+      "lon": 3.167147,
+      "rain_past_21d": 55.7,
+      "t_min_avg": 18.7,
+      "t_max_avg": 20.9,
+      "frost_days": 0
+    },
+    {
+      "lat": 40.717804,
+      "lon": 0.11564891,
+      "rain_past_21d": 48.0,
+      "t_min_avg": 8.0,
+      "t_max_avg": 15.3,
+      "frost_days": 0
+    },
+    {
+      "lat": 40.693874,
+      "lon": 0.40447885,
+      "rain_past_21d": 45.2,
+      "t_min_avg": 12.5,
+      "t_max_avg": 20.3,
+      "frost_days": 0
+    },
+    {
+      "lat": 40.774853,
+      "lon": 0.6944229,
+      "rain_past_21d": 41.6,
+      "t_min_avg": 13.8,
+      "t_max_avg": 21.7,
+      "frost_days": 0
+    },
+    {
+      "lat": 40.71535,
+      "lon": 0.8095187,
+      "rain_past_21d": 67.8,
+      "t_min_avg": 14.7,
+      "t_max_avg": 21.3,
+      "frost_days": 0
+    },
+    {
+      "lat": 40.771572,
+      "lon": 1.1573263,
+      "rain_past_21d": 177.9,
+      "t_min_avg": 18.3,
+      "t_max_avg": 21.0,
+      "frost_days": 0
+    },
+    {
+      "lat": 40.769318,
+      "lon": 1.3887544,
+      "rain_past_21d": 189.8,
+      "t_min_avg": 18.8,
+      "t_max_avg": 21.2,
+      "frost_days": 0
+    },
+    {
+      "lat": 40.76666,
+      "lon": 1.6201622,
+      "rain_past_21d": 154.1,
+      "t_min_avg": 18.9,
+      "t_max_avg": 21.3,
+      "frost_days": 0
+    },
+    {
+      "lat": 40.786102,
+      "lon": 1.9107614,
+      "rain_past_21d": 122.8,
+      "t_min_avg": 19.0,
+      "t_max_avg": 21.4,
+      "frost_days": 0
+    },
+    {
+      "lat": 40.782513,
+      "lon": 2.1422775,
+      "rain_past_21d": 102.5,
+      "t_min_avg": 19.0,
+      "t_max_avg": 21.4,
+      "frost_days": 0
+    },
+    {
+      "lat": 40.754112,
+      "lon": 2.4298804,
+      "rain_past_21d": 84.7,
+      "t_min_avg": 18.9,
+      "t_max_avg": 21.4,
+      "frost_days": 0
+    },
+    {
+      "lat": 40.749607,
+      "lon": 2.661155,
+      "rain_past_21d": 71.6,
+      "t_min_avg": 18.6,
+      "t_max_avg": 21.0,
+      "frost_days": 0
+    },
+    {
+      "lat": 40.744694,
+      "lon": 2.892391,
+      "rain_past_21d": 64.1,
+      "t_min_avg": 18.4,
+      "t_max_avg": 20.6,
+      "frost_days": 0
+    },
+    {
+      "lat": 40.73937,
+      "lon": 3.1235845,
+      "rain_past_21d": 67.3,
+      "t_min_avg": 18.4,
+      "t_max_avg": 20.5,
+      "frost_days": 0
+    },
+    {
+      "lat": 41.023064,
+      "lon": 0.17439713,
+      "rain_past_21d": 26.3,
+      "t_min_avg": 9.4,
+      "t_max_avg": 18.6,
+      "frost_days": 0
+    },
+    {
+      "lat": 41.02255,
+      "lon": 0.40692407,
+      "rain_past_21d": 49.2,
+      "t_min_avg": 10.6,
+      "t_max_avg": 19.0,
+      "frost_days": 0
+    },
+    {
+      "lat": 41.02162,
+      "lon": 0.639445,
+      "rain_past_21d": 41.1,
+      "t_min_avg": 10.8,
+      "t_max_avg": 21.0,
+      "frost_days": 0
+    },
+    {
+      "lat": 40.96154,
+      "lon": 0.8712696,
+      "rain_past_21d": 63.0,
+      "t_min_avg": 14.7,
+      "t_max_avg": 19.9,
+      "frost_days": 0
+    },
+    {
+      "lat": 41.100132,
+      "lon": 1.164344,
+      "rain_past_21d": 78.2,
+      "t_min_avg": 13.0,
+      "t_max_avg": 21.3,
+      "frost_days": 0
+    },
+    {
+      "lat": 41.039158,
+      "lon": 1.3960724,
+      "rain_past_21d": 182.8,
+      "t_min_avg": 18.0,
+      "t_max_avg": 21.2,
+      "frost_days": 0
+    },
+    {
+      "lat": 41.01232,
+      "lon": 1.6856233,
+      "rain_past_21d": 144.6,
+      "t_min_avg": 18.5,
+      "t_max_avg": 21.4,
+      "frost_days": 0
+    },
+    {
+      "lat": 41.00912,
+      "lon": 1.9180503,
+      "rain_past_21d": 113.8,
+      "t_min_avg": 18.6,
+      "t_max_avg": 21.3,
+      "frost_days": 0
+    },
+    {
+      "lat": 41.00551,
+      "lon": 2.150449,
+      "rain_past_21d": 92.7,
+      "t_min_avg": 18.6,
+      "t_max_avg": 21.3,
+      "frost_days": 0
+    },
+    {
+      "lat": 41.00148,
+      "lon": 2.3828158,
+      "rain_past_21d": 85.3,
+      "t_min_avg": 18.5,
+      "t_max_avg": 21.2,
+      "frost_days": 0
+    },
+    {
+      "lat": 40.997036,
+      "lon": 2.615148,
+      "rain_past_21d": 73.7,
+      "t_min_avg": 18.3,
+      "t_max_avg": 20.9,
+      "frost_days": 0
+    },
+    {
+      "lat": 41.014282,
+      "lon": 2.9076266,
+      "rain_past_21d": 53.1,
+      "t_min_avg": 18.1,
+      "t_max_avg": 20.4,
+      "frost_days": 0
+    },
+    {
+      "lat": 41.0089,
+      "lon": 3.1400366,
+      "rain_past_21d": 63.2,
+      "t_min_avg": 18.0,
+      "t_max_avg": 20.2,
+      "frost_days": 0
+    },
+    {
+      "lat": 41.269478,
+      "lon": 0.11679724,
+      "rain_past_21d": 23.3,
+      "t_min_avg": 10.6,
+      "t_max_avg": 19.5,
+      "frost_days": 0
+    },
+    {
+      "lat": 41.269062,
+      "lon": 0.35039,
+      "rain_past_21d": 42.9,
+      "t_min_avg": 10.9,
+      "t_max_avg": 19.7,
+      "frost_days": 0
+    },
+    {
+      "lat": 41.291424,
+      "lon": 0.6428477,
+      "rain_past_21d": 44.2,
+      "t_min_avg": 11.0,
+      "t_max_avg": 19.4,
+      "frost_days": 0
+    },
+    {
+      "lat": 41.18451,
+      "lon": 0.87461233,
+      "rain_past_21d": 64.3,
+      "t_min_avg": 10.7,
+      "t_max_avg": 17.8,
+      "frost_days": 0
+    },
+    {
+      "lat": 41.26432,
+      "lon": 1.1679009,
+      "rain_past_21d": 89.7,
+      "t_min_avg": 12.2,
+      "t_max_avg": 19.4,
+      "frost_days": 0
+    },
+    {
+      "lat": 41.262028,
+      "lon": 1.4014431,
+      "rain_past_21d": 123.7,
+      "t_min_avg": 12.2,
+      "t_max_avg": 19.3,
+      "frost_days": 0
+    },
+    {
+      "lat": 41.25932,
+      "lon": 1.6349645,
+      "rain_past_21d": 86.7,
+      "t_min_avg": 12.1,
+      "t_max_avg": 20.4,
+      "frost_days": 0
+    },
+    {
+      "lat": 41.256195,
+      "lon": 1.8684617,
+      "rain_past_21d": 81.2,
+      "t_min_avg": 15.7,
+      "t_max_avg": 21.0,
+      "frost_days": 0
+    },
+    {
+      "lat": 41.277027,
+      "lon": 2.0450761,
+      "rain_past_21d": 74.3,
+      "t_min_avg": 14.9,
+      "t_max_avg": 21.1,
+      "frost_days": 0
+    },
+    {
+      "lat": 41.27108,
+      "lon": 2.3954918,
+      "rain_past_21d": 69.8,
+      "t_min_avg": 17.9,
+      "t_max_avg": 20.7,
+      "frost_days": 0
+    },
+    {
+      "lat": 41.266594,
+      "lon": 2.6290588,
+      "rain_past_21d": 63.4,
+      "t_min_avg": 17.8,
+      "t_max_avg": 20.5,
+      "frost_days": 0
+    },
+    {
+      "lat": 41.236977,
+      "lon": 2.9188073,
+      "rain_past_21d": 50.7,
+      "t_min_avg": 17.7,
+      "t_max_avg": 20.1,
+      "frost_days": 0
+    },
+    {
+      "lat": 41.23156,
+      "lon": 3.1521096,
+      "rain_past_21d": 41.8,
+      "t_min_avg": 17.7,
+      "t_max_avg": 20.0,
+      "frost_days": 0
+    },
+    {
+      "lat": 41.515617,
+      "lon": 0.1760052,
+      "rain_past_21d": 31.6,
+      "t_min_avg": 10.1,
+      "t_max_avg": 19.4,
+      "frost_days": 0
+    },
+    {
+      "lat": 41.51509,
+      "lon": 0.41067633,
+      "rain_past_21d": 42.6,
+      "t_min_avg": 9.8,
+      "t_max_avg": 20.1,
+      "frost_days": 0
+    },
+    {
+      "lat": 41.514145,
+      "lon": 0.64534134,
+      "rain_past_21d": 51.1,
+      "t_min_avg": 10.8,
+      "t_max_avg": 19.4,
+      "frost_days": 0
+    },
+    {
+      "lat": 41.51278,
+      "lon": 0.87999666,
+      "rain_past_21d": 54.0,
+      "t_min_avg": 10.5,
+      "t_max_avg": 18.6,
+      "frost_days": 0
+    },
+    {
+      "lat": 41.51099,
+      "lon": 1.1146389,
+      "rain_past_21d": 72.3,
+      "t_min_avg": 9.4,
+      "t_max_avg": 16.4,
+      "frost_days": 0
+    },
+    {
+      "lat": 41.531685,
+      "lon": 1.4089714,
+      "rain_past_21d": 81.9,
+      "t_min_avg": 9.1,
+      "t_max_avg": 16.6,
+      "frost_days": 0
+    },
+    {
+      "lat": 41.52895,
+      "lon": 1.6437469,
+      "rain_past_21d": 80.2,
+      "t_min_avg": 9.4,
+      "t_max_avg": 18.2,
+      "frost_days": 0
+    },
+    {
+      "lat": 41.50143,
+      "lon": 1.9357332,
+      "rain_past_21d": 56.7,
+      "t_min_avg": 11.7,
+      "t_max_avg": 21.1,
+      "frost_days": 0
+    },
+    {
+      "lat": 41.497753,
+      "lon": 2.170273,
+      "rain_past_21d": 61.3,
+      "t_min_avg": 12.0,
+      "t_max_avg": 20.8,
+      "frost_days": 0
+    },
+    {
+      "lat": 41.51821,
+      "lon": 2.3479118,
+      "rain_past_21d": 63.3,
+      "t_min_avg": 13.4,
+      "t_max_avg": 20.2,
+      "frost_days": 0
+    },
+    {
+      "lat": 41.489136,
+      "lon": 2.6392527,
+      "rain_past_21d": 50.5,
+      "t_min_avg": 16.7,
+      "t_max_avg": 19.4,
+      "frost_days": 0
+    },
+    {
+      "lat": 41.4842,
+      "lon": 2.8736854,
+      "rain_past_21d": 42.1,
+      "t_min_avg": 16.9,
+      "t_max_avg": 19.4,
+      "frost_days": 0
+    },
+    {
+      "lat": 41.500904,
+      "lon": 3.1690335,
+      "rain_past_21d": 41.4,
+      "t_min_avg": 17.2,
+      "t_max_avg": 19.6,
+      "frost_days": 0
+    },
+    {
+      "lat": 41.761738,
+      "lon": 0.11788392,
+      "rain_past_21d": 30.8,
+      "t_min_avg": 9.2,
+      "t_max_avg": 19.4,
+      "frost_days": 0
+    },
+    {
+      "lat": 41.784725,
+      "lon": 0.41290343,
+      "rain_past_21d": 37.1,
+      "t_min_avg": 9.5,
+      "t_max_avg": 19.4,
+      "frost_days": 0
+    },
+    {
+      "lat": 41.78377,
+      "lon": 0.64884084,
+      "rain_past_21d": 70.6,
+      "t_min_avg": 10.4,
+      "t_max_avg": 19.2,
+      "frost_days": 0
+    },
+    {
+      "lat": 41.7584,
+      "lon": 0.9430341,
+      "rain_past_21d": 79.5,
+      "t_min_avg": 9.8,
+      "t_max_avg": 18.9,
+      "frost_days": 0
+    },
+    {
+      "lat": 41.756493,
+      "lon": 1.1787661,
+      "rain_past_21d": 70.1,
+      "t_min_avg": 10.0,
+      "t_max_avg": 18.2,
+      "frost_days": 0
+    },
+    {
+      "lat": 41.754158,
+      "lon": 1.4144804,
+      "rain_past_21d": 75.4,
+      "t_min_avg": 8.8,
+      "t_max_avg": 16.5,
+      "frost_days": 0
+    },
+    {
+      "lat": 41.751404,
+      "lon": 1.6501735,
+      "rain_past_21d": 67.4,
+      "t_min_avg": 9.2,
+      "t_max_avg": 17.1,
+      "frost_days": 0
+    },
+    {
+      "lat": 41.748226,
+      "lon": 1.8858418,
+      "rain_past_21d": 66.2,
+      "t_min_avg": 10.1,
+      "t_max_avg": 20.1,
+      "frost_days": 0
+    },
+    {
+      "lat": 41.744617,
+      "lon": 2.1214817,
+      "rain_past_21d": 82.6,
+      "t_min_avg": 8.6,
+      "t_max_avg": 15.7,
+      "frost_days": 0
+    },
+    {
+      "lat": 41.682182,
+      "lon": 2.3552043,
+      "rain_past_21d": 89.5,
+      "t_min_avg": 11.3,
+      "t_max_avg": 18.0,
+      "frost_days": 0
+    },
+    {
+      "lat": 41.758503,
+      "lon": 2.6535578,
+      "rain_past_21d": 48.4,
+      "t_min_avg": 11.1,
+      "t_max_avg": 19.5,
+      "frost_days": 0
+    },
+    {
+      "lat": 41.753513,
+      "lon": 2.8892596,
+      "rain_past_21d": 51.7,
+      "t_min_avg": 11.7,
+      "t_max_avg": 18.7,
+      "frost_days": 0
+    },
+    {
+      "lat": 41.831394,
+      "lon": 3.0707984,
+      "rain_past_21d": 39.3,
+      "t_min_avg": 12.8,
+      "t_max_avg": 19.1,
+      "frost_days": 0
+    },
+    {
+      "lat": 42.007584,
+      "lon": 0.17765728,
+      "rain_past_21d": 52.5,
+      "t_min_avg": 8.9,
+      "t_max_avg": 18.5,
+      "frost_days": 0
+    },
+    {
+      "lat": 42.00705,
+      "lon": 0.41453093,
+      "rain_past_21d": 56.2,
+      "t_min_avg": 9.2,
+      "t_max_avg": 16.9,
+      "frost_days": 0
+    },
+    {
+      "lat": 42.006084,
+      "lon": 0.65139836,
+      "rain_past_21d": 62.6,
+      "t_min_avg": 8.9,
+      "t_max_avg": 16.9,
+      "frost_days": 0
+    },
+    {
+      "lat": 42.004696,
+      "lon": 0.88825583,
+      "rain_past_21d": 93.1,
+      "t_min_avg": 9.4,
+      "t_max_avg": 17.1,
+      "frost_days": 0
+    },
+    {
+      "lat": 42.002876,
+      "lon": 1.1250999,
+      "rain_past_21d": 92.4,
+      "t_min_avg": 8.8,
+      "t_max_avg": 16.8,
+      "frost_days": 0
+    },
+    {
+      "lat": 42.000633,
+      "lon": 1.361927,
+      "rain_past_21d": 77.1,
+      "t_min_avg": 7.4,
+      "t_max_avg": 16.3,
+      "frost_days": 0
+    },
+    {
+      "lat": 41.99796,
+      "lon": 1.5987334,
+      "rain_past_21d": 73.8,
+      "t_min_avg": 8.7,
+      "t_max_avg": 18.0,
+      "frost_days": 0
+    },
+    {
+      "lat": 42.01763,
+      "lon": 1.8961592,
+      "rain_past_21d": 62.6,
+      "t_min_avg": 8.6,
+      "t_max_avg": 18.1,
+      "frost_days": 0
+    },
+    {
+      "lat": 42.013992,
+      "lon": 2.1330876,
+      "rain_past_21d": 67.8,
+      "t_min_avg": 8.1,
+      "t_max_avg": 15.7,
+      "frost_days": 0
+    },
+    {
+      "lat": 42.009922,
+      "lon": 2.3699837,
+      "rain_past_21d": 50.5,
+      "t_min_avg": 8.3,
+      "t_max_avg": 16.7,
+      "frost_days": 0
+    },
+    {
+      "lat": 41.980637,
+      "lon": 2.6640117,
+      "rain_past_21d": 33.4,
+      "t_min_avg": 9.6,
+      "t_max_avg": 18.3,
+      "frost_days": 0
+    },
+    {
+      "lat": 41.975613,
+      "lon": 2.9006412,
+      "rain_past_21d": 45.0,
+      "t_min_avg": 10.4,
+      "t_max_avg": 18.0,
+      "frost_days": 0
+    },
+    {
+      "lat": 41.97016,
+      "lon": 3.1372268,
+      "rain_past_21d": 41.1,
+      "t_min_avg": 11.3,
+      "t_max_avg": 19.1,
+      "frost_days": 0
+    },
+    {
+      "lat": 42.25,
+      "lon": 0.14999962,
+      "rain_past_21d": 35.9,
+      "t_min_avg": 7.8,
+      "t_max_avg": 15.6,
+      "frost_days": 0
+    },
+    {
+      "lat": 42.25,
+      "lon": 0.39999962,
+      "rain_past_21d": 43.6,
+      "t_min_avg": 7.2,
+      "t_max_avg": 18.0,
+      "frost_days": 0
+    },
+    {
+      "lat": 42.25,
+      "lon": 0.6499996,
+      "rain_past_21d": 68.8,
+      "t_min_avg": 6.1,
+      "t_max_avg": 15.6,
+      "frost_days": 0
+    },
+    {
+      "lat": 42.25,
+      "lon": 0.8999996,
+      "rain_past_21d": 58.2,
+      "t_min_avg": 6.1,
+      "t_max_avg": 15.9,
+      "frost_days": 0
+    },
+    {
+      "lat": 42.25,
+      "lon": 1.1499996,
+      "rain_past_21d": 82.9,
+      "t_min_avg": 3.2,
+      "t_max_avg": 10.6,
+      "frost_days": 2
+    },
+    {
+      "lat": 42.25,
+      "lon": 1.3999996,
+      "rain_past_21d": 58.1,
+      "t_min_avg": 5.3,
+      "t_max_avg": 13.6,
+      "frost_days": 0
+    },
+    {
+      "lat": 42.25,
+      "lon": 1.6499996,
+      "rain_past_21d": 97.4,
+      "t_min_avg": 3.6,
+      "t_max_avg": 12.5,
+      "frost_days": 3
+    },
+    {
+      "lat": 42.25,
+      "lon": 1.8999996,
+      "rain_past_21d": 95.3,
+      "t_min_avg": 5.4,
+      "t_max_avg": 15.5,
+      "frost_days": 0
+    },
+    {
+      "lat": 42.25,
+      "lon": 2.1499996,
+      "rain_past_21d": 102.7,
+      "t_min_avg": 5.7,
+      "t_max_avg": 14.0,
+      "frost_days": 0
+    },
+    {
+      "lat": 42.239998,
+      "lon": 2.3899994,
+      "rain_past_21d": 85.8,
+      "t_min_avg": 9.6,
+      "t_max_avg": 16.9,
+      "frost_days": 0
+    },
+    {
+      "lat": 42.25,
+      "lon": 2.6499996,
+      "rain_past_21d": 39.6,
+      "t_min_avg": 10.9,
+      "t_max_avg": 18.4,
+      "frost_days": 0
+    },
+    {
+      "lat": 42.25,
+      "lon": 2.8999996,
+      "rain_past_21d": 27.5,
+      "t_min_avg": 11.2,
+      "t_max_avg": 20.8,
+      "frost_days": 0
+    },
+    {
+      "lat": 42.25,
+      "lon": 3.1399994,
+      "rain_past_21d": 32.4,
+      "t_min_avg": 12.1,
+      "t_max_avg": 20.3,
+      "frost_days": 0
+    },
+    {
+      "lat": 42.5,
+      "lon": 0.14999962,
+      "rain_past_21d": 18.6,
+      "t_min_avg": 6.3,
+      "t_max_avg": 18.6,
+      "frost_days": 0
+    },
+    {
+      "lat": 42.5,
+      "lon": 0.39999962,
+      "rain_past_21d": 30.1,
+      "t_min_avg": 6.6,
+      "t_max_avg": 16.2,
+      "frost_days": 0
+    },
+    {
+      "lat": 42.5,
+      "lon": 0.6499996,
+      "rain_past_21d": 43.9,
+      "t_min_avg": 5.7,
+      "t_max_avg": 15.0,
+      "frost_days": 0
+    },
+    {
+      "lat": 42.5,
+      "lon": 0.8999996,
+      "rain_past_21d": 69.9,
+      "t_min_avg": 2.7,
+      "t_max_avg": 8.6,
+      "frost_days": 4
+    },
+    {
+      "lat": 42.5,
+      "lon": 1.1499996,
+      "rain_past_21d": 35.4,
+      "t_min_avg": 5.3,
+      "t_max_avg": 14.4,
+      "frost_days": 0
+    },
+    {
+      "lat": 42.5,
+      "lon": 1.3999996,
+      "rain_past_21d": 54.7,
+      "t_min_avg": 0.3,
+      "t_max_avg": 7.5,
+      "frost_days": 8
+    },
+    {
+      "lat": 42.5,
+      "lon": 1.6499996,
+      "rain_past_21d": 75.3,
+      "t_min_avg": -1.7,
+      "t_max_avg": 5.5,
+      "frost_days": 13
+    },
+    {
+      "lat": 42.5,
+      "lon": 1.8999996,
+      "rain_past_21d": 49.9,
+      "t_min_avg": 2.6,
+      "t_max_avg": 10.9,
+      "frost_days": 3
+    },
+    {
+      "lat": 42.5,
+      "lon": 2.1499996,
+      "rain_past_21d": 41.6,
+      "t_min_avg": 5.0,
+      "t_max_avg": 14.1,
+      "frost_days": 1
+    },
+    {
+      "lat": 42.5,
+      "lon": 2.3899994,
+      "rain_past_21d": 57.7,
+      "t_min_avg": 3.5,
+      "t_max_avg": 10.5,
+      "frost_days": 2
+    },
+    {
+      "lat": 42.5,
+      "lon": 2.6499996,
+      "rain_past_21d": 36.3,
+      "t_min_avg": 9.2,
+      "t_max_avg": 17.3,
+      "frost_days": 0
+    },
+    {
+      "lat": 42.5,
+      "lon": 2.8999996,
+      "rain_past_21d": 29.5,
+      "t_min_avg": 9.0,
+      "t_max_avg": 15.4,
+      "frost_days": 0
+    },
+    {
+      "lat": 42.5,
+      "lon": 3.1499996,
+      "rain_past_21d": 36.3,
+      "t_min_avg": 15.3,
+      "t_max_avg": 19.1,
+      "frost_days": 0
+    },
+    {
+      "lat": 42.75,
+      "lon": 0.14999962,
+      "rain_past_21d": 24.5,
+      "t_min_avg": 0.5,
+      "t_max_avg": 7.6,
+      "frost_days": 10
+    },
+    {
+      "lat": 42.739998,
+      "lon": 0.3899994,
+      "rain_past_21d": 47.1,
+      "t_min_avg": 1.2,
+      "t_max_avg": 8.5,
+      "frost_days": 8
+    },
+    {
+      "lat": 42.75,
+      "lon": 0.6499996,
+      "rain_past_21d": 20.3,
+      "t_min_avg": 2.1,
+      "t_max_avg": 9.2,
+      "frost_days": 7
+    },
+    {
+      "lat": 42.75,
+      "lon": 0.8999996,
+      "rain_past_21d": 20.6,
+      "t_min_avg": 1.2,
+      "t_max_avg": 10.2,
+      "frost_days": 9
+    },
+    {
+      "lat": 42.75,
+      "lon": 1.1499996,
+      "rain_past_21d": 61.5,
+      "t_min_avg": 0.4,
+      "t_max_avg": 7.7,
+      "frost_days": 9
+    },
+    {
+      "lat": 42.75,
+      "lon": 1.3999996,
+      "rain_past_21d": 50.7,
+      "t_min_avg": 1.8,
+      "t_max_avg": 7.6,
+      "frost_days": 8
+    },
+    {
+      "lat": 42.75,
+      "lon": 1.6499996,
+      "rain_past_21d": 26.4,
+      "t_min_avg": 4.1,
+      "t_max_avg": 12.2,
+      "frost_days": 3
+    },
+    {
+      "lat": 42.75,
+      "lon": 1.8999996,
+      "rain_past_21d": 22.3,
+      "t_min_avg": 3.5,
+      "t_max_avg": 12.6,
+      "frost_days": 3
+    },
+    {
+      "lat": 42.75,
+      "lon": 2.1499996,
+      "rain_past_21d": 18.7,
+      "t_min_avg": 3.3,
+      "t_max_avg": 11.4,
+      "frost_days": 3
+    },
+    {
+      "lat": 42.75,
+      "lon": 2.3999996,
+      "rain_past_21d": 14.8,
+      "t_min_avg": 6.1,
+      "t_max_avg": 13.0,
+      "frost_days": 0
+    },
+    {
+      "lat": 42.75,
+      "lon": 2.6499996,
+      "rain_past_21d": 17.4,
+      "t_min_avg": 11.4,
+      "t_max_avg": 18.4,
+      "frost_days": 0
+    },
+    {
+      "lat": 42.75,
+      "lon": 2.8999996,
+      "rain_past_21d": 18.8,
+      "t_min_avg": 11.6,
+      "t_max_avg": 19.4,
+      "frost_days": 0
+    },
+    {
+      "lat": 42.75,
+      "lon": 3.1499996,
+      "rain_past_21d": 37.7,
+      "t_min_avg": 15.2,
+      "t_max_avg": 18.7,
+      "frost_days": 0
+    }
+  ]
+}

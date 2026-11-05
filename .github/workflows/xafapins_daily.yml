@@ -1,0 +1,50 @@
+name: Xafapins Daily Forecast & Telegram Alert
+
+on:
+  schedule:
+    # Ejecución automática a las 06:00 UTC (07:00 / 08:00 hora peninsular)
+    - cron: '0 6 * * *'
+  # Permite ejecutarlo manualmente desde la pestaña "Actions" de GitHub
+  workflow_dispatch:
+
+jobs:
+  run-pipeline:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout del repositorio
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Instalar dependencias
+        run: |
+          pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: 1. Descargar meteo fresca de Cataluña
+        run: |
+          python src/download_meteo.py --grid-step 0.15
+
+      - name: 2. Ejecutar motor predictivo
+        run: |
+          python src/predict_engine.py --species lactarius_deliciosus
+          python src/predict_engine.py --species boletus_edulis
+
+      - name: 3. Enviar informe a Telegram
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          python src/telegram_bot.py
+
+      - name: 4. Actualizar capas GeoJSON en el repositorio (Opcional)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add web/*.geojson data/meteo_catalunya_latest.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "chore(data): actualització diària de capes micològiques" && git push)

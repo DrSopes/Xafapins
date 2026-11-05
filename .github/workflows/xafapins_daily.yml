@@ -38,7 +38,7 @@ jobs:
         env:
           PYTHONUNBUFFERED: "1"
         run: |
-          python src/download_meteo.py --grid-step 0.20
+          python src/download_meteo.py --grid-step 0.05
 
       - name: 2. Ejecutar motor predictivo
         run: |

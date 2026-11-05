@@ -2,14 +2,22 @@ name: Xafapins Daily Forecast & Telegram Alert
 
 on:
   schedule:
-    # Ejecución automática a las 06:00 UTC (07:00 / 08:00 hora peninsular)
     - cron: '0 6 * * *'
-  # Permite ejecutarlo manualmente desde la pestaña "Actions" de GitHub
   workflow_dispatch:
+
+# Aquí defines los permisos que necesita GitHub Pages y el push de git:
+permissions:
+  contents: write    # Necesario para hacer el git push de los GeoJSON actualizados
+  pages: write       # Necesario para desplegar en GitHub Pages
+  id-token: write    # Necesario para que GitHub valide el despliegue de Pages
 
 jobs:
   run-pipeline:
     runs-on: ubuntu-latest
+    # También se puede poner 'environment' para trackear el despliegue de Pages
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
       - name: Checkout del repositorio
@@ -30,7 +38,7 @@ jobs:
         env:
           PYTHONUNBUFFERED: "1"
         run: |
-          python src/download_meteo.py --grid-step 0.25
+          python src/download_meteo.py --grid-step 0.20
 
       - name: 2. Ejecutar motor predictivo
         run: |
@@ -44,7 +52,7 @@ jobs:
         run: |
           python src/telegram_bot.py
 
-      - name: 4. Actualizar capas GeoJSON en el repositorio (Opcional)
+      - name: 4. Actualizar capas GeoJSON en el repositorio
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"

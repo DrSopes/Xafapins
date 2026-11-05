@@ -2,7 +2,7 @@
 <html lang="ca">
 <head>
   <meta charset="UTF-8">
-  <title>Xafapins - Visor Micològic Continu</title>
+  <title>Xafapins - Visor Micològic Continu d'Alta Resolució</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://unpkg.com/maplibre-gl@3.6.2/dist/maplibre-gl.css" rel="stylesheet" />
   <script src="https://unpkg.com/maplibre-gl@3.6.2/dist/maplibre-gl.js"></script>
@@ -12,23 +12,22 @@
     
     .panel {
       position: absolute; top: 15px; left: 15px; z-index: 10;
-      background: rgba(255, 255, 255, 0.95); padding: 16px; border-radius: 12px;
-      box-shadow: 0 4px 25px rgba(0,0,0,0.15); width: 280px;
-      backdrop-filter: blur(6px);
+      background: rgba(255, 255, 255, 0.96); padding: 16px; border-radius: 12px;
+      box-shadow: 0 4px 25px rgba(0,0,0,0.18); width: 290px;
+      backdrop-filter: blur(8px);
     }
-    .panel h2 { margin: 0 0 10px 0; font-size: 1.15rem; color: #1e293b; display: flex; align-items: center; gap: 8px; }
-    .panel label { font-size: 0.75rem; font-weight: 700; color: #64748b; display: block; margin-top: 10px; text-transform: uppercase; letter-spacing: 0.5px; }
+    .panel h2 { margin: 0 0 10px 0; font-size: 1.2rem; color: #0f172a; display: flex; align-items: center; gap: 8px; }
+    .panel label { font-size: 0.75rem; font-weight: 700; color: #64748b; display: block; margin-top: 10px; text-transform: uppercase; }
     select {
       width: 100%; padding: 8px 10px; margin-top: 4px; border: 1px solid #cbd5e1;
-      border-radius: 6px; font-size: 0.9rem; background: #fff; color: #1e293b; outline: none;
+      border-radius: 6px; font-size: 0.88rem; background: #fff; color: #1e293b; outline: none;
     }
     
     .legend-box { margin-top: 15px; border-top: 1px solid #e2e8f0; padding-top: 12px; }
     .legend-title { font-size: 0.8rem; font-weight: 600; color: #334155; margin-bottom: 6px; }
     .legend-bar { height: 12px; border-radius: 6px; margin-bottom: 4px; }
     .legend-labels { display: flex; justify-content: space-between; font-size: 0.75rem; color: #64748b; }
-    
-    .legend-item { display: flex; align-items: center; gap: 8px; font-size: 0.8rem; color: #334155; margin-bottom: 5px; }
+    .legend-item { display: flex; align-items: center; gap: 8px; font-size: 0.8rem; color: #334155; margin-bottom: 4px; }
     .legend-color { width: 14px; height: 14px; border-radius: 4px; }
   </style>
 </head>
@@ -43,13 +42,17 @@
   <select id="species-select">
     <option value="lactarius_deliciosus">Pinetell / Rovelló</option>
     <option value="boletus_edulis">Cep (Boletus edulis)</option>
+    <option value="craterellus_lutescens">Camagroc</option>
+    <option value="cantharellus_cibarius">Rossinyol</option>
+    <option value="hygrophorus_latitabundus">Llenega negra</option>
+    <option value="tricholoma_terreum">Fredolic</option>
   </select>
 
   <label for="layer-select">Capa de visualització:</label>
   <select id="layer-select">
-    <option value="heatmap">Gradient Continu de Probabilitat</option>
-    <option value="trees">Masses Forestals</option>
-    <option value="soil">Acidesa del Sòl (pH)</option>
+    <option value="heatmap_score">Gradient de Probabilitat</option>
+    <option value="heatmap_soil">Acidesa del Sòl (pH Continu)</option>
+    <option value="trees_smooth">Massa Forestal Dominant</option>
   </select>
 
   <div id="legend-container" class="legend-box"></div>
@@ -66,7 +69,7 @@
   map.addControl(new maplibregl.NavigationControl());
 
   let currentSpecies = 'lactarius_deliciosus';
-  let currentMode = 'heatmap';
+  let currentMode = 'heatmap_score';
 
   map.on('load', () => {
     loadSource();
@@ -92,97 +95,90 @@
       return;
     }
 
-    map.addSource(srcId, {
-      type: 'geojson',
-      data: geojsonUrl
-    });
+    map.addSource(srcId, { type: 'geojson', data: geojsonUrl });
 
-    // 1. CAPA GRADIENT CONTINU (HEATMAP)
+    // 1. GRADIENT CONTINU DE PROBABILITAT (HEATMAP)
     map.addLayer({
-      id: 'myco-heatmap',
+      id: 'layer-score',
       type: 'heatmap',
       source: srcId,
       paint: {
-        // Pondera segons la puntuació de probabilitat [0.0 - 1.0]
         'heatmap-weight': ['interpolate', ['linear'], ['get', 'score'], 0, 0, 1, 1],
-        'heatmap-intensity': ['interpolate', ['linear'], ['zoom'], 6, 0.8, 10, 1.8],
-        // Gradient suau i continu
+        'heatmap-intensity': ['interpolate', ['linear'], ['zoom'], 6, 0.9, 10, 2.0],
         'heatmap-color': [
-          'interpolate',
-          ['linear'],
-          ['heatmap-density'],
+          'interpolate', ['linear'], ['heatmap-density'],
           0.0, 'rgba(0,0,0,0)',
-          0.2, 'rgba(239, 68, 68, 0.35)',
-          0.45, 'rgba(245, 158, 11, 0.65)',
-          0.7, 'rgba(132, 204, 22, 0.8)',
+          0.15, 'rgba(239, 68, 68, 0.25)',
+          0.40, 'rgba(245, 158, 11, 0.60)',
+          0.65, 'rgba(132, 204, 22, 0.80)',
           1.0, 'rgba(21, 128, 61, 0.95)'
         ],
-        // Radi de difusió suau entre punts
-        'heatmap-radius': ['interpolate', ['linear'], ['zoom'], 6, 18, 9, 32, 12, 50],
-        'heatmap-opacity': 0.82
+        'heatmap-radius': ['interpolate', ['linear'], ['zoom'], 6, 14, 9, 24, 12, 42],
+        'heatmap-opacity': 0.85
       }
     });
 
-    // 2. CAPA D'ARBRES I MASSA FORESTAL
+    // 2. GRADIENT CONTINU DE SÒL (pH)
     map.addLayer({
-      id: 'myco-trees',
+      id: 'layer-soil',
+      type: 'heatmap',
+      source: srcId,
+      layout: { 'visibility': 'none' },
+      paint: {
+        'heatmap-weight': ['interpolate', ['linear'], ['get', 'ph_norm'], 0, 0.05, 1, 1],
+        'heatmap-intensity': 1.2,
+        'heatmap-color': [
+          'interpolate', ['linear'], ['heatmap-density'],
+          0.0, 'rgba(0,0,0,0)',
+          0.2, '#b45309', // Silici / Àcid (Pirineu / Montseny)
+          0.6, '#0284c7', // Calcari mitjà
+          1.0, '#0369a1'  # Calcari dur
+        ],
+        'heatmap-radius': ['interpolate', ['linear'], ['zoom'], 6, 16, 9, 28, 12, 48],
+        'heatmap-opacity': 0.80
+      }
+    });
+
+    // 3. CAPA DE MASSA FORESTAL AMB DIFUSIÓ SUAU
+    map.addLayer({
+      id: 'layer-trees',
       type: 'circle',
       source: srcId,
       layout: { 'visibility': 'none' },
       paint: {
-        'circle-radius': ['interpolate', ['linear'], ['zoom'], 6, 8, 9, 16],
+        'circle-radius': ['interpolate', ['linear'], ['zoom'], 6, 6, 8, 12, 11, 24],
+        'circle-blur': 0.65,
+        'circle-opacity': 0.75,
         'circle-color': [
           'match', ['get', 'tree_id'],
-          1, '#15803d',
-          2, '#047857',
-          3, '#eab308',
-          4, '#84cc16',
+          1, '#15803d', // Pi roig / Faig / Castanyer
+          2, '#047857', // Pi negre / Roure
+          3, '#ca8a04', // Conreus / Garriga
+          4, '#84cc16', // Pi blanc / Alzina
           '#94a3b8'
-        ],
-        'circle-opacity': 0.75,
-        'circle-blur': 0.3
+        ]
       }
     });
 
-    // 3. CAPA DE SÒL / PH
+    // Capa de detecció de clics
     map.addLayer({
-      id: 'myco-soil',
+      id: 'layer-hitbox',
       type: 'circle',
       source: srcId,
-      layout: { 'visibility': 'none' },
-      paint: {
-        'circle-radius': ['interpolate', ['linear'], ['zoom'], 6, 8, 9, 16],
-        'circle-color': [
-          'match', ['get', 'soil_type'],
-          'Silici (Àcid)', '#b45309',
-          'Calcari (Bàsic)', '#0284c7',
-          'Calcari argilós', '#06b6d4',
-          '#cbd5e1'
-        ],
-        'circle-opacity': 0.75,
-        'circle-blur': 0.3
-      }
+      paint: { 'circle-radius': 12, 'circle-opacity': 0.0 }
     });
 
-    // Capa invisible per permetre clics interactius
-    map.addLayer({
-      id: 'myco-hit',
-      type: 'circle',
-      source: srcId,
-      paint: { 'circle-radius': 14, 'circle-opacity': 0.0 }
-    });
-
-    map.on('click', 'myco-hit', (e) => {
+    map.on('click', 'layer-hitbox', (e) => {
       const p = e.features[0].properties;
       new maplibregl.Popup()
         .setLngLat(e.lngLat)
         .setHTML(`
-          <div style="font-size:0.9rem; line-height:1.4;">
+          <div style="font-size:0.9rem; line-height:1.45;">
             <strong>${p.species}</strong><br>
             ⭐ <b>Probabilitat:</b> ${(p.score * 100).toFixed(0)}%<br>
-            🌲 <b>Massa forestal:</b> ${p.tree_type}<br>
-            🪨 <b>Tipus de sòl:</b> ${p.soil_type} (pH ~${p.ph})<br>
-            🌧️ <b>Pluja acumulada 21d:</b> ${p.rain_21d} mm<br>
+            🌲 <b>Bosc:</b> ${p.tree_type}<br>
+            🪨 <b>Sòl:</b> ${p.soil_type} (pH ~${p.ph})<br>
+            🌧️ <b>Pluja 21d:</b> ${p.rain_21d} mm<br>
             🌡️ <b>T. mínima:</b> ${p.temp_min} °C
           </div>
         `)
@@ -193,14 +189,14 @@
   }
 
   function updateLayersVisibility() {
-    map.setLayoutProperty('myco-heatmap', 'visibility', currentMode === 'heatmap' ? 'visible' : 'none');
-    map.setLayoutProperty('myco-trees', 'visibility', currentMode === 'trees' ? 'visible' : 'none');
-    map.setLayoutProperty('myco-soil', 'visibility', currentMode === 'soil' ? 'visible' : 'none');
+    map.setLayoutProperty('layer-score', 'visibility', currentMode === 'heatmap_score' ? 'visible' : 'none');
+    map.setLayoutProperty('layer-soil', 'visibility', currentMode === 'heatmap_soil' ? 'visible' : 'none');
+    map.setLayoutProperty('layer-trees', 'visibility', currentMode === 'trees_smooth' ? 'visible' : 'none');
   }
 
   function updateLegend() {
     const c = document.getElementById('legend-container');
-    if (currentMode === 'heatmap') {
+    if (currentMode === 'heatmap_score') {
       c.innerHTML = `
         <div class="legend-title">Gradient de Fructificació:</div>
         <div class="legend-bar" style="background: linear-gradient(to right, #ef4444, #f59e0b, #84cc16, #15803d);"></div>
@@ -209,20 +205,22 @@
           <span>Òptim</span>
         </div>
       `;
-    } else if (currentMode === 'trees') {
+    } else if (currentMode === 'heatmap_soil') {
+      c.innerHTML = `
+        <div class="legend-title">Acidesa del Sòl (pH):</div>
+        <div class="legend-bar" style="background: linear-gradient(to right, #b45309, #0284c7, #0369a1);"></div>
+        <div class="legend-labels">
+          <span>Àcid (pH &lt; 6)</span>
+          <span>Bàsic (pH &gt; 7.5)</span>
+        </div>
+      `;
+    } else if (currentMode === 'trees_smooth') {
       c.innerHTML = `
         <div class="legend-title">Massa Forestal:</div>
-        <div class="legend-item"><div class="legend-color" style="background:#15803d"></div> Pi roig / Faig / Castanyer</div>
+        <div class="legend-item"><div class="legend-color" style="background:#15803d"></div> Pi roig / Faig / Avet</div>
         <div class="legend-item"><div class="legend-color" style="background:#047857"></div> Pi negre / Roure</div>
         <div class="legend-item"><div class="legend-color" style="background:#84cc16"></div> Pi blanc / Alzina</div>
-        <div class="legend-item"><div class="legend-color" style="background:#eab308"></div> Garriga / Conreus</div>
-      `;
-    } else if (currentMode === 'soil') {
-      c.innerHTML = `
-        <div class="legend-title">Acidesa del Sòl:</div>
-        <div class="legend-item"><div class="legend-color" style="background:#b45309"></div> Silici / Àcid (pH &lt; 6.0)</div>
-        <div class="legend-item"><div class="legend-color" style="background:#0284c7"></div> Calcari / Bàsic (pH &gt; 7.0)</div>
-        <div class="legend-item"><div class="legend-color" style="background:#06b6d4"></div> Calcari Argilós</div>
+        <div class="legend-item"><div class="legend-color" style="background:#ca8a04"></div> Secà / Garriga</div>
       `;
     }
   }

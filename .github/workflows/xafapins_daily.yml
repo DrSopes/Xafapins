@@ -1,67 +1,60 @@
-name: Xafapins Daily Forecast & Web Map
-
+name: Build and deploy Xafapins
 on:
+  push:
   schedule:
-    # Se ejecuta cada día a las 06:00 UTC (07:00 / 08:00 peninsular)
     - cron: '0 6 * * *'
   workflow_dispatch:
-
 permissions:
-  contents: write
-  pages: write
-  id-token: write
-
+  contents: read
+concurrency:
+  group: xafapins-pages
+  cancel-in-progress: false
 jobs:
-  run-pipeline:
+  build:
+    if: github.ref == format('refs/heads/{0}', github.event.repository.default_branch)
     runs-on: ubuntu-latest
+    timeout-minutes: 60
+    permissions:
+      contents: read
+      pages: read
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check GitHub Pages configuration before downloading data
+        uses: actions/configure-pages@v5
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - run: pip install -r requirements.txt
+      - run: python -m unittest discover -s tests -v
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node --check web/app.js
+      - run: node --check web/environment-layers.js
+      - run: node --test tests/environment.test.cjs tests/app-state.test.cjs
+      - name: Fetch complete weather series
+        env:
+          PYTHONUNBUFFERED: '1'
+        run: python src/download_meteo.py --grid-step 0.16 --forecast-days 7
+      - name: Generate all species at 1 km display spacing
+        run: python src/predict_engine.py --cell-km 1 --all-spain
+      - run: python src/validate_output.py --all-spain
+      - name: Prepare clean Pages artifact
+        run: python src/package_site.py
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-
     steps:
-      - name: Checkout del repositorio
-        uses: actions/checkout@v4
-
-      - name: Configurar Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
-          cache: 'pip'
-
-      - name: Instalar dependencias
-        run: |
-          pip install --upgrade pip
-          pip install -r requirements.txt
-
-      - name: 1. Descargar meteo fresca de Cataluña
-        env:
-          PYTHONUNBUFFERED: "1"
-        run: |
-          python src/download_meteo.py --grid-step 0.08
-
-      - name: 2. Generar gradientes predictivos (GeoJSON continuo)
-        run: |
-          python src/predict_engine.py --species lactarius_deliciosus
-          python src/predict_engine.py --species boletus_edulis
-          python src/predict_engine.py --species craterellus_lutescens
-          python src/predict_engine.py --species cantharellus_cibarius
-          python src/predict_engine.py --species hygrophorus_latitabundus
-          python src/predict_engine.py --species tricholoma_terreum
-
-      - name: 3. Actualizar datos en el repositorio
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add web/*.geojson data/meteo_catalunya_latest.json
-          git diff --quiet && git diff --staged --quiet || (git commit -m "chore(data): actualització diària de capes micològiques" && git push)
-
-      - name: 4. Subir artefacto para GitHub Pages
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: './web'
-
-      - name: 5. Desplegar a GitHub Pages
+      - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4
-        with:
-          timeout: 120000

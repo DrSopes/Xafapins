@@ -1,4 +1,12 @@
 venv/
+.venv/
+*.tmp
+web/data/
+dist/
+data/meteo_catalunya_latest.json
+data/meteo_spain_latest.json
+data/europe-regions.geojson
+data/*-capabilities.xml
 __pycache__/
 *.py[cod]
 .env

@@ -1,74 +1,97 @@
+"""Fetch dated weather; incomplete downloads never replace the last good file."""
 import argparse
 import json
+import math
+import os
 import time
+from datetime import datetime, timezone, date, timedelta
+from pathlib import Path
 import requests
-from datetime import datetime
 from requests.adapters import HTTPAdapter
-from urllib3.util import Retry
+from urllib3.util.retry import Retry
+from shapely.geometry import shape, Point
+from regions import region_geometry, weather_points
 
-def get_resilient_session():
-    """Configura reintentos automáticos ante timeouts o saturación (429, 5xx)."""
+ROOT = Path(__file__).resolve().parents[1]
+VARIABLES = ['precipitation_sum', 'temperature_2m_min', 'temperature_2m_max',
+             'relative_humidity_2m_mean', 'wind_speed_10m_max', 'et0_fao_evapotranspiration']
+
+
+def boundary(region_id=None):
+    return region_geometry(region_id)
+
+
+def atomic_json(path, value):
+    path = Path(path)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    tmp = path.with_suffix(path.suffix + '.tmp')
+    tmp.write_text(json.dumps(value, ensure_ascii=False, separators=(',', ':'), allow_nan=False), encoding='utf-8')
+    os.replace(tmp, path)
+
+
+def validate_daily(item, expected_dates=None):
+    daily = item.get('daily', {})
+    dates = daily.get('time', [])
+    if not dates or len(dates) != len(set(dates)) or dates != sorted(dates):
+        raise ValueError('Missing, duplicated or unordered weather dates')
+    start = date.fromisoformat(dates[0])
+    if dates != [(start+timedelta(days=i)).isoformat() for i in range(len(dates))]:
+        raise ValueError('Weather dates must be consecutive calendar days')
+    if expected_dates is not None and dates != expected_dates:
+        raise ValueError('Weather date coverage differs between locations')
+    for key in VARIABLES:
+        values = daily.get(key, [])
+        if len(values) != len(dates) or any(v is None or not math.isfinite(v) for v in values):
+            raise ValueError(f'Incomplete weather variable: {key}')
+    if not isinstance(item.get('elevation'), (int, float)) or not math.isfinite(item['elevation']):
+        raise ValueError('Missing model elevation')
+    return dates
+
+
+def fetch_grid_weather(step=0.16, history_days=28, forecast_days=7, output=None, region_id=None):
+    if not 0.04 <= step <= 0.5:
+        raise ValueError('Weather grid step must be between 0.04 and 0.5 degrees')
+    points = weather_points(step, boundary(region_id))
     session = requests.Session()
-    retries = Retry(
-        total=5,
-        backoff_factor=1.5,
-        status_forcelist=[429, 500, 502, 503, 504],
-        raise_on_status=False
-    )
-    adapter = HTTPAdapter(max_retries=retries)
-    session.mount("https://", adapter)
-    session.mount("http://", adapter)
-    return session
+    session.mount('https://', HTTPAdapter(max_retries=Retry(total=4, backoff_factor=2,
+                  status_forcelist=[429, 500, 502, 503, 504])))
+    results, dates = [], None
+    for start in range(0, len(points), 25):
+        chunk = points[start:start+25]
+        response = session.get('https://api.open-meteo.com/v1/forecast', params={
+            'latitude': ','.join(str(p[0]) for p in chunk),
+            'longitude': ','.join(str(p[1]) for p in chunk), 'daily': ','.join(VARIABLES),
+            'past_days': history_days, 'forecast_days': forecast_days,
+            # One calendar reference across Spain, explicitly disclosed for Canarias.
+            'timezone': 'Europe/Madrid', 'wind_speed_unit': 'kmh',
+        }, timeout=(15, 90))
+        response.raise_for_status()
+        items = response.json()
+        items = items if isinstance(items, list) else [items]
+        if len(items) != len(chunk):
+            raise ValueError('Incomplete weather batch')
+        for (lat, lon), item in zip(chunk, items):
+            dates = validate_daily(item, dates)
+            if len(dates) != history_days+forecast_days:
+                raise ValueError('Unexpected number of weather days')
+            results.append({'lat': lat, 'lon': lon, 'model_lat': item['latitude'],
+                            'model_lon': item['longitude'], 'elevation': item['elevation'],
+                            'daily': item['daily']})
+        print(f'Weather: {len(results)}/{len(points)} locations', flush=True)
+        time.sleep(0.35)
+    payload = {'schema_version': 2, 'timestamp': datetime.now(timezone.utc).isoformat(),
+               'source': 'Open-Meteo best_match; archived forecasts + forecast',
+               'sampling_step_degrees': step, 'history_days': history_days,
+               'region_id': region_id or 'ES', 'timezone': 'Europe/Madrid',
+               'forecast_dates': dates[history_days:], 'data': results}
+    atomic_json(output or ROOT/'data/meteo_spain_latest.json', payload)
+    return payload
 
-def fetch_grid_weather(bbox=(0.15, 40.5, 3.35, 42.9), step=0.08, history_days=21):
-    min_lon, min_lat, max_lon, max_lat = bbox
-    lons = [round(min_lon + i * step, 4) for i in range(int((max_lon - min_lon) / step) + 1)]
-    lats = [round(min_lat + i * step, 4) for i in range(int((max_lat - min_lat) / step) + 1)]
-    
-    points = [(lat, lon) for lat in lats for lon in lons]
-    print(f"Descargando {len(points)} puntos en lotes seguros...", flush=True)
 
-    session = get_resilient_session()
-    batch_size = 25  # Tamaño de lote moderado para evitar timeouts en Open-Meteo
-    results = []
-    
-    for i in range(0, len(points), batch_size):
-        chunk = points[i:i + batch_size]
-        lat_str = ",".join(str(p[0]) for p in chunk)
-        lon_str = ",".join(str(p[1]) for p in chunk)
-        
-        url = (
-            f"https://api.open-meteo.com/v1/forecast?"
-            f"latitude={lat_str}&longitude={lon_str}&daily=precipitation_sum,temperature_2m_max,temperature_2m_min"
-            f"&past_days={history_days}&forecast_days=7&timezone=Europe%2FMadrid"
-        )
-        
-        try:
-            res = session.get(url, timeout=35)
-            if res.status_code == 200:
-                data = res.json()
-                items = data if isinstance(data, list) else [data]
-                for item in items:
-                    daily = item.get("daily", {})
-                    precip = daily.get("precipitation_sum", [])
-                    t_min = daily.get("temperature_2m_min", [])[:history_days]
-                    t_max = daily.get("temperature_2m_max", [])[:history_days]
-                    
-                    results.append({
-                        "lat": item.get("latitude"),
-                        "lon": item.get("longitude"),
-                        "rain_past_21d": round(sum(precip[:history_days]), 1) if precip else 0.0,
-                        "t_min_avg": round(sum(t_min) / max(len(t_min), 1), 1) if t_min else 0.0,
-                        "t_max_avg": round(sum(t_max) / max(len(t_max), 1), 1) if t_max else 0.0,
-                        "frost_days": sum(1 for t in t_min if t <= 0) if t_min else 0
-                    })
-                print(f"Procesados {min(i + batch_size, len(points))}/{len(points)} puntos...", flush=True)
-            else:
-                print(f"[!] Respuesta {res.status_code} en lote {i}. Omitiendo...", flush=True)
-        except Exception as e:
-            print(f"[!] Error puntual en lote {i}: {e}. Continuando con los demás...", flush=True)
-            
-        time.sleep(0.3)  # Pausa para evitar rate-limiting
-
-    with open("data/meteo_catalunya_latest.json", "w", encoding="utf-8") as f:
-        json.dump({"timestamp": datetime.now().isoformat(), "data": results}, f, indent=2)
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--grid-step', type=float, default=0.16)
+    parser.add_argument('--region', default=None)
+    parser.add_argument('--forecast-days', type=int, choices=range(1, 17), default=7)
+    args = parser.parse_args()
+    fetch_grid_weather(step=args.grid_step, forecast_days=args.forecast_days, region_id=args.region)

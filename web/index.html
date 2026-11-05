@@ -72,11 +72,11 @@
   let currentMode = 'heatmap_score';
 
   map.on('load', () => {
-    loadSource();
+    loadSpeciesData(currentSpecies);
 
     document.getElementById('species-select').addEventListener('change', (e) => {
       currentSpecies = e.target.value;
-      loadSource();
+      loadSpeciesData(currentSpecies);
     });
 
     document.getElementById('layer-select').addEventListener('change', (e) => {
@@ -86,16 +86,31 @@
     });
   });
 
-  function loadSource() {
-    const srcId = 'myco-points';
-    const geojsonUrl = `prediction_${currentSpecies}.geojson`;
+  async function loadSpeciesData(species) {
+    const geojsonUrl = `prediction_${species}.geojson?t=${Date.now()}`;
+    try {
+      const response = await fetch(geojsonUrl);
+      if (!response.ok) throw new Error(`HTTP ${response.status}`);
+      const data = await response.json();
 
-    if (map.getSource(srcId)) {
-      map.getSource(srcId).setData(geojsonUrl);
-      return;
+      const srcId = 'myco-points';
+      if (map.getSource(srcId)) {
+        map.getSource(srcId).setData(data);
+      } else {
+        initLayers(data);
+      }
+    } catch (err) {
+      console.error("Error carregant el fitxer GeoJSON:", err);
     }
+  }
 
-    map.addSource(srcId, { type: 'geojson', data: geojsonUrl });
+  function initLayers(geojson) {
+    const srcId = 'myco-points';
+
+    map.addSource(srcId, {
+      type: 'geojson',
+      data: geojson
+    });
 
     // 1. GRADIENT CONTINU DE PROBABILITAT (HEATMAP)
     map.addLayer({
@@ -130,16 +145,16 @@
         'heatmap-color': [
           'interpolate', ['linear'], ['heatmap-density'],
           0.0, 'rgba(0,0,0,0)',
-          0.2, '#b45309', // Silici / Àcid (Pirineu / Montseny)
-          0.6, '#0284c7', // Calcari mitjà
-          1.0, '#0369a1'  # Calcari dur
+          0.2, '#b45309',
+          0.6, '#0284c7',
+          1.0, '#0369a1'
         ],
         'heatmap-radius': ['interpolate', ['linear'], ['zoom'], 6, 16, 9, 28, 12, 48],
         'heatmap-opacity': 0.80
       }
     });
 
-    // 3. CAPA DE MASSA FORESTAL AMB DIFUSIÓ SUAU
+    // 3. CAPA DE MASSA FORESTAL AMB DIFUSIÓ
     map.addLayer({
       id: 'layer-trees',
       type: 'circle',
@@ -151,21 +166,21 @@
         'circle-opacity': 0.75,
         'circle-color': [
           'match', ['get', 'tree_id'],
-          1, '#15803d', // Pi roig / Faig / Castanyer
-          2, '#047857', // Pi negre / Roure
-          3, '#ca8a04', // Conreus / Garriga
-          4, '#84cc16', // Pi blanc / Alzina
+          1, '#15803d',
+          2, '#047857',
+          3, '#ca8a04',
+          4, '#84cc16',
           '#94a3b8'
         ]
       }
     });
 
-    // Capa de detecció de clics
+    // Capa invisible per permetre clics interactius
     map.addLayer({
       id: 'layer-hitbox',
       type: 'circle',
       source: srcId,
-      paint: { 'circle-radius': 12, 'circle-opacity': 0.0 }
+      paint: { 'circle-radius': 14, 'circle-opacity': 0.0 }
     });
 
     map.on('click', 'layer-hitbox', (e) => {

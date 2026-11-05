@@ -10,33 +10,14 @@
         "temp_min": 15.1,
         "soil_type": "Calcari argil\u00f3s",
         "ph": 7.8,
-        "tree_type": "Garriga / Conreus"
+        "tree_type": "Garriga / Conreus",
+        "tree_id": 3
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              0.4775,
-              40.488
-            ],
-            [
-              0.5595,
-              40.488
-            ],
-            [
-              0.5595,
-              40.57
-            ],
-            [
-              0.4775,
-              40.57
-            ],
-            [
-              0.4775,
-              40.488
-            ]
-          ]
+          0.5185,
+          40.529
         ]
       }
     },
@@ -49,33 +30,14 @@
         "temp_min": 17.8,
         "soil_type": "Calcari argil\u00f3s",
         "ph": 7.8,
-        "tree_type": "Garriga / Conreus"
+        "tree_type": "Garriga / Conreus",
+        "tree_id": 3
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              0.7079,
-              40.4869
-            ],
-            [
-              0.7899,
-              40.4869
-            ],
-            [
-              0.7899,
-              40.5689
-            ],
-            [
-              0.7079,
-              40.5689
-            ],
-            [
-              0.7079,
-              40.4869
-            ]
-          ]
+          0.7489,
+          40.5279
         ]
       }
     },
@@ -88,33 +50,14 @@
         "temp_min": 18.4,
         "soil_type": "Calcari argil\u00f3s",
         "ph": 7.8,
-        "tree_type": "Garriga / Conreus"
+        "tree_type": "Garriga / Conreus",
+        "tree_id": 3
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              0.9383,
-              40.4854
-            ],
-            [
-              1.0203,
-              40.4854
-            ],
-            [
-              1.0203,
-              40.5674
-            ],
-            [
-              0.9383,
-              40.5674
-            ],
-            [
-              0.9383,
-              40.4854
-            ]
-          ]
+          0.9793,
+          40.5264
         ]
       }
     },
@@ -127,33 +70,14 @@
         "temp_min": 18.8,
         "soil_type": "Calcari (B\u00e0sic)",
         "ph": 7.2,
-        "tree_type": "Pi blanc / Alzina"
+        "tree_type": "Pi blanc / Alzina",
+        "tree_id": 4
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              1.112,
-              40.5073
-            ],
-            [
-              1.194,
-              40.5073
-            ],
-            [
-              1.194,
-              40.5893
-            ],
-            [
-              1.112,
-              40.5893
-            ],
-            [
-              1.112,
-              40.5073
-            ]
-          ]
+          1.153,
+          40.5483
         ]
       }
     },
@@ -166,33 +90,14 @@
         "temp_min": 19.0,
         "soil_type": "Calcari (B\u00e0sic)",
         "ph": 7.2,
-        "tree_type": "Pi blanc / Alzina"
+        "tree_type": "Pi blanc / Alzina",
+        "tree_id": 4
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              1.2839,
-              40.4824
-            ],
-            [
-              1.3659,
-              40.4824
-            ],
-            [
-              1.3659,
-              40.5643
-            ],
-            [
-              1.2839,
-              40.5643
-            ],
-            [
-              1.2839,
-              40.4824
-            ]
-          ]
+          1.3249,
+          40.5234
         ]
       }
     },
@@ -205,33 +110,14 @@
         "temp_min": 7.9,
         "soil_type": "Calcari argil\u00f3s",
         "ph": 7.8,
-        "tree_type": "Garriga / Conreus"
+        "tree_type": "Garriga / Conreus",
+        "tree_id": 3
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              0.1323,
-              40.6534
-            ],
-            [
-              0.2143,
-              40.6534
-            ],
-            [
-              0.2143,
-              40.7354
-            ],
-            [
-              0.1323,
-              40.7354
-            ],
-            [
-              0.1323,
-              40.6534
-            ]
-          ]
+          0.1733,
+          40.6944
         ]
       }
     },
@@ -244,33 +130,14 @@
         "temp_min": 12.9,
         "soil_type": "Calcari argil\u00f3s",
         "ph": 7.8,
-        "tree_type": "Garriga / Conreus"
+        "tree_type": "Garriga / Conreus",
+        "tree_id": 3
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              0.3059,
-              40.6764
-            ],
-            [
-              0.3879,
-              40.6764
-            ],
-            [
-              0.3879,
-              40.7584
-            ],
-            [
-              0.3059,
-              40.7584
-            ],
-            [
-              0.3059,
-              40.6764
-            ]
-          ]
+          0.3469,
+          40.7174
         ]
       }
     },
@@ -283,33 +150,14 @@
         "temp_min": 12.6,
         "soil_type": "Calcari argil\u00f3s",
         "ph": 7.8,
-        "tree_type": "Garriga / Conreus"
+        "tree_type": "Garriga / Conreus",
+        "tree_id": 3
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              0.479,
-              40.6525
-            ],
-            [
-              0.561,
-              40.6525
-            ],
-            [
-              0.561,
-              40.7345
-            ],
-            [
-              0.479,
-              40.7345
-            ],
-            [
-              0.479,
-              40.6525
-            ]
-          ]
+          0.52,
+          40.6935
         ]
       }
     },
@@ -322,33 +170,14 @@
         "temp_min": 13.1,
         "soil_type": "Calcari argil\u00f3s",
         "ph": 7.8,
-        "tree_type": "Garriga / Conreus"
+        "tree_type": "Garriga / Conreus",
+        "tree_id": 3
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              0.7102,
-              40.6513
-            ],
-            [
-              0.7922,
-              40.6513
-            ],
-            [
-              0.7922,
-              40.7333
-            ],
-            [
-              0.7102,
-              40.7333
-            ],
-            [
-              0.7102,
-              40.6513
-            ]
-          ]
+          0.7512,
+          40.6923
         ]
       }
     },
@@ -361,33 +190,14 @@
         "temp_min": 17.3,
         "soil_type": "Calcari argil\u00f3s",
         "ph": 7.8,
-        "tree_type": "Garriga / Conreus"
+        "tree_type": "Garriga / Conreus",
+        "tree_id": 3
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              0.8842,
-              40.6736
-            ],
-            [
-              0.9662,
-              40.6736
-            ],
-            [
-              0.9662,
-              40.7556
-            ],
-            [
-              0.8842,
-              40.7556
-            ],
-            [
-              0.8842,
-              40.6736
-            ]
-          ]
+          0.9252,
+          40.7146
         ]
       }
     },
@@ -400,33 +210,14 @@
         "temp_min": 18.5,
         "soil_type": "Calcari (B\u00e0sic)",
         "ph": 7.2,
-        "tree_type": "Pi blanc / Alzina"
+        "tree_type": "Pi blanc / Alzina",
+        "tree_id": 4
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              1.1154,
-              40.6717
-            ],
-            [
-              1.1974,
-              40.6717
-            ],
-            [
-              1.1974,
-              40.7537
-            ],
-            [
-              1.1154,
-              40.7537
-            ],
-            [
-              1.1154,
-              40.6717
-            ]
-          ]
+          1.1564,
+          40.7127
         ]
       }
     },
@@ -439,33 +230,14 @@
         "temp_min": 18.8,
         "soil_type": "Calcari (B\u00e0sic)",
         "ph": 7.2,
-        "tree_type": "Pi blanc / Alzina"
+        "tree_type": "Pi blanc / Alzina",
+        "tree_id": 4
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              1.2879,
-              40.6467
-            ],
-            [
-              1.3699,
-              40.6467
-            ],
-            [
-              1.3699,
-              40.7287
-            ],
-            [
-              1.2879,
-              40.7287
-            ],
-            [
-              1.2879,
-              40.6467
-            ]
-          ]
+          1.3289,
+          40.6877
         ]
       }
     },
@@ -478,33 +250,14 @@
         "temp_min": 9.2,
         "soil_type": "Calcari argil\u00f3s",
         "ph": 7.8,
-        "tree_type": "Garriga / Conreus"
+        "tree_type": "Garriga / Conreus",
+        "tree_id": 3
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              0.307,
-              40.8408
-            ],
-            [
-              0.389,
-              40.8408
-            ],
-            [
-              0.389,
-              40.9228
-            ],
-            [
-              0.307,
-              40.9228
-            ],
-            [
-              0.307,
-              40.8408
-            ]
-          ]
+          0.348,
+          40.8818
         ]
       }
     },
@@ -512,38 +265,19 @@
       "type": "Feature",
       "properties": {
         "species": "Pinetell / Rovell\u00f3 (Lactarius deliciosus / sanguifluus)",
-        "score": 0.487,
+        "score": 0.46,
         "rain_21d": 39.6,
         "temp_min": 12.2,
         "soil_type": "Calcari argil\u00f3s",
         "ph": 7.8,
-        "tree_type": "Garriga / Conreus"
+        "tree_type": "Garriga / Conreus",
+        "tree_id": 3
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              0.4806,
-              40.8168
-            ],
-            [
-              0.5626,
-              40.8168
-            ],
-            [
-              0.5626,
-              40.8988
-            ],
-            [
-              0.4806,
-              40.8988
-            ],
-            [
-              0.4806,
-              40.8168
-            ]
-          ]
+          0.5216,
+          40.8578
         ]
       }
     },
@@ -556,33 +290,14 @@
         "temp_min": 14.5,
         "soil_type": "Calcari argil\u00f3s",
         "ph": 7.8,
-        "tree_type": "Garriga / Conreus"
+        "tree_type": "Garriga / Conreus",
+        "tree_id": 3
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              0.7124,
-              40.8157
-            ],
-            [
-              0.7944,
-              40.8157
-            ],
-            [
-              0.7944,
-              40.8977
-            ],
-            [
-              0.7124,
-              40.8977
-            ],
-            [
-              0.7124,
-              40.8157
-            ]
-          ]
+          0.7534,
+          40.8567
         ]
       }
     },
@@ -595,33 +310,14 @@
         "temp_min": 15.6,
         "soil_type": "Calcari argil\u00f3s",
         "ph": 7.8,
-        "tree_type": "Garriga / Conreus"
+        "tree_type": "Garriga / Conreus",
+        "tree_id": 3
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              0.8303,
-              40.9205
-            ],
-            [
-              0.9123,
-              40.9205
-            ],
-            [
-              0.9123,
-              41.0025
-            ],
-            [
-              0.8303,
-              41.0025
-            ],
-            [
-              0.8303,
-              40.9205
-            ]
-          ]
+          0.8713,
+          40.9615
         ]
       }
     },
@@ -634,72 +330,14 @@
         "temp_min": 18.2,
         "soil_type": "Calcari (B\u00e0sic)",
         "ph": 7.2,
-        "tree_type": "Pi blanc / Alzina"
+        "tree_type": "Pi blanc / Alzina",
+        "tree_id": 4
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              1.1189,
-              40.8361
-            ],
-            [
-              1.2009,
-              40.8361
-            ],
-            [
-              1.2009,
-              40.9181
-            ],
-            [
-              1.1189,
-              40.9181
-            ],
-            [
-              1.1189,
-              40.8361
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "species": "Pinetell / Rovell\u00f3 (Lactarius deliciosus / sanguifluus)",
-        "score": 0.838,
-        "rain_21d": 185.6,
-        "temp_min": 18.6,
-        "soil_type": "Calcari (B\u00e0sic)",
-        "ph": 7.2,
-        "tree_type": "Pi blanc / Alzina"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              1.3509,
-              40.8339
-            ],
-            [
-              1.4329,
-              40.8339
-            ],
-            [
-              1.4329,
-              40.9159
-            ],
-            [
-              1.3509,
-              40.9159
-            ],
-            [
-              1.3509,
-              40.8339
-            ]
-          ]
+          1.1599,
+          40.8771
         ]
       }
     },
@@ -712,33 +350,14 @@
         "temp_min": 10.8,
         "soil_type": "Calcari argil\u00f3s",
         "ph": 7.8,
-        "tree_type": "Garriga / Conreus"
+        "tree_type": "Garriga / Conreus",
+        "tree_id": 3
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              0.3083,
-              41.0638
-            ],
-            [
-              0.3903,
-              41.0638
-            ],
-            [
-              0.3903,
-              41.1458
-            ],
-            [
-              0.3083,
-              41.1458
-            ],
-            [
-              0.3083,
-              41.0638
-            ]
-          ]
+          0.3493,
+          41.1048
         ]
       }
     },
@@ -751,33 +370,14 @@
         "temp_min": 11.2,
         "soil_type": "Calcari argil\u00f3s",
         "ph": 7.8,
-        "tree_type": "Garriga / Conreus"
+        "tree_type": "Garriga / Conreus",
+        "tree_id": 3
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              0.5412,
-              41.063
-            ],
-            [
-              0.6232,
-              41.063
-            ],
-            [
-              0.6232,
-              41.145
-            ],
-            [
-              0.5412,
-              41.145
-            ],
-            [
-              0.5412,
-              41.063
-            ]
-          ]
+          0.5822,
+          41.104
         ]
       }
     },
@@ -790,33 +390,14 @@
         "temp_min": 11.1,
         "soil_type": "Calcari argil\u00f3s",
         "ph": 7.8,
-        "tree_type": "Garriga / Conreus"
+        "tree_type": "Garriga / Conreus",
+        "tree_id": 3
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              0.7164,
-              41.0856
-            ],
-            [
-              0.7984,
-              41.0856
-            ],
-            [
-              0.7984,
-              41.1676
-            ],
-            [
-              0.7164,
-              41.1676
-            ],
-            [
-              0.7164,
-              41.0856
-            ]
-          ]
+          0.7574,
+          41.1266
         ]
       }
     },
@@ -829,33 +410,14 @@
         "temp_min": 13.2,
         "soil_type": "Calcari argil\u00f3s",
         "ph": 7.8,
-        "tree_type": "Garriga / Conreus"
+        "tree_type": "Garriga / Conreus",
+        "tree_id": 3
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              0.9494,
-              41.084
-            ],
-            [
-              1.0314,
-              41.084
-            ],
-            [
-              1.0314,
-              41.166
-            ],
-            [
-              0.9494,
-              41.166
-            ],
-            [
-              0.9494,
-              41.084
-            ]
-          ]
+          0.9904,
+          41.125
         ]
       }
     },
@@ -868,33 +430,14 @@
         "temp_min": 12.9,
         "soil_type": "Calcari (B\u00e0sic)",
         "ph": 7.2,
-        "tree_type": "Pi blanc / Alzina"
+        "tree_type": "Pi blanc / Alzina",
+        "tree_id": 4
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              1.1233,
-              41.0591
-            ],
-            [
-              1.2053,
-              41.0591
-            ],
-            [
-              1.2053,
-              41.1411
-            ],
-            [
-              1.1233,
-              41.1411
-            ],
-            [
-              1.1233,
-              41.0591
-            ]
-          ]
+          1.1643,
+          41.1001
         ]
       }
     },
@@ -907,33 +450,14 @@
         "temp_min": 12.5,
         "soil_type": "Calcari (B\u00e0sic)",
         "ph": 7.2,
-        "tree_type": "Pi blanc / Alzina"
+        "tree_type": "Pi blanc / Alzina",
+        "tree_id": 4
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              1.3,
-              41.1396
-            ],
-            [
-              1.382,
-              41.1396
-            ],
-            [
-              1.382,
-              41.2216
-            ],
-            [
-              1.3,
-              41.2216
-            ],
-            [
-              1.3,
-              41.1396
-            ]
-          ]
+          1.341,
+          41.1806
         ]
       }
     },
@@ -946,33 +470,14 @@
         "temp_min": 14.3,
         "soil_type": "Calcari (B\u00e0sic)",
         "ph": 7.2,
-        "tree_type": "Pi blanc / Alzina"
+        "tree_type": "Pi blanc / Alzina",
+        "tree_id": 4
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              1.4166,
-              41.1383
-            ],
-            [
-              1.4986,
-              41.1383
-            ],
-            [
-              1.4986,
-              41.2203
-            ],
-            [
-              1.4166,
-              41.2203
-            ],
-            [
-              1.4166,
-              41.1383
-            ]
-          ]
+          1.4576,
+          41.1793
         ]
       }
     },
@@ -980,38 +485,19 @@
       "type": "Feature",
       "properties": {
         "species": "Pinetell / Rovell\u00f3 (Lactarius deliciosus / sanguifluus)",
-        "score": 0.379,
+        "score": 0.361,
         "rain_21d": 26.5,
         "temp_min": 11.0,
         "soil_type": "Calcari argil\u00f3s",
         "ph": 7.8,
-        "tree_type": "Garriga / Conreus"
+        "tree_type": "Garriga / Conreus",
+        "tree_id": 3
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              0.1343,
-              41.2519
-            ],
-            [
-              0.2163,
-              41.2519
-            ],
-            [
-              0.2163,
-              41.3339
-            ],
-            [
-              0.1343,
-              41.3339
-            ],
-            [
-              0.1343,
-              41.2519
-            ]
-          ]
+          0.1753,
+          41.2929
         ]
       }
     },
@@ -1024,33 +510,14 @@
         "temp_min": 12.1,
         "soil_type": "Calcari argil\u00f3s",
         "ph": 7.8,
-        "tree_type": "Garriga / Conreus"
+        "tree_type": "Garriga / Conreus",
+        "tree_id": 3
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              0.3094,
-              41.2281
-            ],
-            [
-              0.3914,
-              41.2281
-            ],
-            [
-              0.3914,
-              41.3101
-            ],
-            [
-              0.3094,
-              41.3101
-            ],
-            [
-              0.3094,
-              41.2281
-            ]
-          ]
+          0.3504,
+          41.2691
         ]
       }
     },
@@ -1063,33 +530,14 @@
         "temp_min": 11.3,
         "soil_type": "Calcari argil\u00f3s",
         "ph": 7.8,
-        "tree_type": "Garriga / Conreus"
+        "tree_type": "Garriga / Conreus",
+        "tree_id": 3
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              0.485,
-              41.251
-            ],
-            [
-              0.567,
-              41.251
-            ],
-            [
-              0.567,
-              41.3329
-            ],
-            [
-              0.485,
-              41.3329
-            ],
-            [
-              0.485,
-              41.251
-            ]
-          ]
+          0.526,
+          41.2919
         ]
       }
     },
@@ -1102,33 +550,14 @@
         "temp_min": 9.9,
         "soil_type": "Calcari argil\u00f3s",
         "ph": 7.8,
-        "tree_type": "Garriga / Conreus"
+        "tree_type": "Garriga / Conreus",
+        "tree_id": 3
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              0.7187,
-              41.2498
-            ],
-            [
-              0.8007,
-              41.2498
-            ],
-            [
-              0.8007,
-              41.3318
-            ],
-            [
-              0.7187,
-              41.3318
-            ],
-            [
-              0.7187,
-              41.2498
-            ]
-          ]
+          0.7597,
+          41.2908
         ]
       }
     },
@@ -1141,33 +570,14 @@
         "temp_min": 9.1,
         "soil_type": "Calcari argil\u00f3s",
         "ph": 7.8,
-        "tree_type": "Garriga / Conreus"
+        "tree_type": "Garriga / Conreus",
+        "tree_id": 3
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              0.9525,
-              41.2482
-            ],
-            [
-              1.0345,
-              41.2482
-            ],
-            [
-              1.0345,
-              41.3302
-            ],
-            [
-              0.9525,
-              41.3302
-            ],
-            [
-              0.9525,
-              41.2482
-            ]
-          ]
+          0.9935,
+          41.2892
         ]
       }
     },
@@ -1180,33 +590,14 @@
         "temp_min": 10.8,
         "soil_type": "Calcari (B\u00e0sic)",
         "ph": 7.2,
-        "tree_type": "Pi blanc / Alzina"
+        "tree_type": "Pi blanc / Alzina",
+        "tree_id": 4
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              1.0693,
-              41.2473
-            ],
-            [
-              1.1513,
-              41.2473
-            ],
-            [
-              1.1513,
-              41.3293
-            ],
-            [
-              1.0693,
-              41.3293
-            ],
-            [
-              1.0693,
-              41.2473
-            ]
-          ]
+          1.1103,
+          41.2883
         ]
       }
     },
@@ -1219,33 +610,14 @@
         "temp_min": 11.6,
         "soil_type": "Calcari (B\u00e0sic)",
         "ph": 7.2,
-        "tree_type": "Pi blanc / Alzina"
+        "tree_type": "Pi blanc / Alzina",
+        "tree_id": 4
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              1.3031,
-              41.2451
-            ],
-            [
-              1.3851,
-              41.2451
-            ],
-            [
-              1.3851,
-              41.3271
-            ],
-            [
-              1.3031,
-              41.3271
-            ],
-            [
-              1.3031,
-              41.2451
-            ]
-          ]
+          1.3441,
+          41.2861
         ]
       }
     },
@@ -1258,33 +630,14 @@
         "temp_min": 11.6,
         "soil_type": "Calcari (B\u00e0sic)",
         "ph": 7.2,
-        "tree_type": "Pi blanc / Alzina"
+        "tree_type": "Pi blanc / Alzina",
+        "tree_id": 4
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              1.5368,
-              41.2425
-            ],
-            [
-              1.6188,
-              41.2425
-            ],
-            [
-              1.6188,
-              41.3245
-            ],
-            [
-              1.5368,
-              41.3245
-            ],
-            [
-              1.5368,
-              41.2425
-            ]
-          ]
+          1.5778,
+          41.2835
         ]
       }
     },
@@ -1297,33 +650,14 @@
         "temp_min": 11.4,
         "soil_type": "Calcari (B\u00e0sic)",
         "ph": 7.2,
-        "tree_type": "Pi blanc / Alzina"
+        "tree_type": "Pi blanc / Alzina",
+        "tree_id": 4
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              1.6536,
-              41.241
-            ],
-            [
-              1.7356,
-              41.241
-            ],
-            [
-              1.7356,
-              41.323
-            ],
-            [
-              1.6536,
-              41.323
-            ],
-            [
-              1.6536,
-              41.241
-            ]
-          ]
+          1.6946,
+          41.282
         ]
       }
     },
@@ -1336,33 +670,14 @@
         "temp_min": 13.7,
         "soil_type": "Calcari (B\u00e0sic)",
         "ph": 7.2,
-        "tree_type": "Pi blanc / Alzina"
+        "tree_type": "Pi blanc / Alzina",
+        "tree_id": 4
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              1.8873,
-              41.2378
-            ],
-            [
-              1.9693,
-              41.2378
-            ],
-            [
-              1.9693,
-              41.3198
-            ],
-            [
-              1.8873,
-              41.3198
-            ],
-            [
-              1.8873,
-              41.2378
-            ]
-          ]
+          1.9283,
+          41.2788
         ]
       }
     },
@@ -1375,33 +690,14 @@
         "temp_min": 13.2,
         "soil_type": "Calcari (B\u00e0sic)",
         "ph": 7.2,
-        "tree_type": "Pi blanc / Alzina"
+        "tree_type": "Pi blanc / Alzina",
+        "tree_id": 4
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              2.0657,
-              41.3172
-            ],
-            [
-              2.1477,
-              41.3172
-            ],
-            [
-              2.1477,
-              41.3992
-            ],
-            [
-              2.0657,
-              41.3992
-            ],
-            [
-              2.0657,
-              41.3172
-            ]
-          ]
+          2.1067,
+          41.3582
         ]
       }
     },
@@ -1409,38 +705,19 @@
       "type": "Feature",
       "properties": {
         "species": "Pinetell / Rovell\u00f3 (Lactarius deliciosus / sanguifluus)",
-        "score": 0.36,
+        "score": 0.338,
         "rain_21d": 31.6,
         "temp_min": 10.1,
         "soil_type": "Calcari argil\u00f3s",
         "ph": 7.8,
-        "tree_type": "Garriga / Conreus"
+        "tree_type": "Garriga / Conreus",
+        "tree_id": 3
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              0.135,
-              41.4746
-            ],
-            [
-              0.217,
-              41.4746
-            ],
-            [
-              0.217,
-              41.5566
-            ],
-            [
-              0.135,
-              41.5566
-            ],
-            [
-              0.135,
-              41.4746
-            ]
-          ]
+          0.176,
+          41.5156
         ]
       }
     },
@@ -1448,38 +725,19 @@
       "type": "Feature",
       "properties": {
         "species": "Pinetell / Rovell\u00f3 (Lactarius deliciosus / sanguifluus)",
-        "score": 0.378,
+        "score": 0.356,
         "rain_21d": 31.7,
         "temp_min": 10.5,
         "soil_type": "Calcari argil\u00f3s",
         "ph": 7.8,
-        "tree_type": "Garriga / Conreus"
+        "tree_type": "Garriga / Conreus",
+        "tree_id": 3
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              0.3113,
-              41.4978
-            ],
-            [
-              0.3933,
-              41.4978
-            ],
-            [
-              0.3933,
-              41.5798
-            ],
-            [
-              0.3113,
-              41.5798
-            ],
-            [
-              0.3113,
-              41.4978
-            ]
-          ]
+          0.3523,
+          41.5388
         ]
       }
     },
@@ -1492,33 +750,14 @@
         "temp_min": 10.0,
         "soil_type": "Calcari argil\u00f3s",
         "ph": 7.8,
-        "tree_type": "Garriga / Conreus"
+        "tree_type": "Garriga / Conreus",
+        "tree_id": 3
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              0.487,
-              41.4737
-            ],
-            [
-              0.569,
-              41.4737
-            ],
-            [
-              0.569,
-              41.5557
-            ],
-            [
-              0.487,
-              41.5557
-            ],
-            [
-              0.487,
-              41.4737
-            ]
-          ]
+          0.528,
+          41.5147
         ]
       }
     },
@@ -1531,33 +770,14 @@
         "temp_min": 10.3,
         "soil_type": "Calcari argil\u00f3s",
         "ph": 7.8,
-        "tree_type": "Garriga / Conreus"
+        "tree_type": "Garriga / Conreus",
+        "tree_id": 3
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              0.7217,
-              41.4725
-            ],
-            [
-              0.8037,
-              41.4725
-            ],
-            [
-              0.8037,
-              41.5545
-            ],
-            [
-              0.7217,
-              41.5545
-            ],
-            [
-              0.7217,
-              41.4725
-            ]
-          ]
+          0.7627,
+          41.5135
         ]
       }
     },
@@ -1570,33 +790,14 @@
         "temp_min": 10.0,
         "soil_type": "Calcari argil\u00f3s",
         "ph": 7.8,
-        "tree_type": "Garriga / Conreus"
+        "tree_type": "Garriga / Conreus",
+        "tree_id": 3
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              0.8984,
-              41.4949
-            ],
-            [
-              0.9804,
-              41.4949
-            ],
-            [
-              0.9804,
-              41.5769
-            ],
-            [
-              0.8984,
-              41.5769
-            ],
-            [
-              0.8984,
-              41.4949
-            ]
-          ]
+          0.9394,
+          41.5359
         ]
       }
     },
@@ -1609,33 +810,14 @@
         "temp_min": 9.4,
         "soil_type": "Calcari (B\u00e0sic)",
         "ph": 7.2,
-        "tree_type": "Pi blanc / Alzina"
+        "tree_type": "Pi blanc / Alzina",
+        "tree_id": 4
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              1.0736,
-              41.47
-            ],
-            [
-              1.1556,
-              41.47
-            ],
-            [
-              1.1556,
-              41.552
-            ],
-            [
-              1.0736,
-              41.552
-            ],
-            [
-              1.0736,
-              41.47
-            ]
-          ]
+          1.1146,
+          41.511
         ]
       }
     },
@@ -1648,33 +830,14 @@
         "temp_min": 9.2,
         "soil_type": "Calcari (B\u00e0sic)",
         "ph": 7.2,
-        "tree_type": "Pi blanc / Alzina"
+        "tree_type": "Pi blanc / Alzina",
+        "tree_id": 4
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              1.3083,
-              41.4678
-            ],
-            [
-              1.3903,
-              41.4678
-            ],
-            [
-              1.3903,
-              41.5498
-            ],
-            [
-              1.3083,
-              41.5498
-            ],
-            [
-              1.3083,
-              41.4678
-            ]
-          ]
+          1.3493,
+          41.5088
         ]
       }
     },
@@ -1687,33 +850,14 @@
         "temp_min": 9.0,
         "soil_type": "Calcari (B\u00e0sic)",
         "ph": 7.2,
-        "tree_type": "Pi blanc / Alzina"
+        "tree_type": "Pi blanc / Alzina",
+        "tree_id": 4
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              1.5429,
-              41.4652
-            ],
-            [
-              1.6249,
-              41.4652
-            ],
-            [
-              1.6249,
-              41.5472
-            ],
-            [
-              1.5429,
-              41.5472
-            ],
-            [
-              1.5429,
-              41.4652
-            ]
-          ]
+          1.5839,
+          41.5062
         ]
       }
     },
@@ -1726,33 +870,14 @@
         "temp_min": 11.1,
         "soil_type": "Calcari (B\u00e0sic)",
         "ph": 7.2,
-        "tree_type": "Pi blanc / Alzina"
+        "tree_type": "Pi blanc / Alzina",
+        "tree_id": 4
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              1.7201,
-              41.4864
-            ],
-            [
-              1.8021,
-              41.4864
-            ],
-            [
-              1.8021,
-              41.5684
-            ],
-            [
-              1.7201,
-              41.5684
-            ],
-            [
-              1.7201,
-              41.4864
-            ]
-          ]
+          1.7611,
+          41.5274
         ]
       }
     },
@@ -1765,33 +890,14 @@
         "temp_min": 11.5,
         "soil_type": "Calcari (B\u00e0sic)",
         "ph": 7.2,
-        "tree_type": "Pi blanc / Alzina"
+        "tree_type": "Pi blanc / Alzina",
+        "tree_id": 4
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              1.8947,
-              41.4604
-            ],
-            [
-              1.9767,
-              41.4604
-            ],
-            [
-              1.9767,
-              41.5424
-            ],
-            [
-              1.8947,
-              41.5424
-            ],
-            [
-              1.8947,
-              41.4604
-            ]
-          ]
+          1.9357,
+          41.5014
         ]
       }
     },
@@ -1804,33 +910,14 @@
         "temp_min": 12.0,
         "soil_type": "Calcari (B\u00e0sic)",
         "ph": 7.2,
-        "tree_type": "Pi blanc / Alzina"
+        "tree_type": "Pi blanc / Alzina",
+        "tree_id": 4
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              2.1293,
-              41.4568
-            ],
-            [
-              2.2113,
-              41.4568
-            ],
-            [
-              2.2113,
-              41.5388
-            ],
-            [
-              2.1293,
-              41.5388
-            ],
-            [
-              2.1293,
-              41.4568
-            ]
-          ]
+          2.1703,
+          41.4978
         ]
       }
     },
@@ -1843,33 +930,14 @@
         "temp_min": 12.9,
         "soil_type": "Calcari (B\u00e0sic)",
         "ph": 7.2,
-        "tree_type": "Pi blanc / Alzina"
+        "tree_type": "Pi blanc / Alzina",
+        "tree_id": 4
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              2.3069,
-              41.4772
-            ],
-            [
-              2.3889,
-              41.4772
-            ],
-            [
-              2.3889,
-              41.5592
-            ],
-            [
-              2.3069,
-              41.5592
-            ],
-            [
-              2.3069,
-              41.4772
-            ]
-          ]
+          2.3479,
+          41.5182
         ]
       }
     },
@@ -1882,33 +950,14 @@
         "temp_min": 12.9,
         "soil_type": "Calcari (B\u00e0sic)",
         "ph": 7.2,
-        "tree_type": "Pi blanc / Alzina"
+        "tree_type": "Pi blanc / Alzina",
+        "tree_id": 4
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              2.4262,
-              41.5335
-            ],
-            [
-              2.5082,
-              41.5335
-            ],
-            [
-              2.5082,
-              41.6155
-            ],
-            [
-              2.4262,
-              41.6155
-            ],
-            [
-              2.4262,
-              41.5335
-            ]
-          ]
+          2.4672,
+          41.5745
         ]
       }
     },
@@ -1921,33 +970,14 @@
         "temp_min": 16.8,
         "soil_type": "Calcari (B\u00e0sic)",
         "ph": 7.2,
-        "tree_type": "Pi blanc / Alzina"
+        "tree_type": "Pi blanc / Alzina",
+        "tree_id": 4
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              2.7155,
-              41.4457
-            ],
-            [
-              2.7975,
-              41.4457
-            ],
-            [
-              2.7975,
-              41.5277
-            ],
-            [
-              2.7155,
-              41.5277
-            ],
-            [
-              2.7155,
-              41.4457
-            ]
-          ]
+          2.7565,
+          41.4867
         ]
       }
     },
@@ -1960,33 +990,14 @@
         "temp_min": 17.0,
         "soil_type": "Calcari (B\u00e0sic)",
         "ph": 7.2,
-        "tree_type": "Pi blanc / Alzina"
+        "tree_type": "Pi blanc / Alzina",
+        "tree_id": 4
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              2.8935,
-              41.4654
-            ],
-            [
-              2.9755,
-              41.4654
-            ],
-            [
-              2.9755,
-              41.5474
-            ],
-            [
-              2.8935,
-              41.5474
-            ],
-            [
-              2.8935,
-              41.4654
-            ]
-          ]
+          2.9345,
+          41.5064
         ]
       }
     },
@@ -1994,38 +1005,19 @@
       "type": "Feature",
       "properties": {
         "species": "Pinetell / Rovell\u00f3 (Lactarius deliciosus / sanguifluus)",
-        "score": 0.33,
+        "score": 0.308,
         "rain_21d": 33.2,
         "temp_min": 9.3,
         "soil_type": "Calcari argil\u00f3s",
         "ph": 7.8,
-        "tree_type": "Garriga / Conreus"
+        "tree_type": "Garriga / Conreus",
+        "tree_id": 3
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              0.3124,
-              41.6619
-            ],
-            [
-              0.3944,
-              41.6619
-            ],
-            [
-              0.3944,
-              41.7439
-            ],
-            [
-              0.3124,
-              41.7439
-            ],
-            [
-              0.3124,
-              41.6619
-            ]
-          ]
+          0.3534,
+          41.7029
         ]
       }
     },
@@ -2038,33 +1030,14 @@
         "temp_min": 9.5,
         "soil_type": "Calcari argil\u00f3s",
         "ph": 7.8,
-        "tree_type": "Garriga / Conreus"
+        "tree_type": "Garriga / Conreus",
+        "tree_id": 3
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              0.4886,
-              41.6377
-            ],
-            [
-              0.5706,
-              41.6377
-            ],
-            [
-              0.5706,
-              41.7197
-            ],
-            [
-              0.4886,
-              41.7197
-            ],
-            [
-              0.4886,
-              41.6377
-            ]
-          ]
+          0.5296,
+          41.6787
         ]
       }
     },
@@ -2077,33 +1050,14 @@
         "temp_min": 9.6,
         "soil_type": "Calcari argil\u00f3s",
         "ph": 7.8,
-        "tree_type": "Garriga / Conreus"
+        "tree_type": "Garriga / Conreus",
+        "tree_id": 3
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              0.724,
-              41.6366
-            ],
-            [
-              0.806,
-              41.6366
-            ],
-            [
-              0.806,
-              41.7186
-            ],
-            [
-              0.724,
-              41.7186
-            ],
-            [
-              0.724,
-              41.6366
-            ]
-          ]
+          0.765,
+          41.6776
         ]
       }
     },
@@ -2116,33 +1070,14 @@
         "temp_min": 9.7,
         "soil_type": "Calcari argil\u00f3s",
         "ph": 7.8,
-        "tree_type": "Garriga / Conreus"
+        "tree_type": "Garriga / Conreus",
+        "tree_id": 3
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              0.9013,
-              41.659
-            ],
-            [
-              0.9833,
-              41.659
-            ],
-            [
-              0.9833,
-              41.741
-            ],
-            [
-              0.9013,
-              41.741
-            ],
-            [
-              0.9013,
-              41.659
-            ]
-          ]
+          0.9423,
+          41.7
         ]
       }
     },
@@ -2155,33 +1090,14 @@
         "temp_min": 10.0,
         "soil_type": "Calcari (B\u00e0sic)",
         "ph": 7.2,
-        "tree_type": "Pi blanc / Alzina"
+        "tree_type": "Pi blanc / Alzina",
+        "tree_id": 4
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              1.1368,
-              41.6571
-            ],
-            [
-              1.2188,
-              41.6571
-            ],
-            [
-              1.2188,
-              41.7391
-            ],
-            [
-              1.1368,
-              41.7391
-            ],
-            [
-              1.1368,
-              41.6571
-            ]
-          ]
+          1.1778,
+          41.6981
         ]
       }
     },
@@ -2194,33 +1110,14 @@
         "temp_min": 9.7,
         "soil_type": "Calcari (B\u00e0sic)",
         "ph": 7.2,
-        "tree_type": "Pi blanc / Alzina"
+        "tree_type": "Pi blanc / Alzina",
+        "tree_id": 4
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              1.3124,
-              41.6318
-            ],
-            [
-              1.3944,
-              41.6318
-            ],
-            [
-              1.3944,
-              41.7138
-            ],
-            [
-              1.3124,
-              41.7138
-            ],
-            [
-              1.3124,
-              41.6318
-            ]
-          ]
+          1.3534,
+          41.6728
         ]
       }
     },
@@ -2233,33 +1130,14 @@
         "temp_min": 8.9,
         "soil_type": "Calcari (B\u00e0sic)",
         "ph": 7.2,
-        "tree_type": "Pi blanc / Alzina"
+        "tree_type": "Pi blanc / Alzina",
+        "tree_id": 4
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              1.4901,
-              41.6534
-            ],
-            [
-              1.5721,
-              41.6534
-            ],
-            [
-              1.5721,
-              41.7354
-            ],
-            [
-              1.4901,
-              41.7354
-            ],
-            [
-              1.4901,
-              41.6534
-            ]
-          ]
+          1.5311,
+          41.6944
         ]
       }
     },
@@ -2272,33 +1150,14 @@
         "temp_min": 9.8,
         "soil_type": "Calcari (B\u00e0sic)",
         "ph": 7.2,
-        "tree_type": "Pi blanc / Alzina"
+        "tree_type": "Pi blanc / Alzina",
+        "tree_id": 4
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              1.7256,
-              41.6504
-            ],
-            [
-              1.8076,
-              41.6504
-            ],
-            [
-              1.8076,
-              41.7324
-            ],
-            [
-              1.7256,
-              41.7324
-            ],
-            [
-              1.7256,
-              41.6504
-            ]
-          ]
+          1.7666,
+          41.6914
         ]
       }
     },
@@ -2311,33 +1170,14 @@
         "temp_min": 9.7,
         "soil_type": "Calcari (B\u00e0sic)",
         "ph": 7.2,
-        "tree_type": "Pi blanc / Alzina"
+        "tree_type": "Pi blanc / Alzina",
+        "tree_id": 4
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              1.9007,
-              41.6244
-            ],
-            [
-              1.9827,
-              41.6244
-            ],
-            [
-              1.9827,
-              41.7064
-            ],
-            [
-              1.9007,
-              41.7064
-            ],
-            [
-              1.9007,
-              41.6244
-            ]
-          ]
+          1.9417,
+          41.6654
         ]
       }
     },
@@ -2350,33 +1190,14 @@
         "temp_min": 9.9,
         "soil_type": "Calcari (B\u00e0sic)",
         "ph": 7.2,
-        "tree_type": "Pi blanc / Alzina"
+        "tree_type": "Pi blanc / Alzina",
+        "tree_id": 4
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              2.0788,
-              41.6452
-            ],
-            [
-              2.1608,
-              41.6452
-            ],
-            [
-              2.1608,
-              41.7272
-            ],
-            [
-              2.0788,
-              41.7272
-            ],
-            [
-              2.0788,
-              41.6452
-            ]
-          ]
+          2.1198,
+          41.6862
         ]
       }
     },
@@ -2384,38 +1205,19 @@
       "type": "Feature",
       "properties": {
         "species": "Pinetell / Rovell\u00f3 (Lactarius deliciosus / sanguifluus)",
-        "score": 0.204,
+        "score": 0.163,
         "rain_21d": 89.5,
         "temp_min": 10.9,
         "soil_type": "Silici (\u00c0cid)",
         "ph": 5.2,
-        "tree_type": "Pi roig / Faig / Castanyer"
+        "tree_type": "Pi roig / Faig / Castanyer",
+        "tree_id": 1
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              2.3142,
-              41.6412
-            ],
-            [
-              2.3962,
-              41.6412
-            ],
-            [
-              2.3962,
-              41.7232
-            ],
-            [
-              2.3142,
-              41.7232
-            ],
-            [
-              2.3142,
-              41.6412
-            ]
-          ]
+          2.3552,
+          41.6822
         ]
       }
     },
@@ -2423,38 +1225,19 @@
       "type": "Feature",
       "properties": {
         "species": "Pinetell / Rovell\u00f3 (Lactarius deliciosus / sanguifluus)",
-        "score": 0.165,
+        "score": 0.132,
         "rain_21d": 57.5,
         "temp_min": 11.6,
         "soil_type": "Silici (\u00c0cid)",
         "ph": 5.2,
-        "tree_type": "Pi roig / Faig / Castanyer"
+        "tree_type": "Pi roig / Faig / Castanyer",
+        "tree_id": 1
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              2.4319,
-              41.639
-            ],
-            [
-              2.5139,
-              41.639
-            ],
-            [
-              2.5139,
-              41.721
-            ],
-            [
-              2.4319,
-              41.721
-            ],
-            [
-              2.4319,
-              41.639
-            ]
-          ]
+          2.4729,
+          41.68
         ]
       }
     },
@@ -2462,38 +1245,19 @@
       "type": "Feature",
       "properties": {
         "species": "Pinetell / Rovell\u00f3 (Lactarius deliciosus / sanguifluus)",
-        "score": 0.135,
+        "score": 0.108,
         "rain_21d": 43.1,
         "temp_min": 11.5,
         "soil_type": "Silici (\u00c0cid)",
         "ph": 5.2,
-        "tree_type": "Pi roig / Faig / Castanyer"
+        "tree_type": "Pi roig / Faig / Castanyer",
+        "tree_id": 1
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              2.6673,
-              41.6344
-            ],
-            [
-              2.7493,
-              41.6344
-            ],
-            [
-              2.7493,
-              41.7164
-            ],
-            [
-              2.6673,
-              41.7164
-            ],
-            [
-              2.6673,
-              41.6344
-            ]
-          ]
+          2.7083,
+          41.6754
         ]
       }
     },
@@ -2501,38 +1265,19 @@
       "type": "Feature",
       "properties": {
         "species": "Pinetell / Rovell\u00f3 (Lactarius deliciosus / sanguifluus)",
-        "score": 0.164,
+        "score": 0.131,
         "rain_21d": 51.7,
         "temp_min": 12.5,
         "soil_type": "Silici (\u00c0cid)",
         "ph": 5.2,
-        "tree_type": "Pi roig / Faig / Castanyer"
+        "tree_type": "Pi roig / Faig / Castanyer",
+        "tree_id": 1
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              2.8483,
-              41.7125
-            ],
-            [
-              2.9303,
-              41.7125
-            ],
-            [
-              2.9303,
-              41.7945
-            ],
-            [
-              2.8483,
-              41.7945
-            ],
-            [
-              2.8483,
-              41.7125
-            ]
-          ]
+          2.8893,
+          41.7535
         ]
       }
     },
@@ -2545,33 +1290,14 @@
         "temp_min": 10.3,
         "soil_type": "Calcari (B\u00e0sic)",
         "ph": 7.4,
-        "tree_type": "Pi negre / Roure"
+        "tree_type": "Pi negre / Roure",
+        "tree_id": 2
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              0.3138,
-              41.8843
-            ],
-            [
-              0.3958,
-              41.8843
-            ],
-            [
-              0.3958,
-              41.9663
-            ],
-            [
-              0.3138,
-              41.9663
-            ],
-            [
-              0.3138,
-              41.8843
-            ]
-          ]
+          0.3548,
+          41.9253
         ]
       }
     },
@@ -2584,33 +1310,14 @@
         "temp_min": 9.7,
         "soil_type": "Calcari (B\u00e0sic)",
         "ph": 7.4,
-        "tree_type": "Pi negre / Roure"
+        "tree_type": "Pi negre / Roure",
+        "tree_id": 2
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              0.5503,
-              41.8834
-            ],
-            [
-              0.6323,
-              41.8834
-            ],
-            [
-              0.6323,
-              41.9654
-            ],
-            [
-              0.5503,
-              41.9654
-            ],
-            [
-              0.5503,
-              41.8834
-            ]
-          ]
+          0.5913,
+          41.9244
         ]
       }
     },
@@ -2623,33 +1330,14 @@
         "temp_min": 8.8,
         "soil_type": "Calcari (B\u00e0sic)",
         "ph": 7.4,
-        "tree_type": "Pi negre / Roure"
+        "tree_type": "Pi negre / Roure",
+        "tree_id": 2
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              0.6685,
-              41.8828
-            ],
-            [
-              0.7505,
-              41.8828
-            ],
-            [
-              0.7505,
-              41.9648
-            ],
-            [
-              0.6685,
-              41.9648
-            ],
-            [
-              0.6685,
-              41.8828
-            ]
-          ]
+          0.7095,
+          41.9238
         ]
       }
     },
@@ -2662,33 +1350,14 @@
         "temp_min": 9.5,
         "soil_type": "Calcari (B\u00e0sic)",
         "ph": 7.4,
-        "tree_type": "Pi negre / Roure"
+        "tree_type": "Pi negre / Roure",
+        "tree_id": 2
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              0.905,
-              41.8813
-            ],
-            [
-              0.987,
-              41.8813
-            ],
-            [
-              0.987,
-              41.9633
-            ],
-            [
-              0.905,
-              41.9633
-            ],
-            [
-              0.905,
-              41.8813
-            ]
-          ]
+          0.946,
+          41.9223
         ]
       }
     },
@@ -2701,33 +1370,14 @@
         "temp_min": 7.7,
         "soil_type": "Calcari (B\u00e0sic)",
         "ph": 7.4,
-        "tree_type": "Pi negre / Roure"
+        "tree_type": "Pi negre / Roure",
+        "tree_id": 2
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              1.1415,
-              41.8794
-            ],
-            [
-              1.2235,
-              41.8794
-            ],
-            [
-              1.2235,
-              41.9614
-            ],
-            [
-              1.1415,
-              41.9614
-            ],
-            [
-              1.1415,
-              41.8794
-            ]
-          ]
+          1.1825,
+          41.9204
         ]
       }
     },
@@ -2740,33 +1390,14 @@
         "temp_min": 8.8,
         "soil_type": "Calcari (B\u00e0sic)",
         "ph": 7.4,
-        "tree_type": "Pi negre / Roure"
+        "tree_type": "Pi negre / Roure",
+        "tree_id": 2
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              1.2597,
-              41.8783
-            ],
-            [
-              1.3417,
-              41.8783
-            ],
-            [
-              1.3417,
-              41.9603
-            ],
-            [
-              1.2597,
-              41.9603
-            ],
-            [
-              1.2597,
-              41.8783
-            ]
-          ]
+          1.3007,
+          41.9193
         ]
       }
     },
@@ -2779,33 +1410,14 @@
         "temp_min": 8.3,
         "soil_type": "Calcari (B\u00e0sic)",
         "ph": 7.2,
-        "tree_type": "Pi blanc / Alzina"
+        "tree_type": "Pi blanc / Alzina",
+        "tree_id": 4
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              1.4961,
-              41.8757
-            ],
-            [
-              1.5781,
-              41.8757
-            ],
-            [
-              1.5781,
-              41.9577
-            ],
-            [
-              1.4961,
-              41.9577
-            ],
-            [
-              1.4961,
-              41.8757
-            ]
-          ]
+          1.5371,
+          41.9167
         ]
       }
     },
@@ -2818,33 +1430,14 @@
         "temp_min": 9.1,
         "soil_type": "Calcari (B\u00e0sic)",
         "ph": 7.2,
-        "tree_type": "Pi blanc / Alzina"
+        "tree_type": "Pi blanc / Alzina",
+        "tree_id": 4
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              1.7325,
-              41.8728
-            ],
-            [
-              1.8145,
-              41.8728
-            ],
-            [
-              1.8145,
-              41.9548
-            ],
-            [
-              1.7325,
-              41.9548
-            ],
-            [
-              1.7325,
-              41.8728
-            ]
-          ]
+          1.7735,
+          41.9138
         ]
       }
     },
@@ -2857,33 +1450,14 @@
         "temp_min": 9.1,
         "soil_type": "Calcari (B\u00e0sic)",
         "ph": 7.2,
-        "tree_type": "Pi blanc / Alzina"
+        "tree_type": "Pi blanc / Alzina",
+        "tree_id": 4
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              1.9113,
-              41.8938
-            ],
-            [
-              1.9933,
-              41.8938
-            ],
-            [
-              1.9933,
-              41.9758
-            ],
-            [
-              1.9113,
-              41.9758
-            ],
-            [
-              1.9113,
-              41.8938
-            ]
-          ]
+          1.9523,
+          41.9348
         ]
       }
     },
@@ -2896,33 +1470,14 @@
         "temp_min": 8.2,
         "soil_type": "Calcari (B\u00e0sic)",
         "ph": 7.2,
-        "tree_type": "Pi blanc / Alzina"
+        "tree_type": "Pi blanc / Alzina",
+        "tree_id": 4
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              2.0871,
-              41.8675
-            ],
-            [
-              2.1691,
-              41.8675
-            ],
-            [
-              2.1691,
-              41.9495
-            ],
-            [
-              2.0871,
-              41.9495
-            ],
-            [
-              2.0871,
-              41.8675
-            ]
-          ]
+          2.1281,
+          41.9085
         ]
       }
     },
@@ -2930,38 +1485,19 @@
       "type": "Feature",
       "properties": {
         "species": "Pinetell / Rovell\u00f3 (Lactarius deliciosus / sanguifluus)",
-        "score": 0.098,
+        "score": 0.078,
         "rain_21d": 43.2,
         "temp_min": 8.2,
         "soil_type": "Silici (\u00c0cid)",
         "ph": 5.2,
-        "tree_type": "Pi roig / Faig / Castanyer"
+        "tree_type": "Pi roig / Faig / Castanyer",
+        "tree_id": 1
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              2.3235,
-              41.8634
-            ],
-            [
-              2.4055,
-              41.8634
-            ],
-            [
-              2.4055,
-              41.9454
-            ],
-            [
-              2.3235,
-              41.9454
-            ],
-            [
-              2.3235,
-              41.8634
-            ]
-          ]
+          2.3645,
+          41.9044
         ]
       }
     },
@@ -2969,38 +1505,19 @@
       "type": "Feature",
       "properties": {
         "species": "Pinetell / Rovell\u00f3 (Lactarius deliciosus / sanguifluus)",
-        "score": 0.166,
+        "score": 0.133,
         "rain_21d": 74.8,
         "temp_min": 8.5,
         "soil_type": "Silici (\u00c0cid)",
         "ph": 5.2,
-        "tree_type": "Pi roig / Faig / Castanyer"
+        "tree_type": "Pi roig / Faig / Castanyer",
+        "tree_id": 1
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              2.4416,
-              41.8612
-            ],
-            [
-              2.5236,
-              41.8612
-            ],
-            [
-              2.5236,
-              41.9432
-            ],
-            [
-              2.4416,
-              41.9432
-            ],
-            [
-              2.4416,
-              41.8612
-            ]
-          ]
+          2.4826,
+          41.9022
         ]
       }
     },
@@ -3008,38 +1525,19 @@
       "type": "Feature",
       "properties": {
         "species": "Pinetell / Rovell\u00f3 (Lactarius deliciosus / sanguifluus)",
-        "score": 0.155,
+        "score": 0.124,
         "rain_21d": 56.9,
         "temp_min": 10.8,
         "soil_type": "Silici (\u00c0cid)",
         "ph": 5.2,
-        "tree_type": "Pi roig / Faig / Castanyer"
+        "tree_type": "Pi roig / Faig / Castanyer",
+        "tree_id": 1
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              2.6779,
-              41.8566
-            ],
-            [
-              2.7599,
-              41.8566
-            ],
-            [
-              2.7599,
-              41.9385
-            ],
-            [
-              2.6779,
-              41.9385
-            ],
-            [
-              2.6779,
-              41.8566
-            ]
-          ]
+          2.7189,
+          41.8976
         ]
       }
     },
@@ -3047,38 +1545,19 @@
       "type": "Feature",
       "properties": {
         "species": "Pinetell / Rovell\u00f3 (Lactarius deliciosus / sanguifluus)",
-        "score": 0.168,
+        "score": 0.135,
         "rain_21d": 63.8,
         "temp_min": 10.7,
         "soil_type": "Silici (\u00c0cid)",
         "ph": 5.2,
-        "tree_type": "Pi roig / Faig / Castanyer"
+        "tree_type": "Pi roig / Faig / Castanyer",
+        "tree_id": 1
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              2.9142,
-              41.8514
-            ],
-            [
-              2.9962,
-              41.8514
-            ],
-            [
-              2.9962,
-              41.9334
-            ],
-            [
-              2.9142,
-              41.9334
-            ],
-            [
-              2.9142,
-              41.8514
-            ]
-          ]
+          2.9552,
+          41.8924
         ]
       }
     },
@@ -3086,38 +1565,19 @@
       "type": "Feature",
       "properties": {
         "species": "Pinetell / Rovell\u00f3 (Lactarius deliciosus / sanguifluus)",
-        "score": 0.137,
+        "score": 0.11,
         "rain_21d": 44.9,
         "temp_min": 11.4,
         "soil_type": "Silici (\u00c0cid)",
         "ph": 5.2,
-        "tree_type": "Pi roig / Faig / Castanyer"
+        "tree_type": "Pi roig / Faig / Castanyer",
+        "tree_id": 1
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              3.0937,
-              41.8709
-            ],
-            [
-              3.1757,
-              41.8709
-            ],
-            [
-              3.1757,
-              41.9529
-            ],
-            [
-              3.0937,
-              41.9529
-            ],
-            [
-              3.0937,
-              41.8709
-            ]
-          ]
+          3.1347,
+          41.9119
         ]
       }
     },
@@ -3130,33 +1590,14 @@
         "temp_min": 8.1,
         "soil_type": "Calcari (B\u00e0sic)",
         "ph": 7.4,
-        "tree_type": "Pi negre / Roure"
+        "tree_type": "Pi negre / Roure",
+        "tree_id": 2
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              0.309,
-              42.059
-            ],
-            [
-              0.391,
-              42.059
-            ],
-            [
-              0.391,
-              42.141
-            ],
-            [
-              0.309,
-              42.141
-            ],
-            [
-              0.309,
-              42.059
-            ]
-          ]
+          0.35,
+          42.1
         ]
       }
     },
@@ -3169,33 +1610,14 @@
         "temp_min": 6.6,
         "soil_type": "Calcari (B\u00e0sic)",
         "ph": 7.4,
-        "tree_type": "Pi negre / Roure"
+        "tree_type": "Pi negre / Roure",
+        "tree_id": 2
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              0.509,
-              42.059
-            ],
-            [
-              0.591,
-              42.059
-            ],
-            [
-              0.591,
-              42.141
-            ],
-            [
-              0.509,
-              42.141
-            ],
-            [
-              0.509,
-              42.059
-            ]
-          ]
+          0.55,
+          42.1
         ]
       }
     },
@@ -3208,33 +1630,14 @@
         "temp_min": 7.6,
         "soil_type": "Calcari (B\u00e0sic)",
         "ph": 7.4,
-        "tree_type": "Pi negre / Roure"
+        "tree_type": "Pi negre / Roure",
+        "tree_id": 2
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              0.709,
-              42.059
-            ],
-            [
-              0.791,
-              42.059
-            ],
-            [
-              0.791,
-              42.141
-            ],
-            [
-              0.709,
-              42.141
-            ],
-            [
-              0.709,
-              42.059
-            ]
-          ]
+          0.75,
+          42.1
         ]
       }
     },
@@ -3247,33 +1650,14 @@
         "temp_min": 8.0,
         "soil_type": "Calcari (B\u00e0sic)",
         "ph": 7.4,
-        "tree_type": "Pi negre / Roure"
+        "tree_type": "Pi negre / Roure",
+        "tree_id": 2
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              0.909,
-              42.059
-            ],
-            [
-              0.991,
-              42.059
-            ],
-            [
-              0.991,
-              42.141
-            ],
-            [
-              0.909,
-              42.141
-            ],
-            [
-              0.909,
-              42.059
-            ]
-          ]
+          0.95,
+          42.1
         ]
       }
     },
@@ -3286,33 +1670,14 @@
         "temp_min": 6.5,
         "soil_type": "Calcari (B\u00e0sic)",
         "ph": 7.4,
-        "tree_type": "Pi negre / Roure"
+        "tree_type": "Pi negre / Roure",
+        "tree_id": 2
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              1.109,
-              42.059
-            ],
-            [
-              1.191,
-              42.059
-            ],
-            [
-              1.191,
-              42.141
-            ],
-            [
-              1.109,
-              42.141
-            ],
-            [
-              1.109,
-              42.059
-            ]
-          ]
+          1.15,
+          42.1
         ]
       }
     },
@@ -3325,33 +1690,14 @@
         "temp_min": 6.2,
         "soil_type": "Calcari (B\u00e0sic)",
         "ph": 7.4,
-        "tree_type": "Pi negre / Roure"
+        "tree_type": "Pi negre / Roure",
+        "tree_id": 2
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              1.309,
-              42.059
-            ],
-            [
-              1.391,
-              42.059
-            ],
-            [
-              1.391,
-              42.141
-            ],
-            [
-              1.309,
-              42.141
-            ],
-            [
-              1.309,
-              42.059
-            ]
-          ]
+          1.35,
+          42.1
         ]
       }
     },
@@ -3364,33 +1710,14 @@
         "temp_min": 6.0,
         "soil_type": "Calcari (B\u00e0sic)",
         "ph": 7.2,
-        "tree_type": "Pi blanc / Alzina"
+        "tree_type": "Pi blanc / Alzina",
+        "tree_id": 4
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              1.509,
-              42.059
-            ],
-            [
-              1.591,
-              42.059
-            ],
-            [
-              1.591,
-              42.141
-            ],
-            [
-              1.509,
-              42.141
-            ],
-            [
-              1.509,
-              42.059
-            ]
-          ]
+          1.55,
+          42.1
         ]
       }
     },
@@ -3403,33 +1730,14 @@
         "temp_min": 4.8,
         "soil_type": "Calcari (B\u00e0sic)",
         "ph": 7.2,
-        "tree_type": "Pi blanc / Alzina"
+        "tree_type": "Pi blanc / Alzina",
+        "tree_id": 4
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              1.709,
-              42.059
-            ],
-            [
-              1.791,
-              42.059
-            ],
-            [
-              1.791,
-              42.141
-            ],
-            [
-              1.709,
-              42.141
-            ],
-            [
-              1.709,
-              42.059
-            ]
-          ]
+          1.75,
+          42.1
         ]
       }
     },
@@ -3442,33 +1750,14 @@
         "temp_min": 7.5,
         "soil_type": "Calcari (B\u00e0sic)",
         "ph": 7.2,
-        "tree_type": "Pi blanc / Alzina"
+        "tree_type": "Pi blanc / Alzina",
+        "tree_id": 4
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              1.909,
-              42.059
-            ],
-            [
-              1.991,
-              42.059
-            ],
-            [
-              1.991,
-              42.141
-            ],
-            [
-              1.909,
-              42.141
-            ],
-            [
-              1.909,
-              42.059
-            ]
-          ]
+          1.95,
+          42.1
         ]
       }
     },
@@ -3481,33 +1770,14 @@
         "temp_min": 7.1,
         "soil_type": "Calcari (B\u00e0sic)",
         "ph": 7.2,
-        "tree_type": "Pi blanc / Alzina"
+        "tree_type": "Pi blanc / Alzina",
+        "tree_id": 4
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              2.109,
-              42.059
-            ],
-            [
-              2.191,
-              42.059
-            ],
-            [
-              2.191,
-              42.141
-            ],
-            [
-              2.109,
-              42.141
-            ],
-            [
-              2.109,
-              42.059
-            ]
-          ]
+          2.15,
+          42.1
         ]
       }
     },
@@ -3520,33 +1790,14 @@
         "temp_min": 7.1,
         "soil_type": "Calcari (B\u00e0sic)",
         "ph": 7.2,
-        "tree_type": "Pi blanc / Alzina"
+        "tree_type": "Pi blanc / Alzina",
+        "tree_id": 4
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              2.309,
-              42.059
-            ],
-            [
-              2.391,
-              42.059
-            ],
-            [
-              2.391,
-              42.141
-            ],
-            [
-              2.309,
-              42.141
-            ],
-            [
-              2.309,
-              42.059
-            ]
-          ]
+          2.35,
+          42.1
         ]
       }
     },
@@ -3559,33 +1810,14 @@
         "temp_min": 8.3,
         "soil_type": "Calcari (B\u00e0sic)",
         "ph": 7.2,
-        "tree_type": "Pi blanc / Alzina"
+        "tree_type": "Pi blanc / Alzina",
+        "tree_id": 4
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              2.509,
-              42.059
-            ],
-            [
-              2.591,
-              42.059
-            ],
-            [
-              2.591,
-              42.141
-            ],
-            [
-              2.509,
-              42.141
-            ],
-            [
-              2.509,
-              42.059
-            ]
-          ]
+          2.55,
+          42.1
         ]
       }
     },
@@ -3593,38 +1825,19 @@
       "type": "Feature",
       "properties": {
         "species": "Pinetell / Rovell\u00f3 (Lactarius deliciosus / sanguifluus)",
-        "score": 0.43,
+        "score": 0.404,
         "rain_21d": 38.9,
         "temp_min": 11.0,
         "soil_type": "Calcari (B\u00e0sic)",
         "ph": 7.2,
-        "tree_type": "Pi blanc / Alzina"
+        "tree_type": "Pi blanc / Alzina",
+        "tree_id": 4
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              2.709,
-              42.059
-            ],
-            [
-              2.791,
-              42.059
-            ],
-            [
-              2.791,
-              42.141
-            ],
-            [
-              2.709,
-              42.141
-            ],
-            [
-              2.709,
-              42.059
-            ]
-          ]
+          2.75,
+          42.1
         ]
       }
     },
@@ -3632,38 +1845,19 @@
       "type": "Feature",
       "properties": {
         "species": "Pinetell / Rovell\u00f3 (Lactarius deliciosus / sanguifluus)",
-        "score": 0.443,
+        "score": 0.417,
         "rain_21d": 37.5,
         "temp_min": 11.4,
         "soil_type": "Calcari (B\u00e0sic)",
         "ph": 7.2,
-        "tree_type": "Pi blanc / Alzina"
+        "tree_type": "Pi blanc / Alzina",
+        "tree_id": 4
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              2.909,
-              42.059
-            ],
-            [
-              2.991,
-              42.059
-            ],
-            [
-              2.991,
-              42.141
-            ],
-            [
-              2.909,
-              42.141
-            ],
-            [
-              2.909,
-              42.059
-            ]
-          ]
+          2.95,
+          42.1
         ]
       }
     },
@@ -3671,38 +1865,19 @@
       "type": "Feature",
       "properties": {
         "species": "Pinetell / Rovell\u00f3 (Lactarius deliciosus / sanguifluus)",
-        "score": 0.485,
+        "score": 0.46,
         "rain_21d": 36.9,
         "temp_min": 12.4,
         "soil_type": "Calcari (B\u00e0sic)",
         "ph": 7.2,
-        "tree_type": "Pi blanc / Alzina"
+        "tree_type": "Pi blanc / Alzina",
+        "tree_id": 4
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              3.109,
-              42.059
-            ],
-            [
-              3.191,
-              42.059
-            ],
-            [
-              3.191,
-              42.141
-            ],
-            [
-              3.109,
-              42.141
-            ],
-            [
-              3.109,
-              42.059
-            ]
-          ]
+          3.15,
+          42.1
         ]
       }
     },
@@ -3710,38 +1885,19 @@
       "type": "Feature",
       "properties": {
         "species": "Pinetell / Rovell\u00f3 (Lactarius deliciosus / sanguifluus)",
-        "score": 0.063,
+        "score": 0.045,
         "rain_21d": 39.4,
         "temp_min": 7.0,
         "soil_type": "Silici (\u00c0cid)",
         "ph": 5.2,
-        "tree_type": "Pi roig / Faig / Castanyer"
+        "tree_type": "Pi roig / Faig / Castanyer",
+        "tree_id": 1
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              0.309,
-              42.259
-            ],
-            [
-              0.391,
-              42.259
-            ],
-            [
-              0.391,
-              42.341
-            ],
-            [
-              0.309,
-              42.341
-            ],
-            [
-              0.309,
-              42.259
-            ]
-          ]
+          0.35,
+          42.3
         ]
       }
     },
@@ -3749,38 +1905,19 @@
       "type": "Feature",
       "properties": {
         "species": "Pinetell / Rovell\u00f3 (Lactarius deliciosus / sanguifluus)",
-        "score": 0.111,
+        "score": 0.089,
         "rain_21d": 56.2,
         "temp_min": 5.8,
         "soil_type": "Silici (\u00c0cid)",
         "ph": 5.2,
-        "tree_type": "Pi roig / Faig / Castanyer"
+        "tree_type": "Pi roig / Faig / Castanyer",
+        "tree_id": 1
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              0.509,
-              42.259
-            ],
-            [
-              0.591,
-              42.259
-            ],
-            [
-              0.591,
-              42.341
-            ],
-            [
-              0.509,
-              42.341
-            ],
-            [
-              0.509,
-              42.259
-            ]
-          ]
+          0.55,
+          42.3
         ]
       }
     },
@@ -3788,38 +1925,19 @@
       "type": "Feature",
       "properties": {
         "species": "Pinetell / Rovell\u00f3 (Lactarius deliciosus / sanguifluus)",
-        "score": 0.106,
+        "score": 0.085,
         "rain_21d": 53.8,
         "temp_min": 6.5,
         "soil_type": "Silici (\u00c0cid)",
         "ph": 5.2,
-        "tree_type": "Pi roig / Faig / Castanyer"
+        "tree_type": "Pi roig / Faig / Castanyer",
+        "tree_id": 1
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              0.709,
-              42.259
-            ],
-            [
-              0.791,
-              42.259
-            ],
-            [
-              0.791,
-              42.341
-            ],
-            [
-              0.709,
-              42.341
-            ],
-            [
-              0.709,
-              42.259
-            ]
-          ]
+          0.75,
+          42.3
         ]
       }
     },
@@ -3827,38 +1945,19 @@
       "type": "Feature",
       "properties": {
         "species": "Pinetell / Rovell\u00f3 (Lactarius deliciosus / sanguifluus)",
-        "score": 0.112,
+        "score": 0.089,
         "rain_21d": 54.9,
         "temp_min": 7.3,
         "soil_type": "Silici (\u00c0cid)",
         "ph": 5.2,
-        "tree_type": "Pi roig / Faig / Castanyer"
+        "tree_type": "Pi roig / Faig / Castanyer",
+        "tree_id": 1
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              0.909,
-              42.259
-            ],
-            [
-              0.991,
-              42.259
-            ],
-            [
-              0.991,
-              42.341
-            ],
-            [
-              0.909,
-              42.341
-            ],
-            [
-              0.909,
-              42.259
-            ]
-          ]
+          0.95,
+          42.3
         ]
       }
     },
@@ -3866,38 +1965,19 @@
       "type": "Feature",
       "properties": {
         "species": "Pinetell / Rovell\u00f3 (Lactarius deliciosus / sanguifluus)",
-        "score": 0.056,
+        "score": 0.045,
         "rain_21d": 56.6,
         "temp_min": 3.7,
         "soil_type": "Silici (\u00c0cid)",
         "ph": 5.2,
-        "tree_type": "Pi roig / Faig / Castanyer"
+        "tree_type": "Pi roig / Faig / Castanyer",
+        "tree_id": 1
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              1.119,
-              42.259
-            ],
-            [
-              1.201,
-              42.259
-            ],
-            [
-              1.201,
-              42.341
-            ],
-            [
-              1.119,
-              42.341
-            ],
-            [
-              1.119,
-              42.259
-            ]
-          ]
+          1.16,
+          42.3
         ]
       }
     },
@@ -3905,38 +1985,19 @@
       "type": "Feature",
       "properties": {
         "species": "Pinetell / Rovell\u00f3 (Lactarius deliciosus / sanguifluus)",
-        "score": 0.107,
+        "score": 0.086,
         "rain_21d": 54.4,
         "temp_min": 5.9,
         "soil_type": "Silici (\u00c0cid)",
         "ph": 5.2,
-        "tree_type": "Pi roig / Faig / Castanyer"
+        "tree_type": "Pi roig / Faig / Castanyer",
+        "tree_id": 1
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              1.309,
-              42.259
-            ],
-            [
-              1.391,
-              42.259
-            ],
-            [
-              1.391,
-              42.341
-            ],
-            [
-              1.309,
-              42.341
-            ],
-            [
-              1.309,
-              42.259
-            ]
-          ]
+          1.35,
+          42.3
         ]
       }
     },
@@ -3944,38 +2005,19 @@
       "type": "Feature",
       "properties": {
         "species": "Pinetell / Rovell\u00f3 (Lactarius deliciosus / sanguifluus)",
-        "score": 0.114,
+        "score": 0.091,
         "rain_21d": 76.3,
         "temp_min": 4.7,
         "soil_type": "Silici (\u00c0cid)",
         "ph": 5.2,
-        "tree_type": "Pi roig / Faig / Castanyer"
+        "tree_type": "Pi roig / Faig / Castanyer",
+        "tree_id": 1
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              1.519,
-              42.249
-            ],
-            [
-              1.601,
-              42.249
-            ],
-            [
-              1.601,
-              42.331
-            ],
-            [
-              1.519,
-              42.331
-            ],
-            [
-              1.519,
-              42.249
-            ]
-          ]
+          1.56,
+          42.29
         ]
       }
     },
@@ -3983,38 +2025,19 @@
       "type": "Feature",
       "properties": {
         "species": "Pinetell / Rovell\u00f3 (Lactarius deliciosus / sanguifluus)",
-        "score": 0.08,
+        "score": 0.064,
         "rain_21d": 116.3,
         "temp_min": 4.1,
         "soil_type": "Silici (\u00c0cid)",
         "ph": 5.2,
-        "tree_type": "Pi roig / Faig / Castanyer"
+        "tree_type": "Pi roig / Faig / Castanyer",
+        "tree_id": 1
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              1.709,
-              42.259
-            ],
-            [
-              1.791,
-              42.259
-            ],
-            [
-              1.791,
-              42.341
-            ],
-            [
-              1.709,
-              42.341
-            ],
-            [
-              1.709,
-              42.259
-            ]
-          ]
+          1.75,
+          42.3
         ]
       }
     },
@@ -4027,33 +2050,14 @@
         "temp_min": 1.6,
         "soil_type": "Silici (\u00c0cid)",
         "ph": 5.2,
-        "tree_type": "Pi roig / Faig / Castanyer"
+        "tree_type": "Pi roig / Faig / Castanyer",
+        "tree_id": 1
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              1.909,
-              42.259
-            ],
-            [
-              1.991,
-              42.259
-            ],
-            [
-              1.991,
-              42.341
-            ],
-            [
-              1.909,
-              42.341
-            ],
-            [
-              1.909,
-              42.259
-            ]
-          ]
+          1.95,
+          42.3
         ]
       }
     },
@@ -4061,38 +2065,19 @@
       "type": "Feature",
       "properties": {
         "species": "Pinetell / Rovell\u00f3 (Lactarius deliciosus / sanguifluus)",
-        "score": 0.12,
+        "score": 0.096,
         "rain_21d": 90.4,
         "temp_min": 4.3,
         "soil_type": "Silici (\u00c0cid)",
         "ph": 5.2,
-        "tree_type": "Pi roig / Faig / Castanyer"
+        "tree_type": "Pi roig / Faig / Castanyer",
+        "tree_id": 1
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              2.109,
-              42.259
-            ],
-            [
-              2.191,
-              42.259
-            ],
-            [
-              2.191,
-              42.341
-            ],
-            [
-              2.109,
-              42.341
-            ],
-            [
-              2.109,
-              42.259
-            ]
-          ]
+          2.15,
+          42.3
         ]
       }
     },
@@ -4100,38 +2085,19 @@
       "type": "Feature",
       "properties": {
         "species": "Pinetell / Rovell\u00f3 (Lactarius deliciosus / sanguifluus)",
-        "score": 0.16,
+        "score": 0.128,
         "rain_21d": 99.7,
         "temp_min": 5.6,
         "soil_type": "Silici (\u00c0cid)",
         "ph": 5.2,
-        "tree_type": "Pi roig / Faig / Castanyer"
+        "tree_type": "Pi roig / Faig / Castanyer",
+        "tree_id": 1
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              2.309,
-              42.259
-            ],
-            [
-              2.391,
-              42.259
-            ],
-            [
-              2.391,
-              42.341
-            ],
-            [
-              2.309,
-              42.341
-            ],
-            [
-              2.309,
-              42.259
-            ]
-          ]
+          2.35,
+          42.3
         ]
       }
     },
@@ -4139,38 +2105,19 @@
       "type": "Feature",
       "properties": {
         "species": "Pinetell / Rovell\u00f3 (Lactarius deliciosus / sanguifluus)",
-        "score": 0.177,
+        "score": 0.142,
         "rain_21d": 73.7,
         "temp_min": 9.7,
         "soil_type": "Silici (\u00c0cid)",
         "ph": 5.2,
-        "tree_type": "Pi roig / Faig / Castanyer"
+        "tree_type": "Pi roig / Faig / Castanyer",
+        "tree_id": 1
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              2.499,
-              42.259
-            ],
-            [
-              2.581,
-              42.259
-            ],
-            [
-              2.581,
-              42.341
-            ],
-            [
-              2.499,
-              42.341
-            ],
-            [
-              2.499,
-              42.259
-            ]
-          ]
+          2.54,
+          42.3
         ]
       }
     },
@@ -4178,38 +2125,19 @@
       "type": "Feature",
       "properties": {
         "species": "Pinetell / Rovell\u00f3 (Lactarius deliciosus / sanguifluus)",
-        "score": 0.123,
+        "score": 0.098,
         "rain_21d": 47.3,
         "temp_min": 9.7,
         "soil_type": "Silici (\u00c0cid)",
         "ph": 5.2,
-        "tree_type": "Pi roig / Faig / Castanyer"
+        "tree_type": "Pi roig / Faig / Castanyer",
+        "tree_id": 1
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              2.709,
-              42.259
-            ],
-            [
-              2.791,
-              42.259
-            ],
-            [
-              2.791,
-              42.341
-            ],
-            [
-              2.709,
-              42.341
-            ],
-            [
-              2.709,
-              42.259
-            ]
-          ]
+          2.75,
+          42.3
         ]
       }
     },
@@ -4217,38 +2145,19 @@
       "type": "Feature",
       "properties": {
         "species": "Pinetell / Rovell\u00f3 (Lactarius deliciosus / sanguifluus)",
-        "score": 0.101,
+        "score": 0.077,
         "rain_21d": 27.3,
         "temp_min": 11.5,
         "soil_type": "Silici (\u00c0cid)",
         "ph": 5.2,
-        "tree_type": "Pi roig / Faig / Castanyer"
+        "tree_type": "Pi roig / Faig / Castanyer",
+        "tree_id": 1
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              2.909,
-              42.259
-            ],
-            [
-              2.991,
-              42.259
-            ],
-            [
-              2.991,
-              42.341
-            ],
-            [
-              2.909,
-              42.341
-            ],
-            [
-              2.909,
-              42.259
-            ]
-          ]
+          2.95,
+          42.3
         ]
       }
     },
@@ -4256,38 +2165,19 @@
       "type": "Feature",
       "properties": {
         "species": "Pinetell / Rovell\u00f3 (Lactarius deliciosus / sanguifluus)",
-        "score": 0.117,
+        "score": 0.089,
         "rain_21d": 30.5,
         "temp_min": 12.6,
         "soil_type": "Silici (\u00c0cid)",
         "ph": 5.2,
-        "tree_type": "Pi roig / Faig / Castanyer"
+        "tree_type": "Pi roig / Faig / Castanyer",
+        "tree_id": 1
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              3.109,
-              42.259
-            ],
-            [
-              3.191,
-              42.259
-            ],
-            [
-              3.191,
-              42.341
-            ],
-            [
-              3.109,
-              42.341
-            ],
-            [
-              3.109,
-              42.259
-            ]
-          ]
+          3.15,
+          42.3
         ]
       }
     },
@@ -4300,33 +2190,14 @@
         "temp_min": 1.0,
         "soil_type": "Silici (\u00c0cid)",
         "ph": 5.2,
-        "tree_type": "Pi roig / Faig / Castanyer"
+        "tree_type": "Pi roig / Faig / Castanyer",
+        "tree_id": 1
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              0.309,
-              42.459
-            ],
-            [
-              0.391,
-              42.459
-            ],
-            [
-              0.391,
-              42.541
-            ],
-            [
-              0.309,
-              42.541
-            ],
-            [
-              0.309,
-              42.459
-            ]
-          ]
+          0.35,
+          42.5
         ]
       }
     },
@@ -4334,38 +2205,19 @@
       "type": "Feature",
       "properties": {
         "species": "Pinetell / Rovell\u00f3 (Lactarius deliciosus / sanguifluus)",
-        "score": 0.047,
+        "score": 0.033,
         "rain_21d": 38.6,
         "temp_min": 4.5,
         "soil_type": "Silici (\u00c0cid)",
         "ph": 5.2,
-        "tree_type": "Pi roig / Faig / Castanyer"
+        "tree_type": "Pi roig / Faig / Castanyer",
+        "tree_id": 1
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              0.509,
-              42.459
-            ],
-            [
-              0.591,
-              42.459
-            ],
-            [
-              0.591,
-              42.541
-            ],
-            [
-              0.509,
-              42.541
-            ],
-            [
-              0.509,
-              42.459
-            ]
-          ]
+          0.55,
+          42.5
         ]
       }
     },
@@ -4378,33 +2230,14 @@
         "temp_min": 1.8,
         "soil_type": "Silici (\u00c0cid)",
         "ph": 5.2,
-        "tree_type": "Pi roig / Faig / Castanyer"
+        "tree_type": "Pi roig / Faig / Castanyer",
+        "tree_id": 1
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              0.709,
-              42.459
-            ],
-            [
-              0.791,
-              42.459
-            ],
-            [
-              0.791,
-              42.541
-            ],
-            [
-              0.709,
-              42.541
-            ],
-            [
-              0.709,
-              42.459
-            ]
-          ]
+          0.75,
+          42.5
         ]
       }
     },
@@ -4417,33 +2250,14 @@
         "temp_min": 1.4,
         "soil_type": "Silici (\u00c0cid)",
         "ph": 5.2,
-        "tree_type": "Pi roig / Faig / Castanyer"
+        "tree_type": "Pi roig / Faig / Castanyer",
+        "tree_id": 1
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              0.909,
-              42.459
-            ],
-            [
-              0.991,
-              42.459
-            ],
-            [
-              0.991,
-              42.541
-            ],
-            [
-              0.909,
-              42.541
-            ],
-            [
-              0.909,
-              42.459
-            ]
-          ]
+          0.95,
+          42.5
         ]
       }
     },
@@ -4451,38 +2265,19 @@
       "type": "Feature",
       "properties": {
         "species": "Pinetell / Rovell\u00f3 (Lactarius deliciosus / sanguifluus)",
-        "score": 0.059,
+        "score": 0.042,
         "rain_21d": 35.4,
         "temp_min": 5.3,
         "soil_type": "Silici (\u00c0cid)",
         "ph": 5.2,
-        "tree_type": "Pi roig / Faig / Castanyer"
+        "tree_type": "Pi roig / Faig / Castanyer",
+        "tree_id": 1
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              1.109,
-              42.459
-            ],
-            [
-              1.191,
-              42.459
-            ],
-            [
-              1.191,
-              42.541
-            ],
-            [
-              1.109,
-              42.541
-            ],
-            [
-              1.109,
-              42.459
-            ]
-          ]
+          1.15,
+          42.5
         ]
       }
     },
@@ -4495,33 +2290,14 @@
         "temp_min": 2.7,
         "soil_type": "Silici (\u00c0cid)",
         "ph": 5.2,
-        "tree_type": "Pi roig / Faig / Castanyer"
+        "tree_type": "Pi roig / Faig / Castanyer",
+        "tree_id": 1
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              1.319,
-              42.459
-            ],
-            [
-              1.401,
-              42.459
-            ],
-            [
-              1.401,
-              42.541
-            ],
-            [
-              1.319,
-              42.541
-            ],
-            [
-              1.319,
-              42.459
-            ]
-          ]
+          1.36,
+          42.5
         ]
       }
     },
@@ -4529,38 +2305,19 @@
       "type": "Feature",
       "properties": {
         "species": "Pinetell / Rovell\u00f3 (Lactarius deliciosus / sanguifluus)",
-        "score": 0.082,
+        "score": 0.066,
         "rain_21d": 55.5,
         "temp_min": 5.0,
         "soil_type": "Silici (\u00c0cid)",
         "ph": 5.2,
-        "tree_type": "Pi roig / Faig / Castanyer"
+        "tree_type": "Pi roig / Faig / Castanyer",
+        "tree_id": 1
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              1.519,
-              42.459
-            ],
-            [
-              1.601,
-              42.459
-            ],
-            [
-              1.601,
-              42.541
-            ],
-            [
-              1.519,
-              42.541
-            ],
-            [
-              1.519,
-              42.459
-            ]
-          ]
+          1.56,
+          42.5
         ]
       }
     },
@@ -4573,33 +2330,14 @@
         "temp_min": 0.3,
         "soil_type": "Silici (\u00c0cid)",
         "ph": 5.2,
-        "tree_type": "Pi roig / Faig / Castanyer"
+        "tree_type": "Pi roig / Faig / Castanyer",
+        "tree_id": 1
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              1.709,
-              42.459
-            ],
-            [
-              1.791,
-              42.459
-            ],
-            [
-              1.791,
-              42.541
-            ],
-            [
-              1.709,
-              42.541
-            ],
-            [
-              1.709,
-              42.459
-            ]
-          ]
+          1.75,
+          42.5
         ]
       }
     },
@@ -4607,38 +2345,19 @@
       "type": "Feature",
       "properties": {
         "species": "Pinetell / Rovell\u00f3 (Lactarius deliciosus / sanguifluus)",
-        "score": 0.051,
+        "score": 0.04,
         "rain_21d": 51.5,
         "temp_min": 3.2,
         "soil_type": "Silici (\u00c0cid)",
         "ph": 5.2,
-        "tree_type": "Pi roig / Faig / Castanyer"
+        "tree_type": "Pi roig / Faig / Castanyer",
+        "tree_id": 1
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              1.909,
-              42.459
-            ],
-            [
-              1.991,
-              42.459
-            ],
-            [
-              1.991,
-              42.541
-            ],
-            [
-              1.909,
-              42.541
-            ],
-            [
-              1.909,
-              42.459
-            ]
-          ]
+          1.95,
+          42.5
         ]
       }
     },
@@ -4646,38 +2365,19 @@
       "type": "Feature",
       "properties": {
         "species": "Pinetell / Rovell\u00f3 (Lactarius deliciosus / sanguifluus)",
-        "score": 0.061,
+        "score": 0.048,
         "rain_21d": 41.6,
         "temp_min": 5.0,
         "soil_type": "Silici (\u00c0cid)",
         "ph": 5.2,
-        "tree_type": "Pi roig / Faig / Castanyer"
+        "tree_type": "Pi roig / Faig / Castanyer",
+        "tree_id": 1
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              2.109,
-              42.459
-            ],
-            [
-              2.191,
-              42.459
-            ],
-            [
-              2.191,
-              42.541
-            ],
-            [
-              2.109,
-              42.541
-            ],
-            [
-              2.109,
-              42.459
-            ]
-          ]
+          2.15,
+          42.5
         ]
       }
     },
@@ -4685,38 +2385,19 @@
       "type": "Feature",
       "properties": {
         "species": "Pinetell / Rovell\u00f3 (Lactarius deliciosus / sanguifluus)",
-        "score": 0.113,
+        "score": 0.09,
         "rain_21d": 57.2,
         "temp_min": 5.5,
         "soil_type": "Silici (\u00c0cid)",
         "ph": 5.2,
-        "tree_type": "Pi roig / Faig / Castanyer"
+        "tree_type": "Pi roig / Faig / Castanyer",
+        "tree_id": 1
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              2.309,
-              42.459
-            ],
-            [
-              2.391,
-              42.459
-            ],
-            [
-              2.391,
-              42.541
-            ],
-            [
-              2.309,
-              42.541
-            ],
-            [
-              2.309,
-              42.459
-            ]
-          ]
+          2.35,
+          42.5
         ]
       }
     },
@@ -4724,38 +2405,19 @@
       "type": "Feature",
       "properties": {
         "species": "Pinetell / Rovell\u00f3 (Lactarius deliciosus / sanguifluus)",
-        "score": 0.075,
+        "score": 0.06,
         "rain_21d": 51.2,
         "temp_min": 4.8,
         "soil_type": "Silici (\u00c0cid)",
         "ph": 5.2,
-        "tree_type": "Pi roig / Faig / Castanyer"
+        "tree_type": "Pi roig / Faig / Castanyer",
+        "tree_id": 1
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              2.509,
-              42.459
-            ],
-            [
-              2.591,
-              42.459
-            ],
-            [
-              2.591,
-              42.541
-            ],
-            [
-              2.509,
-              42.541
-            ],
-            [
-              2.509,
-              42.459
-            ]
-          ]
+          2.55,
+          42.5
         ]
       }
     },
@@ -4763,38 +2425,19 @@
       "type": "Feature",
       "properties": {
         "species": "Pinetell / Rovell\u00f3 (Lactarius deliciosus / sanguifluus)",
-        "score": 0.092,
+        "score": 0.068,
         "rain_21d": 39.8,
         "temp_min": 9.5,
         "soil_type": "Silici (\u00c0cid)",
         "ph": 5.2,
-        "tree_type": "Pi roig / Faig / Castanyer"
+        "tree_type": "Pi roig / Faig / Castanyer",
+        "tree_id": 1
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              2.709,
-              42.459
-            ],
-            [
-              2.791,
-              42.459
-            ],
-            [
-              2.791,
-              42.541
-            ],
-            [
-              2.709,
-              42.541
-            ],
-            [
-              2.709,
-              42.459
-            ]
-          ]
+          2.75,
+          42.5
         ]
       }
     },
@@ -4802,38 +2445,19 @@
       "type": "Feature",
       "properties": {
         "species": "Pinetell / Rovell\u00f3 (Lactarius deliciosus / sanguifluus)",
-        "score": 0.097,
+        "score": 0.077,
         "rain_21d": 41.6,
         "temp_min": 8.4,
         "soil_type": "Silici (\u00c0cid)",
         "ph": 5.2,
-        "tree_type": "Pi roig / Faig / Castanyer"
+        "tree_type": "Pi roig / Faig / Castanyer",
+        "tree_id": 1
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              2.919,
-              42.449
-            ],
-            [
-              3.001,
-              42.449
-            ],
-            [
-              3.001,
-              42.531
-            ],
-            [
-              2.919,
-              42.531
-            ],
-            [
-              2.919,
-              42.449
-            ]
-          ]
+          2.96,
+          42.49
         ]
       }
     },
@@ -4841,38 +2465,19 @@
       "type": "Feature",
       "properties": {
         "species": "Pinetell / Rovell\u00f3 (Lactarius deliciosus / sanguifluus)",
-        "score": 0.147,
+        "score": 0.112,
         "rain_21d": 36.3,
         "temp_min": 15.3,
         "soil_type": "Silici (\u00c0cid)",
         "ph": 5.2,
-        "tree_type": "Pi roig / Faig / Castanyer"
+        "tree_type": "Pi roig / Faig / Castanyer",
+        "tree_id": 1
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              3.109,
-              42.459
-            ],
-            [
-              3.191,
-              42.459
-            ],
-            [
-              3.191,
-              42.541
-            ],
-            [
-              3.109,
-              42.541
-            ],
-            [
-              3.109,
-              42.459
-            ]
-          ]
+          3.15,
+          42.5
         ]
       }
     },
@@ -4885,33 +2490,14 @@
         "temp_min": 0.7,
         "soil_type": "Silici (\u00c0cid)",
         "ph": 5.2,
-        "tree_type": "Pi roig / Faig / Castanyer"
+        "tree_type": "Pi roig / Faig / Castanyer",
+        "tree_id": 1
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              0.309,
-              42.659
-            ],
-            [
-              0.391,
-              42.659
-            ],
-            [
-              0.391,
-              42.741
-            ],
-            [
-              0.309,
-              42.741
-            ],
-            [
-              0.309,
-              42.659
-            ]
-          ]
+          0.35,
+          42.7
         ]
       }
     },
@@ -4924,33 +2510,14 @@
         "temp_min": -3.3,
         "soil_type": "Silici (\u00c0cid)",
         "ph": 5.2,
-        "tree_type": "Pi roig / Faig / Castanyer"
+        "tree_type": "Pi roig / Faig / Castanyer",
+        "tree_id": 1
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              0.509,
-              42.659
-            ],
-            [
-              0.591,
-              42.659
-            ],
-            [
-              0.591,
-              42.741
-            ],
-            [
-              0.509,
-              42.741
-            ],
-            [
-              0.509,
-              42.659
-            ]
-          ]
+          0.55,
+          42.7
         ]
       }
     },
@@ -4963,33 +2530,14 @@
         "temp_min": 0.4,
         "soil_type": "Silici (\u00c0cid)",
         "ph": 5.2,
-        "tree_type": "Pi roig / Faig / Castanyer"
+        "tree_type": "Pi roig / Faig / Castanyer",
+        "tree_id": 1
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              0.709,
-              42.659
-            ],
-            [
-              0.791,
-              42.659
-            ],
-            [
-              0.791,
-              42.741
-            ],
-            [
-              0.709,
-              42.741
-            ],
-            [
-              0.709,
-              42.659
-            ]
-          ]
+          0.75,
+          42.7
         ]
       }
     },
@@ -5002,33 +2550,14 @@
         "temp_min": 1.0,
         "soil_type": "Silici (\u00c0cid)",
         "ph": 5.2,
-        "tree_type": "Pi roig / Faig / Castanyer"
+        "tree_type": "Pi roig / Faig / Castanyer",
+        "tree_id": 1
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              0.909,
-              42.659
-            ],
-            [
-              0.991,
-              42.659
-            ],
-            [
-              0.991,
-              42.741
-            ],
-            [
-              0.909,
-              42.741
-            ],
-            [
-              0.909,
-              42.659
-            ]
-          ]
+          0.95,
+          42.7
         ]
       }
     },
@@ -5041,33 +2570,14 @@
         "temp_min": 0.5,
         "soil_type": "Silici (\u00c0cid)",
         "ph": 5.2,
-        "tree_type": "Pi roig / Faig / Castanyer"
+        "tree_type": "Pi roig / Faig / Castanyer",
+        "tree_id": 1
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              1.109,
-              42.659
-            ],
-            [
-              1.191,
-              42.659
-            ],
-            [
-              1.191,
-              42.741
-            ],
-            [
-              1.109,
-              42.741
-            ],
-            [
-              1.109,
-              42.659
-            ]
-          ]
+          1.15,
+          42.7
         ]
       }
     },
@@ -5080,33 +2590,14 @@
         "temp_min": -0.9,
         "soil_type": "Silici (\u00c0cid)",
         "ph": 5.2,
-        "tree_type": "Pi roig / Faig / Castanyer"
+        "tree_type": "Pi roig / Faig / Castanyer",
+        "tree_id": 1
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              1.309,
-              42.659
-            ],
-            [
-              1.391,
-              42.659
-            ],
-            [
-              1.391,
-              42.741
-            ],
-            [
-              1.309,
-              42.741
-            ],
-            [
-              1.309,
-              42.659
-            ]
-          ]
+          1.35,
+          42.7
         ]
       }
     },
@@ -5119,33 +2610,14 @@
         "temp_min": 0.7,
         "soil_type": "Silici (\u00c0cid)",
         "ph": 5.2,
-        "tree_type": "Pi roig / Faig / Castanyer"
+        "tree_type": "Pi roig / Faig / Castanyer",
+        "tree_id": 1
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              1.509,
-              42.659
-            ],
-            [
-              1.591,
-              42.659
-            ],
-            [
-              1.591,
-              42.741
-            ],
-            [
-              1.509,
-              42.741
-            ],
-            [
-              1.509,
-              42.659
-            ]
-          ]
+          1.55,
+          42.7
         ]
       }
     },
@@ -5158,33 +2630,14 @@
         "temp_min": 1.3,
         "soil_type": "Silici (\u00c0cid)",
         "ph": 5.2,
-        "tree_type": "Pi roig / Faig / Castanyer"
+        "tree_type": "Pi roig / Faig / Castanyer",
+        "tree_id": 1
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              1.709,
-              42.659
-            ],
-            [
-              1.791,
-              42.659
-            ],
-            [
-              1.791,
-              42.741
-            ],
-            [
-              1.709,
-              42.741
-            ],
-            [
-              1.709,
-              42.659
-            ]
-          ]
+          1.75,
+          42.7
         ]
       }
     },
@@ -5197,33 +2650,14 @@
         "temp_min": 2.6,
         "soil_type": "Silici (\u00c0cid)",
         "ph": 5.2,
-        "tree_type": "Pi roig / Faig / Castanyer"
+        "tree_type": "Pi roig / Faig / Castanyer",
+        "tree_id": 1
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              1.909,
-              42.659
-            ],
-            [
-              1.991,
-              42.659
-            ],
-            [
-              1.991,
-              42.741
-            ],
-            [
-              1.909,
-              42.741
-            ],
-            [
-              1.909,
-              42.659
-            ]
-          ]
+          1.95,
+          42.7
         ]
       }
     },
@@ -5231,38 +2665,19 @@
       "type": "Feature",
       "properties": {
         "species": "Pinetell / Rovell\u00f3 (Lactarius deliciosus / sanguifluus)",
-        "score": 0.024,
+        "score": 0.018,
         "rain_21d": 25.5,
         "temp_min": 4.4,
         "soil_type": "Silici (\u00c0cid)",
         "ph": 5.2,
-        "tree_type": "Pi roig / Faig / Castanyer"
+        "tree_type": "Pi roig / Faig / Castanyer",
+        "tree_id": 1
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              2.109,
-              42.659
-            ],
-            [
-              2.191,
-              42.659
-            ],
-            [
-              2.191,
-              42.741
-            ],
-            [
-              2.109,
-              42.741
-            ],
-            [
-              2.109,
-              42.659
-            ]
-          ]
+          2.15,
+          42.7
         ]
       }
     },
@@ -5270,38 +2685,19 @@
       "type": "Feature",
       "properties": {
         "species": "Pinetell / Rovell\u00f3 (Lactarius deliciosus / sanguifluus)",
-        "score": 0.029,
+        "score": 0.022,
         "rain_21d": 15.7,
         "temp_min": 3.9,
         "soil_type": "Silici (\u00c0cid)",
         "ph": 5.2,
-        "tree_type": "Pi roig / Faig / Castanyer"
+        "tree_type": "Pi roig / Faig / Castanyer",
+        "tree_id": 1
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              2.309,
-              42.659
-            ],
-            [
-              2.391,
-              42.659
-            ],
-            [
-              2.391,
-              42.741
-            ],
-            [
-              2.309,
-              42.741
-            ],
-            [
-              2.309,
-              42.659
-            ]
-          ]
+          2.35,
+          42.7
         ]
       }
     },
@@ -5309,38 +2705,19 @@
       "type": "Feature",
       "properties": {
         "species": "Pinetell / Rovell\u00f3 (Lactarius deliciosus / sanguifluus)",
-        "score": 0.075,
+        "score": 0.057,
         "rain_21d": 17.8,
         "temp_min": 10.0,
         "soil_type": "Silici (\u00c0cid)",
         "ph": 5.2,
-        "tree_type": "Pi roig / Faig / Castanyer"
+        "tree_type": "Pi roig / Faig / Castanyer",
+        "tree_id": 1
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              2.509,
-              42.659
-            ],
-            [
-              2.591,
-              42.659
-            ],
-            [
-              2.591,
-              42.741
-            ],
-            [
-              2.509,
-              42.741
-            ],
-            [
-              2.509,
-              42.659
-            ]
-          ]
+          2.55,
+          42.7
         ]
       }
     },
@@ -5348,38 +2725,19 @@
       "type": "Feature",
       "properties": {
         "species": "Pinetell / Rovell\u00f3 (Lactarius deliciosus / sanguifluus)",
-        "score": 0.104,
+        "score": 0.079,
         "rain_21d": 27.9,
         "temp_min": 11.7,
         "soil_type": "Silici (\u00c0cid)",
         "ph": 5.2,
-        "tree_type": "Pi roig / Faig / Castanyer"
+        "tree_type": "Pi roig / Faig / Castanyer",
+        "tree_id": 1
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              2.709,
-              42.659
-            ],
-            [
-              2.791,
-              42.659
-            ],
-            [
-              2.791,
-              42.741
-            ],
-            [
-              2.709,
-              42.741
-            ],
-            [
-              2.709,
-              42.659
-            ]
-          ]
+          2.75,
+          42.7
         ]
       }
     },
@@ -5387,38 +2745,19 @@
       "type": "Feature",
       "properties": {
         "species": "Pinetell / Rovell\u00f3 (Lactarius deliciosus / sanguifluus)",
-        "score": 0.101,
+        "score": 0.078,
         "rain_21d": 22.4,
         "temp_min": 11.9,
         "soil_type": "Silici (\u00c0cid)",
         "ph": 5.2,
-        "tree_type": "Pi roig / Faig / Castanyer"
+        "tree_type": "Pi roig / Faig / Castanyer",
+        "tree_id": 1
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              2.909,
-              42.659
-            ],
-            [
-              2.991,
-              42.659
-            ],
-            [
-              2.991,
-              42.741
-            ],
-            [
-              2.909,
-              42.741
-            ],
-            [
-              2.909,
-              42.659
-            ]
-          ]
+          2.95,
+          42.7
         ]
       }
     },
@@ -5426,38 +2765,19 @@
       "type": "Feature",
       "properties": {
         "species": "Pinetell / Rovell\u00f3 (Lactarius deliciosus / sanguifluus)",
-        "score": 0.149,
+        "score": 0.114,
         "rain_21d": 36.0,
         "temp_min": 15.1,
         "soil_type": "Silici (\u00c0cid)",
         "ph": 5.2,
-        "tree_type": "Pi roig / Faig / Castanyer"
+        "tree_type": "Pi roig / Faig / Castanyer",
+        "tree_id": 1
       },
       "geometry": {
-        "type": "Polygon",
+        "type": "Point",
         "coordinates": [
-          [
-            [
-              3.109,
-              42.659
-            ],
-            [
-              3.191,
-              42.659
-            ],
-            [
-              3.191,
-              42.741
-            ],
-            [
-              3.109,
-              42.741
-            ],
-            [
-              3.109,
-              42.659
-            ]
-          ]
+          3.15,
+          42.7
         ]
       }
     }

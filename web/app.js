@@ -16,27 +16,24 @@ function wms(service, layer) {
   return `https://geoserveis.icgc.cat/servei/catalunya/${service}/wms?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&LAYERS=${layer}&STYLES=&FORMAT=image/png&TRANSPARENT=true&SRS=EPSG:3857&BBOX={bbox-epsg-3857}&WIDTH=256&HEIGHT=256`;
 }
 const EL=EnvironmentLayers;
-const nationalTiles=EL.tile('https://www.ign.es/wms-inspire/mapa-raster','mtn_rasterizado');
 const map = new maplibregl.Map({container:'map', center:[-5,37], zoom:4.5, maxZoom:18,
-  style:{version:8,sources:{base:{type:'raster',tiles:[nationalTiles],tileSize:256,attribution:'© IGN · © ICGC · © OpenStreetMap contributors'}},
+  style:{version:8,sources:{base:{type:'raster',tiles:['https://tile.openstreetmap.org/{z}/{x}/{y}.png'],tileSize:256,attribution:'© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>'}},
     layers:[{id:'background',type:'background',paint:{'background-color':'#edf0e8'}},{id:'base',type:'raster',source:'base'}]}});
 map.addControl(new maplibregl.NavigationControl());
 map.addControl(new maplibregl.GeolocateControl({positionOptions:{enableHighAccuracy:true},trackUserLocation:false}));
 let manifest, environment, grid, currentScores, revision=0, selected=null, ready=false;
 let national, regionRevision=0, dataPath='', inspectionController;
 const speciesCache = new Map();
-let spots = [];
-try { spots = JSON.parse(localStorage.getItem('xafapins-spots') || '[]').filter(s => typeof s.name==='string' && Number.isFinite(s.lat) && Number.isFinite(s.lon) && Math.abs(s.lat)<=90 && Math.abs(s.lon)<=180); } catch { spots=[]; }
 function status(text, warn=false) { $('status').textContent=text; $('status').classList.toggle('warn',warn); }
 async function json(url) { const response=await fetch(url); if(!response.ok) throw new Error(`HTTP ${response.status}: ${url}`); return response.json(); }
 function option(select, value, label) { const o=document.createElement('option');o.value=value;o.textContent=label;select.append(o); }
 function text(tag, value, parent) { const node=document.createElement(tag);node.textContent=value;parent.append(node);return node; }
 function baseTiles(id, service, layer) { map.getSource(id).setTiles([wms(service,layer)]); }
-map.on('error', e => { if(e.sourceId && e.sourceId!=='cells') status('Una capa cartogràfica no respon. Prova una altra base o torna-ho a intentar.',true); });
+map.on('error', e => { if(e.sourceId && e.sourceId!=='cells') status('Una capa cartogràfica no respon. Torna-ho a intentar més tard.',true); });
 map.on('load', async () => {
   map.addSource('cover',{type:'raster',tiles:[wms('cobertes-sol','cobertes_2024')],tileSize:256,attribution:'Cobertes del sòl © ICGC'});
   map.addLayer({id:'cover',type:'raster',source:'cover',layout:{visibility:'none'},paint:{'raster-opacity':0.7}});
-  for(const [id,endpoint,layer,attribution] of [['forest-map',EL.FOREST,'ff_form_arbolada','© MITECO · Mapa Forestal de España'],['soil-map',EL.SOIL,'phh2o_0-5cm_mean','© ISRIC SoilGrids · CC BY 4.0']]) {
+  for(const [id,endpoint,layer,attribution] of [['forest-map',EL.FOREST,'ff_tipo_bosque','© MITECO · Mapa Forestal de España'],['soil-map',EL.SOIL,'phh2o_0-5cm_mean','© ISRIC SoilGrids · CC BY 4.0']]) {
     map.addSource(id,{type:'raster',tiles:[EL.tile(endpoint,layer)],tileSize:256,attribution});
     map.addLayer({id,type:'raster',source:id,layout:{visibility:'none'},paint:{'raster-opacity':0.75}});
   }
@@ -149,7 +146,6 @@ async function inspectEnvironment(lon,lat) {
   text('h2','Bosc i sòl en aquest punt',root);text('p',`${lat.toFixed(5)}, ${lon.toFixed(5)}`,root);
   const forest=text('p','Consultant MITECO…',root),ph=text('p','Consultant SoilGrids…',root);
   const depth=$('soil').value==='off'?'0-5cm':$('soil').value;
-  const save=text('button','Desa aquest punt',root);save.onclick=()=>{const name=prompt('Nom del setal','Setal');if(name?.trim()){spots.push({name:name.trim().slice(0,100),lat,lon});saveSpots();}};
   const tasks=[EL.forest(lon,lat,controller.signal).then(value=>{
     if(controller!==inspectionController)return;
     forest.textContent=value?`Bosc: ${value.formation}. Tipus: ${value.type}. Arbres: ${value.hosts.join(', ')||'sense dades'}. Coberta arbòria: ${value.canopy===null?'sense dades':value.canopy+'%'}.`:'MITECO: cap formació retornada; no confirma absència de bosc.';
@@ -169,28 +165,8 @@ function showDetail() {
   text('p',`Idoneïtat meteorològica · ${manifest.dates[day]}`,root);
   text('p',`${selected.lat.toFixed(4)}, ${selected.lon.toFixed(4)}`,root);
   for(const [key,values] of Object.entries(environment.days[day])) text('p',`${modes[key][0]}: ${values[i]}${modes[key][3]}`,root);
-  const button=text('button','Desa aquest setal',root);button.onclick=()=>{
-    const name=prompt('Nom del setal',s.common_name);if(!name?.trim()) return;
-    spots.push({name:name.trim().slice(0,100),lat:selected.lat,lon:selected.lon});saveSpots();
-  };
 }
-function saveSpots() {try {localStorage.setItem('xafapins-spots',JSON.stringify(spots));}catch{status('No es poden desar els llocs al navegador. Exporta’ls a GPX.',true);}renderSpots();}
-let markers=[];
-function renderSpots() {
-  markers.forEach(m=>m.remove());markers=[];$('spots').replaceChildren();
-  spots.forEach((s,i)=>{const row=document.createElement('div');row.className='spot';$('spots').append(row);
-    const go=text('button',s.name,row);go.onclick=()=>map.flyTo({center:[s.lon,s.lat],zoom:13});
-    const remove=text('button','×',row);remove.setAttribute('aria-label',`Elimina ${s.name}`);remove.onclick=()=>{spots.splice(i,1);saveSpots();};
-    markers.push(new maplibregl.Marker({color:'#a15b3b'}).setLngLat([s.lon,s.lat]).addTo(map));
-  });$('export').disabled=!spots.length;
-}
-$('export').onclick=()=>{
-  const escape=value=>String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&apos;'}[c]));
-  const gpx=`<?xml version="1.0" encoding="UTF-8"?><gpx version="1.1" creator="Xafapins" xmlns="http://www.topografix.com/GPX/1/1">${spots.map(s=>`<wpt lat="${s.lat}" lon="${s.lon}"><name>${escape(s.name)}</name></wpt>`).join('')}</gpx>`;
-  const url=URL.createObjectURL(new Blob([gpx],{type:'application/gpx+xml'})),a=document.createElement('a');a.href=url;a.download='xafapins-setals.gpx';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
-};
 $('opacity').oninput=()=>{if(currentScores)map.setPaintProperty('conditions','fill-opacity',$('layer').value==='none'?0:Number($('opacity').value)/100);};
-$('base').onchange=()=>{const value=$('base').value;map.getSource('base').setTiles([value==='ign'?nationalTiles:value==='osm'?'https://tile.openstreetmap.org/{z}/{x}/{y}.png':wms('mapa-base',value)]);};
 $('landcover').onchange=()=>{if(!map.getLayer('cover'))return;const v=$('landcover').value;map.setLayoutProperty('cover','visibility',v==='off'?'none':'visible');if(v!=='off')baseTiles('cover','cobertes-sol',v);};
 $('toggle').onclick=()=>{const collapsed=$('panel').classList.toggle('collapsed');$('toggle').textContent=collapsed?'+':'−';$('toggle').setAttribute('aria-expanded',String(!collapsed));};
 let searchRevision=0;
@@ -225,8 +201,7 @@ function overlayChange(kind) {
     $('layer').value='none';render();
     const layer=active==='forest'?$('forest').value:`phh2o_${$('soil').value}_mean`;
     $('source-legend').src=EL.url(active==='forest'?EL.FOREST:EL.SOIL,{SERVICE:'WMS',VERSION:'1.1.1',REQUEST:'GetLegendGraphic',LAYER:layer,FORMAT:'image/png'});
-    $('environment-caption').textContent=active==='forest'?'Llegenda MITECO · colors de les formacions arbolades':'SoilGrids · pH estimat; els valors pH×10 es divideixen per 10. Sense color = sense dades.';
+    $('environment-caption').textContent=active==='forest'?'Llegenda MITECO · coníferes, frondoses i bosc mixt':'SoilGrids · pH estimat; els valors pH×10 es divideixen per 10. Sense color = sense dades.';
   }
 }
 $('forest').onchange=()=>overlayChange('forest');$('soil').onchange=()=>overlayChange('soil');
-renderSpots();

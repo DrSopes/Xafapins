@@ -41,18 +41,7 @@
     if(!response.ok)throw new Error('HTTP '+response.status);
     return response.json();
   }
-  const forestTypes=[
-    ['ff_form_arbolada','Totes les formacions'],['ff_tipo_bosque','Coníferes / frondoses / mixt'],
-    ['pinar_pino_albar','Pi roig · Pinus sylvestris'],['pinar_pino_negro','Pi negre · P. uncinata'],
-    ['pinar_pino_carrasco','Pi blanc · P. halepensis'],['pinar_pino_salgareno','Pinassa · P. nigra'],
-    ['pinar_pino_pinonero','Pi pinyer · P. pinea'],['pinar_pino_canario','Pi canari'],
-    ['pinar_pino_pinaster_reg_atlantica','Pinastre atlàntic'],['pinar_pino_pinaster_reg_mediterranea','Pinastre mediterrani'],
-    ['encinares','Alzinars'],['alcornocales','Suredes'],['hayedos','Fagedes'],['abetales','Avetoses'],
-    ['castanares','Castanyedes'],['robledales_qrobur_qpetraea','Rouredes de roure pènol / fulla gran'],
-    ['robledales_roble_pubescente','Rouredes de roure martinenc'],['melojares','Rouredes de reboll'],
-    ['quejigares','Rouredes de roure de fulla petita'],['abedulares','Bedollars'],
-    ['bosque_ribereno','Bosc de ribera'],['dehesas','Deveses'],['eucaliptales','Eucaliptus'],
-    ['pinsapares','Pinsapars'],['laurisilvas_macaronesicas','Laurisilva'],['fayal_brezal','Fayal-brezal']];
+  const forestTypes=[['ff_tipo_bosque','Coníferes / frondoses / mixt']];
   root.EnvironmentLayers={FOREST,SOIL,tile,url,featureUrl,phValue,phClass,forestValue,forestTypes,
     forest:(lon,lat,signal)=>request(FOREST,'ff_form_arbolada',lon,lat,'application/json',signal).then(forestValue),
     ph:(lon,lat,depth,stat,signal)=>request(SOIL,`phh2o_${depth}_${stat}`,lon,lat,'application/geo+json',signal).then(phValue)};

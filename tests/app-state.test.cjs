@@ -46,7 +46,6 @@ async function setup() {
   }
   const context=vm.createContext({EnvironmentLayers:E,document:{getElementById:id=>nodes[id],createElement:element},
     maplibregl:{Map:MapStub,NavigationControl:class{},GeolocateControl:class{}},
-    localStorage:{getItem(){return null;},setItem(){}},
     fetch:async url=>({ok:!!assets[url],status:assets[url]?200:404,json:async()=>structuredClone(assets[url])}),
     requestAnimationFrame:fn=>fn(),setTimeout,clearTimeout,AbortController,URL,Blob,console});
   vm.runInContext(fs.readFileSync(path.join(__dirname,'../web/app.js'),'utf8'),context);
@@ -69,7 +68,7 @@ test('region change replaces score arrays and rejects delayed previous responses
 });
 test('forest and soil overlays are exclusive and weather selection clears them',async()=>{
   const {context,map,nodes}=await setup();
-  nodes.forest.value='hayedos';context.overlayChange('forest');
+  nodes.forest.value='ff_tipo_bosque';context.overlayChange('forest');
   assert.equal(nodes.layer.value,'none');assert.equal(map.layers['forest-map'].layout.visibility,'visible');
   nodes.soil.value='0-5cm';context.overlayChange('soil');
   assert.equal(nodes.forest.value,'off');assert.equal(map.layers['forest-map'].layout.visibility,'none');

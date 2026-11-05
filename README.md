@@ -1,16 +1,18 @@
 # Xafapins · Spain
 
+App feta per **Dr.Sopes**.
+
 A static mushroom-weather explorer with **24 species**, **all 19 Spanish regions**, **official forest formations**, and **modelled soil pH**. Includes mainland Spain, the Balearic Islands, the Canary Islands, Ceuta and Melilla. The interface remains in Catalan.
 
 ## Use the map
 
 - The national overview colours regions by their average weather-suitability index. The selected region loads its approximately **1 km cells**. Click another region or choose it in the selector to load its detailed forecast. Regional averages are simple cell means, not occurrence probabilities.
 - Select a species, forecast date and weather layer. The **Tot Espanya** and **Canàries** buttons navigate between national and island views.
-- **Tipus de bosc** offers all mapped formations, broadleaf/conifer/mixed forest, and individual formations such as Scots pine, black pine, Aleppo pine, Canary pine, oak, beech, fir, chestnut, riparian woodland and laurel forest. These are official MITECO WMS layers, not guesses derived from coordinates.
+- **Tipus de bosc** uses a simplified classification: conifers, broadleaf and mixed forest, through the official MITECO `ff_tipo_bosque` layer. The overlay can also be hidden. Detailed formation and tree information remains available by clicking the map.
 - **pH del sòl** displays SoilGrids estimates for 0–5, 5–15 or 15–30 cm depth. Click the map to query the pH, an approximate acidity class and, where available, the model's 5th–95th percentile interval. These are **250 m model estimates, not local measurements**.
 - Every land click queries the forest formation, dominant tree species and canopy cover where supplied by MITECO, plus soil pH. Empty/error responses remain unknown; they never become zero or neutral pH. Point queries can be retried by clicking again.
 - Forest and pH overlays are mutually exclusive so their original provider legends remain readable. Selecting either hides weather colours; selecting a weather layer hides the environmental overlay. Point details can show both independently.
-- Search Spanish place names or `latitude, longitude`. Click a region to load its forecast after navigating. Saved places stay in the browser; export them as GPX for backup.
+- Search Spanish place names or `latitude, longitude`. Click a region to load its forecast after navigating.
 
 ## Run locally
 
@@ -72,8 +74,8 @@ Weather includes 28 historical days and 7 forecast days by default. Antecedent r
 - [MITECO official forest formations directory](https://www.miteco.gob.es/es/cartografia-y-sig/ide/directorio_datos_servicios/biodiversidad/wms-formaciones-arboladas.html), service `https://iepnb.gob.es/geoserver/foto_fija_mfe/wms`; © MITECO.
 - [ISRIC SoilGrids documentation](https://docs.isric.org/globaldata/soilgrids/SoilGrids_faqs_01.html), service `https://maps.isric.org/mapserv?map=/map/phh2o.map`; CC BY 4.0.
 - [Open-Meteo Forecast API](https://open-meteo.com/en/docs); CC BY 4.0. Archived forecast/model output, not station observations.
-- [IGN national raster basemap](https://www.ign.es/wms-inspire/mapa-raster?SERVICE=WMS&REQUEST=GetCapabilities); © IGN. OpenStreetMap fallback: © OpenStreetMap contributors.
-- [ICGC](https://www.icgc.cat/ca/Geoinformacio-i-mapes/Servei-de-Mapa-Base) regional topography, imagery, geology and land cover remain available for Catalonia.
+- [OpenStreetMap](https://www.openstreetmap.org/copyright) is the only basemap; © OpenStreetMap contributors.
+- [ICGC](https://www.icgc.cat/ca/Geoinformacio-i-mapes/Servei-de-Mapa-Base) land cover overlays remain available for Catalonia.
 - [Eurostat GISCO NUTS 2024](https://gisco-services.ec.europa.eu/distribution/v2/nuts/), 19 Spanish NUTS-2 boundaries at 1:1M; © EuroGeographics for administrative boundaries. Checked-in `data/spain-regions.geojson` is the Spanish subset.
 - [Sporas.io](https://sporas.io/) supplied the original feature reference; no proprietary algorithm or assets copied.
 

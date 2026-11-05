@@ -12,7 +12,7 @@
 <label for="species">Espècie</label><select id="species" disabled></select><p class="hint" id="profile"></p>
 <label for="date">Data de previsió</label><select id="date" disabled></select>
 <label for="layer">Condicions al mapa</label><select id="layer" disabled></select>
-<label for="base">Cartografia de referència</label><select id="base"><option value="ign">Topogràfic · IGN · Espanya</option><option value="osm">OpenStreetMap · Espanya</option><option value="topografic">Topogràfic · ICGC · Catalunya</option><option value="orto-hibrida">Ortofoto · ICGC · Catalunya</option><option value="geologic">Geologia · ICGC · Catalunya</option></select>
+<p class="hint">Cartografia de referència: OpenStreetMap</p>
 <label for="forest">Tipus de bosc · MITECO</label><select id="forest"><option value="off">Ocult</option></select>
 <label for="soil">pH del sòl · SoilGrids</label><select id="soil"><option value="off">Ocult</option><option value="0-5cm">Superfície · 0–5 cm</option><option value="5-15cm">Sòl · 5–15 cm</option><option value="15-30cm">Sòl · 15–30 cm</option></select>
 <p class="hint">Les capes de bosc i pH cobreixen Espanya independentment de la regió de previsió. Fes clic per consultar-les.</p>
@@ -23,8 +23,7 @@
 <div class="status" id="status" role="status" aria-live="polite">Carregant dades…</div><p class="hint" id="notice"></p>
 <div id="detail" class="detail hidden" aria-live="polite"></div>
 <div id="environment-detail" class="detail hidden" aria-live="polite"></div>
-<details><summary>Els meus setals · només en aquest navegador</summary><p class="hint">Fes clic al mapa per desar un lloc. Les dades no se sincronitzen.</p><div class="spots" id="spots"></div><button id="export">Exporta GPX</button></details>
 <details><summary>Com llegir el mapa</summary><p class="hint">Índex meteorològic i estacional de 0 a 100, sense calibratge de camp. No és una probabilitat de trobar bolets. Perfils provisionals: la cobertura nacional no implica presència de totes les espècies a cada regió.</p><p class="hint">El bosc prové del Mapa Forestal d’Espanya (MITECO). El pH és una estimació SoilGrids a 250 m, no una mesura local. Les dades buides no s’interpreten com a bosc absent ni pH neutre. Bosc i pH són consultes independents: encara no alteren l’índex meteorològic.</p><p class="hint">Dates meteo en Europe/Madrid per a tot el mapa, també Canàries. L’altitud és del model meteorològic. El visor no identifica bolets ni certifica comestibilitat.</p><p class="hint"><a href="https://www.miteco.gob.es/es/biodiversidad/temas/inventarios-nacionales/mapa-forestal-espana.html" target="_blank" rel="noopener">MITECO</a> · <a href="https://soilgrids.org" target="_blank" rel="noopener">SoilGrids / ISRIC</a> · <a href="https://open-meteo.com/" target="_blank" rel="noopener">Open-Meteo</a></p></details>
-<p class="footer">XAFAPINS / OBSERVA · EXPLORA · RESPECTA<br>Meteo: Open-Meteo, CC BY 4.0 · Sòl: ISRIC SoilGrids, CC BY 4.0 · Bosc: MITECO · Límits: Eurostat GISCO, © EuroGeographics</p></div></aside>
+<p class="footer">XAFAPINS / OBSERVA · EXPLORA · RESPECTA<br>App feta per Dr.Sopes.<br>Meteo: Open-Meteo, CC BY 4.0 · Sòl: ISRIC SoilGrids, CC BY 4.0 · Bosc: MITECO · Límits: Eurostat GISCO, © EuroGeographics</p></div></aside>
 <div class="badge" id="resolution">Selecciona una espècie i explora les condicions del bosc.</div>
 </body></html>

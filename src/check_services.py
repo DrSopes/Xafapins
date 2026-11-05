@@ -11,8 +11,7 @@ def check():
     report={'checked_at':datetime.now(timezone.utc).isoformat(),'checks':[]}
     common={'SERVICE':'WMS','VERSION':'1.1.1','STYLES':'','FORMAT':'image/png',
             'SRS':'EPSG:4326','BBOX':'2.39,41.79,2.41,41.81','WIDTH':101,'HEIGHT':101}
-    for endpoint,layer in [(FOREST,'ff_form_arbolada'),(SOIL,'phh2o_0-5cm_mean'),
-                           ('https://www.ign.es/wms-inspire/mapa-raster','mtn_rasterizado')]:
+    for endpoint,layer in [(FOREST,'ff_tipo_bosque'),(SOIL,'phh2o_0-5cm_mean')]:
         response=requests.get(endpoint,params={**common,'REQUEST':'GetMap','LAYERS':layer},timeout=45)
         response.raise_for_status()
         assert response.content.startswith(b'\x89PNG\r\n\x1a\n'),f'{layer}: expected PNG, got {response.text[:100]}'

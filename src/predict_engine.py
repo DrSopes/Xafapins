@@ -57,7 +57,7 @@ def generate_predictions(species="lactarius_deliciosus"):
         data = json.load(f)["data"]
         
     features = []
-    d = 0.08
+    d = 0.04
     for pt in data:
         score = calculate_suitability(pt, rule)
         lon, lat = pt["lon"], pt["lat"]

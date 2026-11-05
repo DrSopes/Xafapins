@@ -27,8 +27,10 @@ jobs:
           pip install -r requirements.txt
 
       - name: 1. Descargar meteo fresca de Cataluña
+        env:
+          PYTHONUNBUFFERED: "1"
         run: |
-          python src/download_meteo.py --grid-step 0.15
+          python src/download_meteo.py --grid-step 0.25
 
       - name: 2. Ejecutar motor predictivo
         run: |

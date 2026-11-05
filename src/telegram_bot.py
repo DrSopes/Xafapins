@@ -15,6 +15,9 @@ def format_report():
         "boletus_edulis": "🍄 Cep (Boletus edulis)"
     }
     
+    # URL de GitHub Pages (es pot definir via secret/env o posar en brut)
+    web_url = os.environ.get("PAGES_URL", "https://elteuusuari.github.io/Xafapins/")
+    
     lines = ["<b>🍄 XAFAPINS - Butlletí Micològic Diari 🌲</b>\n"]
     
     for sp_key, sp_name in species_map.items():
@@ -23,7 +26,6 @@ def format_report():
             continue
             
         features = data.get("features", [])
-        # Ordenar por índice de probabilidad descendente
         sorted_spots = sorted(
             features, 
             key=lambda f: f["properties"].get("score", 0), 
@@ -43,17 +45,16 @@ def format_report():
             lon, lat = coords[0], coords[1]
             score_pct = int(p["score"] * 100)
             
-            # Enlace directo a Google Maps / OpenStreetMap
-            maps_url = f"https://www.google.com/maps/search/?api=1&query={lat:.3f},{lon:.3f}"
+            maps_url = f"https://www.google.com/maps/search/?api=1&query={lat:.4f},{lon:.4f}"
             
             lines.append(
                 f"{i}. <b>Probabilitat: {score_pct}%</b>\n"
                 f"   🌧️ Pluja 21d: {p['rain_21d']} mm | 🌡️ T.mín: {p['temp_min']}°C\n"
-                f"   📍 <a href='{maps_url}'>Veure coordenades ({lat:.2f}, {lon:.2f})</a>"
+                f"   📍 <a href='{maps_url}'>Veure a Google Maps ({lat:.2f}, {lon:.2f})</a>"
             )
         lines.append("")
         
-    lines.append("🌐 <i>Consulta el visor complet a la teva web local de Xafapins.</i>")
+    lines.append(f"🗺️ <b>Explora el mapa complet en línia:</b>\n👉 <a href='{web_url}'>{web_url}</a>")
     return "\n".join(lines)
 
 def send_telegram_message():
@@ -70,7 +71,7 @@ def send_telegram_message():
         "chat_id": chat_id,
         "text": text,
         "parse_mode": "HTML",
-        "disable_web_page_preview": True
+        "disable_web_page_preview": False
     }
     
     res = requests.post(url, json=payload, timeout=10)

@@ -67,3 +67,5 @@ jobs:
       - name: 6. Desplegar a GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+        with:
+          timeout: 120000 # Aumenta el tiempo de espera a 2 minutos

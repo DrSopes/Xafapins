@@ -62,3 +62,7 @@ The first build takes several minutes and depends on public weather API availabi
 A failed refresh does not deploy partial data; the previous Pages deployment remains available. Forest and pH maps are independent live services and may temporarily fail even when a forecast deployment succeeds.
 
 The workflows have been prepared and checked locally. An actual GitHub-hosted run cannot be verified until this source is committed to your repository and Pages is enabled.
+
+## Timeout during syncing_files
+
+GitHub Pages enforces a ten-minute deployment limit. Raising the Actions job timeout does not remove it. First rerun the failed deployment job once; if it repeats, inspect the build job summary for artifact size and the largest files. The packager uses maximum gzip compression and stable gzip headers. These reduce transfer size and keep unchanged data byte-identical, but cannot guarantee a successful Pages deployment. Keep the 500 m grid unless actual artifact measurements justify a different architecture.

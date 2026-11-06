@@ -2,6 +2,7 @@
 import json
 import gzip
 import shutil
+import os
 from pathlib import Path
 from download_meteo import ROOT
 from regions import regions
@@ -42,12 +43,21 @@ def package():
             if name == 'manifest.json':
                 shutil.copy2(source/name,destination/name)
             else:
-                with open(source/name, 'rb') as original, gzip.open(destination/(name+'.gz'), 'wb', compresslevel=6) as compressed:
-                    shutil.copyfileobj(original, compressed)
+                # Stable gzip headers keep unchanged assets byte-identical across builds.
+                with open(source/name, 'rb') as original, open(destination/(name+'.gz'), 'wb') as target:
+                    with gzip.GzipFile(filename='', mode='wb', fileobj=target, compresslevel=9, mtime=0) as compressed:
+                        shutil.copyfileobj(original, compressed)
     (output/'.nojekyll').touch()
-    total=sum(p.stat().st_size for p in output.rglob('*') if p.is_file())
+    files=sorted((p for p in output.rglob('*') if p.is_file()),key=lambda p:p.stat().st_size,reverse=True)
+    total=sum(p.stat().st_size for p in files)
+    report=[f'Pages artifact ready: {len(expected)} regions, {total/1e6:.1f} MB, {len(files)} files',
+            '', 'Largest published files:']
+    report.extend(f'- {p.relative_to(output).as_posix()}: {p.stat().st_size/1e6:.2f} MB' for p in files[:10])
+    print('\n'.join(report),flush=True)
+    if os.environ.get('GITHUB_STEP_SUMMARY'):
+        with open(os.environ['GITHUB_STEP_SUMMARY'],'a',encoding='utf-8') as summary:
+            summary.write('## Pages artifact\n\n'+'\n'.join(report)+'\n')
     if total>=1_000_000_000:
         raise ValueError('Pages output exceeds 1 GB; reduce grid density')
-    print(f'Pages artifact ready: {len(expected)} regions, {total/1e6:.1f} MB',flush=True)
 
 if __name__=='__main__':package()

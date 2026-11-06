@@ -173,6 +173,11 @@ class PipelineTests(unittest.TestCase):
             with gzip.open(packed,'rt',encoding='utf-8') as stream:env=json.load(stream)
             self.assertEqual(len(env['days']),7)
             self.assertFalse((packed.parent/'environment.json').exists())
+            first=packed.read_bytes()
+            with patch.object(package_site,'ROOT',root),patch.object(package_site,'regions',return_value=[{'properties':{'id':'ES51'}}]):
+                package_site.package()
+            self.assertEqual(first,packed.read_bytes())
+            self.assertEqual(first[4:8],b'\x00'*4)
             photos=json.loads((root/'dist/species-photos.json').read_text(encoding='utf-8'))
             self.assertEqual(len(photos),24)
             self.assertTrue(all((root/'dist'/p['image']).exists() and p['author'] and p['license'] for p in photos.values()))

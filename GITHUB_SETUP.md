@@ -46,7 +46,7 @@ The workflow:
 1. Checks Pages configuration early.
 2. Installs Python dependencies and runs Python/JavaScript tests.
 3. Downloads weather covering all Spanish regions, islands and autonomous cities.
-4. Builds 24 species for 15 historical dates and seven forecast dates at 1 km calculation spacing; the browser draws the nominal 250 m visual grid when zoomed in.
+4. Builds 24 species for 15 historical dates and seven forecast dates at 500 m calculation spacing; the browser draws the nominal 250 m visual grid when zoomed in.
 5. Validates all 19 regional datasets and prepares a clean `dist` folder.
 6. Uploads the Pages artifact and deploys it. The final deployment step supplies your website URL.
 

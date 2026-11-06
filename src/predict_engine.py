@@ -32,7 +32,7 @@ def score_weather(rain, temperature, frost, elevation, rule, month):
     return np.rint(100*wet*thermal*freeze*altitude*season).astype(int)
 
 
-def build(step_km=1.0, weather_path=None, output=None, allow_legacy=False, region_id=None):
+def build(step_km=0.5, weather_path=None, output=None, allow_legacy=False, region_id=None):
     if not 0.5 <= step_km <= 5:
         raise ValueError('Cell size must be between 0.5 and 5 km')
     output = Path(output or ROOT/'web/data')
@@ -152,7 +152,7 @@ def build(step_km=1.0, weather_path=None, output=None, allow_legacy=False, regio
     print(f'Built {region_id or "test"}: {len(features)} cells, {len(rules)} species, {len(forecast_dates)} dates', flush=True)
 
 
-def build_spain(step_km=1):
+def build_spain(step_km=0.5):
     catalog = []
     for feature in regions():
         region_id = feature['properties']['id']
@@ -174,7 +174,7 @@ def build_spain(step_km=1):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--cell-km', type=float, default=1)
+    parser.add_argument('--cell-km', type=float, default=0.5)
     parser.add_argument('--allow-legacy', action='store_true')
     parser.add_argument('--all-spain', action='store_true')
     parser.add_argument('--region')

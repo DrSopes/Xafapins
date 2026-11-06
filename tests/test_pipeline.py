@@ -31,6 +31,19 @@ def fixture():
 
 
 class PipelineTests(unittest.TestCase):
+    def test_half_km_cells_are_independently_built_and_validated(self):
+        with tempfile.TemporaryDirectory() as directory:
+            folder=Path(directory)
+            atomic_json(folder/'weather.json',fixture())
+            with patch('predict_engine.boundary',return_value=box(1.95,41.95,2.05,42.05)):
+                build(step_km=1,weather_path=folder/'weather.json',output=folder/'coarse')
+                build(weather_path=folder/'weather.json',output=folder/'fine')
+            validate(folder/'fine')
+            coarse=json.loads((folder/'coarse/manifest.json').read_text())
+            fine=json.loads((folder/'fine/manifest.json').read_text())
+            self.assertEqual(fine['cell_size_km'],0.5)
+            self.assertGreater(fine['cell_count'],coarse['cell_count']*3)
+
     def test_spain_has_19_regions_and_islands_and_cities(self):
         self.assertEqual(len(regions()),19)
         for code,lon,lat in [('ES51',2.17,41.39),('ES53',2.65,39.57),('ES70',-16.25,28.46),('ES63',-5.32,35.89),('ES64',-2.95,35.29)]:
@@ -146,7 +159,7 @@ class PipelineTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as directory:
             root=Path(directory);web=root/'web';web.mkdir()
             source=Path(__file__).resolve().parents[1]/'web'
-            for name in ['index.html','app.js','app.css','environment-layers.js','visual-grid.js','species-photos.json']:
+            for name in ['index.html','app.js','app.css','environment-layers.js','visual-grid.js','tile-cache-sw.js','species-photos.json']:
                 shutil.copy2(source/name,web/name)
             shutil.copytree(source/'images',web/'images')
             atomic_json(root/'weather.json',fixture())

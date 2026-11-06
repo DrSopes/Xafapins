@@ -19,7 +19,7 @@ def package():
     if output.exists():
         shutil.rmtree(output)
     output.mkdir()
-    for name in ['index.html','app.js','app.css','environment-layers.js','visual-grid.js','species-photos.json']:
+    for name in ['index.html','app.js','app.css','environment-layers.js','visual-grid.js','tile-cache-sw.js','species-photos.json']:
         shutil.copy2(web/name,output/name)
     shutil.copytree(web/'images', output/'images')
     (output/'data/regions').mkdir(parents=True)

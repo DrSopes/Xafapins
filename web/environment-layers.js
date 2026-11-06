@@ -9,7 +9,7 @@
   function tile(endpoint,layer) {
     return url(endpoint,{SERVICE:'WMS',VERSION:'1.1.1',REQUEST:'GetMap',LAYERS:layer,
       STYLES:'',FORMAT:'image/png',TRANSPARENT:'true',SRS:'EPSG:3857',
-      BBOX:'{bbox-epsg-3857}',WIDTH:256,HEIGHT:256}).replace('%7Bbbox-epsg-3857%7D','{bbox-epsg-3857}');
+      BBOX:'{bbox-epsg-3857}',WIDTH:512,HEIGHT:512}).replace('%7Bbbox-epsg-3857%7D','{bbox-epsg-3857}');
   }
   function featureUrl(endpoint,layer,lon,lat,format) {
     // Small fixed footprint avoids zoom-dependent picking of neighbouring forests.

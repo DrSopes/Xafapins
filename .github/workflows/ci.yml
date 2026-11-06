@@ -22,4 +22,5 @@ jobs:
       - run: node --check web/app.js
       - run: node --check web/environment-layers.js
       - run: node --check web/visual-grid.js
+      - run: node --check web/tile-cache-sw.js
       - run: node --test tests/*.test.cjs

@@ -1,4 +1,7 @@
 'use strict';
+if (typeof navigator !== 'undefined' && 'serviceWorker' in navigator) {
+  navigator.serviceWorker.register('./tile-cache-sw.js').catch(() => {});
+}
 const $ = id => document.getElementById(id);
 const modes = {
   score: ['Idoneïtat meteorològica', 0, 100, ' / 100', ['#e1e6d6','#b8c976','#4a8050','#153e35']],
@@ -45,8 +48,8 @@ map.on('load', async () => {
   map.addSource('cover',{type:'raster',tiles:[wms('cobertes-sol','cobertes_2024')],tileSize:256,attribution:'Cobertes del sòl © ICGC'});
   map.addLayer({id:'cover',type:'raster',source:'cover',layout:{visibility:'none'},paint:{'raster-opacity':0.7}});
   for(const [id,endpoint,layer,attribution] of [['forest-map',EL.FOREST,'ff_tipo_bosque','© MITECO · Mapa Forestal de España'],['soil-map',EL.SOIL,'phh2o_0-5cm_mean','© ISRIC SoilGrids · CC BY 4.0']]) {
-    map.addSource(id,{type:'raster',tiles:[EL.tile(endpoint,layer)],tileSize:256,maxzoom:id==='soil-map'?11:13,attribution});
-    map.addLayer({id,type:'raster',source:id,layout:{visibility:'none'},paint:{'raster-opacity':0.75}});
+    map.addSource(id,{type:'raster',tiles:[EL.tile(endpoint,layer)],tileSize:512,maxzoom:id==='soil-map'?10:12,bounds:[-18.3,27.5,4.4,43.9],attribution});
+    map.addLayer({id,type:'raster',source:id,layout:{visibility:'none'},paint:{'raster-opacity':0.75,'raster-fade-duration':0}});
   }
   EL.forestTypes.forEach(([id,label])=>option($('forest'),id,label));
   try {

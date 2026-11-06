@@ -19,6 +19,8 @@ test('forest query keeps real formation and dominant species',()=>{
 });
 test('WMS URLs preserve map parameter, tile token and longitude-latitude axis order',()=>{
   const tile=E.tile(E.SOIL,'phh2o_0-5cm_mean');
+  assert.equal(new URL(tile).searchParams.get('WIDTH'),'512');
+  assert.equal(new URL(tile).searchParams.get('HEIGHT'),'512');
   assert.ok(tile.includes('map=/map/phh2o.map'));assert.ok(tile.includes('{bbox-epsg-3857}'));
   const query=new URL(E.featureUrl(E.FOREST,'ff_form_arbolada',2.4,41.8,'application/json'));
   assert.equal(query.searchParams.get('STYLES'),'');assert.equal(query.searchParams.get('SRS'),'EPSG:4326');

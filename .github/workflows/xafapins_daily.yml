@@ -33,13 +33,14 @@ jobs:
       - run: node --check web/app.js
       - run: node --check web/environment-layers.js
       - run: node --check web/visual-grid.js
+      - run: node --check web/tile-cache-sw.js
       - run: node --test tests/*.test.cjs
       - name: Fetch complete weather series
         env:
           PYTHONUNBUFFERED: '1'
         run: python src/download_meteo.py --grid-step 0.16 --forecast-days 7
-      - name: Generate all species at 1 km display spacing
-        run: python src/predict_engine.py --cell-km 1 --all-spain
+      - name: Generate all species at 500 m display spacing
+        run: python src/predict_engine.py --cell-km 0.5 --all-spain
       - run: python src/validate_output.py --all-spain
       - name: Prepare clean Pages artifact
         run: python src/package_site.py
